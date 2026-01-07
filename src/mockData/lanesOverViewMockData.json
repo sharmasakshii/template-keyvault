@@ -1,0 +1,115 @@
+{ "laneOverviewTotalEmissionData" : {
+  "company_level": [0],
+  "targer_level": [
+    0.00064832193125, 0.0006438338624999999, 0.00063934579375, 0.000634857725,
+    0.00063036965625, 0.0006258815874999999, 0.00062139351875, 0.00061690545
+  ],
+  "base_level": [0],
+  "max": 0,
+  "year": [2023, 2024]
+},
+
+ "laneOverviewEmissionRegionData" : {
+  "company_level": [390.9],
+  "targer_level": [
+    388.2167252994012, 385.5292589820359, 382.84179266467066, 380.1543263473054,
+    377.4668600299401, 374.77939371257486, 372.0919273952096, 369.4044610778443
+  ],
+  "base_level": [508.2],
+  "max": 609.8,
+  "year": [2023, 2024]
+},
+
+ "totalemissionCarriertoggleMockData" : {
+  "contributor": [],
+  "detractor": [
+    {
+      "name": "FEDEX GROUND (CORPORATE)",
+      "value": 0,
+      "total_emission": 0.00065281,
+      "total_intensity": 390.904191,
+      "shipment_count": 1,
+      "color": "#929597"
+    }
+  ],
+  "unit": "tCo2e",
+  "average": 0
+},
+
+ "emisionIntensityCarriertoggleMockData" : {
+  "contributor": [],
+  "detractor": [
+    {
+      "name": "FEDEX GROUND (CORPORATE)",
+      "value": 0,
+      "total_emission": 0.00065281,
+      "total_intensity": 390.904191,
+      "shipment_count": 1,
+      "color": "#929597"
+    }
+  ],
+  "unit": "g",
+  "average": 390.9
+},
+
+ "mockNoData" : {
+  "data": {
+    "responseData": [],
+    "average": "",
+    "pagination": {
+      "page": 0,
+      "page_size": 0,
+      "total_count": 0
+    }
+  }
+},
+
+ "laneOverviewMockData" : {
+  "data": {
+    "responseData": [
+      {
+        "intensity": {
+          "value": 390.1,
+          "color": "#929597"
+        },
+        "emission": {
+          "value": 0,
+          "color": "#929597"
+        },
+        "shipment_count": 1,
+        "carrier": "FDEG",
+        "carrier_name": "FEDEX GROUND (CORPORATE)",
+        "carrier_logo": "/images/company_logo/fedex-ground.png",
+        "SmartwayData": [
+          {
+            "code": "FDEG",
+            "ranking": 1,
+            "year": 2020
+          },
+          {
+            "code": "FDEG",
+            "ranking": 1,
+            "year": 2021
+          }
+        ]
+      }
+    ],
+    "average": 390.1,
+    "pagination": {
+      "page": 0,
+      "page_size": 20,
+      "total_count": 1
+    }
+  }
+},
+
+ "mapMockData" : {
+  "data":[ {
+    "intensity": 390.061224,
+    "emission": 0.00076452,
+    "shipment_count": 1,
+    "source": "FINDLAY, OH",
+    "destination": "CLERMONT, FL"
+  }]
+}
+}

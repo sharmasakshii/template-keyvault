@@ -1,0 +1,626 @@
+{
+    "commonReportFilterMockData": {
+        "years": [
+            {
+                "year": 2023
+            },
+            {
+                "year": 2024
+            }
+        ],
+        "months": [
+            {
+                "id": 1,
+                "name": "Jan"
+            },
+            {
+                "id": 2,
+                "name": "Feb"
+            },
+            {
+                "id": 3,
+                "name": "Mar"
+            },
+            {
+                "id": 4,
+                "name": "Apr"
+            },
+            {
+                "id": 5,
+                "name": "May"
+            },
+            {
+                "id": 6,
+                "name": "Jun"
+            },
+            {
+                "id": 7,
+                "name": "Jul"
+            },
+            {
+                "id": 8,
+                "name": "Aug"
+            },
+            {
+                "id": 9,
+                "name": "Sep"
+            },
+            {
+                "id": 10,
+                "name": "Oct"
+            },
+            {
+                "id": 11,
+                "name": "Nov"
+            },
+            {
+                "id": 12,
+                "name": "Dec"
+            }
+        ]
+    },
+    "locationListDtoMockData": [
+        {
+            "id": 19,
+            "name": "Kirkwood, NY",
+            "longitude": -75.80549621582031,
+            "latitude": 42.06700134277344
+        },
+        {
+            "id": 20,
+            "name": "Aberdeen, MD",
+            "longitude": -76.16410064697266,
+            "latitude": 39.50960159301758
+        }
+    ],
+    "vehicleListDtoMockData": [
+        {
+            "vehicle_id": "C15122"
+        },
+        {
+            "vehicle_id": "C15123"
+        },
+        {
+            "vehicle_id": "C15130"
+        },
+        {
+            "vehicle_id": "C15131"
+        },
+        {
+            "vehicle_id": "C15132"
+        }
+    ],
+    "fritoLayTransactionListDtoMockData": {
+        "list": [
+            {
+                "id": 34749,
+                "vehicle_id": "C14700",
+                "transaction_date": "2024-11-30",
+                "transaction_type": "TAX - USEXTX-SALES",
+                "fuel_consumption": 54,
+                "card_assignment": "JON WORDEN",
+                "fuelLocation": {
+                    "name": "Kirkwood, NY"
+                },
+                "fuelConstant": {
+                    "name": "RNG"
+                }
+            },
+            {
+                "id": 34750,
+                "vehicle_id": "C23316",
+                "transaction_date": "2024-11-30",
+                "transaction_type": "TAX - USEXTX-SALES",
+                "fuel_consumption": 66,
+                "card_assignment": "JAY CHRISTENSEN",
+                "fuelLocation": {
+                    "name": "Kirkwood, NY"
+                },
+                "fuelConstant": {
+                    "name": "RNG"
+                }
+            },
+            {
+                "id": 34751,
+                "vehicle_id": "C22143",
+                "transaction_date": "2024-11-30",
+                "transaction_type": "TAX - USEXTX-SALES",
+                "fuel_consumption": 98,
+                "card_assignment": "JAY CHRISTENSEN",
+                "fuelLocation": {
+                    "name": "Kirkwood, NY"
+                },
+                "fuelConstant": {
+                    "name": "RNG"
+                }
+            },
+            {
+                "id": 34752,
+                "vehicle_id": "C14699",
+                "transaction_date": "2024-11-30",
+                "transaction_type": "TAX - USEXTX-SALES",
+                "fuel_consumption": 79,
+                "card_assignment": "CARLOS MENDOZA",
+                "fuelLocation": {
+                    "name": "Kirkwood, NY"
+                },
+                "fuelConstant": {
+                    "name": "RNG"
+                }
+            },
+            {
+                "id": 34753,
+                "vehicle_id": "C18106",
+                "transaction_date": "2024-11-30",
+                "transaction_type": "TAX - USEXTX-SALES",
+                "fuel_consumption": 70,
+                "card_assignment": "CARLOS MENDOZA",
+                "fuelLocation": {
+                    "name": "Vancouver, WA"
+                },
+                "fuelConstant": {
+                    "name": "RNG"
+                }
+            },
+            {
+                "id": 34870,
+                "vehicle_id": "C14700",
+                "transaction_date": "2024-11-30",
+                "transaction_type": "TAX - USEXTX-SALES",
+                "fuel_consumption": 54,
+                "card_assignment": "JON WORDEN",
+                "fuelLocation": {
+                    "name": "Aberdeen, MD"
+                },
+                "fuelConstant": {
+                    "name": "RNG"
+                }
+            },
+            {
+                "id": 34871,
+                "vehicle_id": "C15120",
+                "transaction_date": "2024-11-30",
+                "transaction_type": "TAX - USEXTX-SALES",
+                "fuel_consumption": 54,
+                "card_assignment": "SAM MAJOR",
+                "fuelLocation": {
+                    "name": "Aberdeen, MD"
+                },
+                "fuelConstant": {
+                    "name": "RNG"
+                }
+            },
+            {
+                "id": 34872,
+                "vehicle_id": "C14749",
+                "transaction_date": "2024-11-30",
+                "transaction_type": "TAX - USEXTX-SALES",
+                "fuel_consumption": 68,
+                "card_assignment": "SAM MAJOR",
+                "fuelLocation": {
+                    "name": "Aberdeen, MD"
+                },
+                "fuelConstant": {
+                    "name": "RNG"
+                }
+            },
+            {
+                "id": 35402,
+                "vehicle_id": "C14700",
+                "transaction_date": "2024-11-30",
+                "transaction_type": "TAX - MDEXTX-SALES",
+                "fuel_consumption": 54,
+                "card_assignment": "JON WORDEN",
+                "fuelLocation": {
+                    "name": "Aberdeen, MD"
+                },
+                "fuelConstant": {
+                    "name": "RNG"
+                }
+            },
+            {
+                "id": 35403,
+                "vehicle_id": "C15120",
+                "transaction_date": "2024-11-30",
+                "transaction_type": "TAX - MDEXTX-SALES",
+                "fuel_consumption": 54,
+                "card_assignment": "SAM MAJOR",
+                "fuelLocation": {
+                    "name": "Aberdeen, MD"
+                },
+                "fuelConstant": {
+                    "name": "RNG"
+                }
+            }
+        ],
+        "pagination": {
+            "page": 0,
+            "page_size": 10,
+            "total_count": 36649
+        }
+    },
+    "sectorListDtoMockData": [
+        {
+            "id": 2,
+            "name": "FLNA"
+        }
+    ],
+    "bioDieselFuelTypeListMockData": [
+        {
+            "id": 13,
+            "name": "B9",
+            "fuelConstant.name": "B9"
+        }
+    ],
+    "bioDieselTransactionListDtoMockData": {
+        "list": [
+            {
+                "id": 1677,
+                "country_id": 1,
+                "sector_id": 2,
+                "bu_id": null,
+                "location_id": 34,
+                "fuel_id": 13,
+                "fuel_consumption": 49.81999969482422,
+                "vehicle_id": "23480",
+                "month": 12,
+                "year": 2024,
+                "distance": 1142.5400390625,
+                "transaction_date": "2024-12-12",
+                "created_on": "2025-01-08T06:16:59.240Z",
+                "modified_on": "2025-01-08T06:16:59.240Z",
+                "fuelLocation": {
+                    "name": "Beloit"
+                },
+                "fuelConstant": {
+                    "name": "B9"
+                }
+            },
+            {
+                "id": 4244,
+                "country_id": 1,
+                "sector_id": 2,
+                "bu_id": null,
+                "location_id": 35,
+                "fuel_id": 13,
+                "fuel_consumption": 1.0199999809265137,
+                "vehicle_id": "23902",
+                "month": 12,
+                "year": 2024,
+                "distance": 536.1630249023438,
+                "transaction_date": "2024-12-12",
+                "created_on": "2025-01-08T06:23:17.540Z",
+                "modified_on": "2025-01-08T06:23:17.540Z",
+                "fuelLocation": {
+                    "name": "Wytheville"
+                },
+                "fuelConstant": {
+                    "name": "B9"
+                }
+            },
+            {
+                "id": 4245,
+                "country_id": 1,
+                "sector_id": 2,
+                "bu_id": null,
+                "location_id": 35,
+                "fuel_id": 13,
+                "fuel_consumption": 0.25,
+                "vehicle_id": "23867",
+                "month": 12,
+                "year": 2024,
+                "distance": 562.4940185546875,
+                "transaction_date": "2024-12-12",
+                "created_on": "2025-01-08T06:23:17.540Z",
+                "modified_on": "2025-01-08T06:23:17.540Z",
+                "fuelLocation": {
+                    "name": "Wytheville"
+                },
+                "fuelConstant": {
+                    "name": "B9"
+                }
+            },
+            {
+                "id": 4246,
+                "country_id": 1,
+                "sector_id": 2,
+                "bu_id": null,
+                "location_id": 35,
+                "fuel_id": 13,
+                "fuel_consumption": 0,
+                "vehicle_id": "23875",
+                "month": 12,
+                "year": 2024,
+                "distance": 0,
+                "transaction_date": "2024-12-12",
+                "created_on": "2025-01-08T06:23:17.540Z",
+                "modified_on": "2025-01-08T06:23:17.540Z",
+                "fuelLocation": {
+                    "name": "Wytheville"
+                },
+                "fuelConstant": {
+                    "name": "B9"
+                }
+            },
+            {
+                "id": 12069,
+                "country_id": 1,
+                "sector_id": 2,
+                "bu_id": null,
+                "location_id": 36,
+                "fuel_id": 13,
+                "fuel_consumption": 86.0199966430664,
+                "vehicle_id": "23205",
+                "month": 12,
+                "year": 2024,
+                "distance": 0,
+                "transaction_date": "2024-12-12",
+                "created_on": "2025-01-08T06:29:40.650Z",
+                "modified_on": "2025-01-08T06:29:40.650Z",
+                "fuelLocation": {
+                    "name": "Topeka"
+                },
+                "fuelConstant": {
+                    "name": "B9"
+                }
+            },
+            {
+                "id": 12070,
+                "country_id": 1,
+                "sector_id": 2,
+                "bu_id": null,
+                "location_id": 36,
+                "fuel_id": 13,
+                "fuel_consumption": 47.470001220703125,
+                "vehicle_id": "24186",
+                "month": 12,
+                "year": 2024,
+                "distance": 367.38299560546875,
+                "transaction_date": "2024-12-12",
+                "created_on": "2025-01-08T06:29:40.650Z",
+                "modified_on": "2025-01-08T06:29:40.650Z",
+                "fuelLocation": {
+                    "name": "Topeka"
+                },
+                "fuelConstant": {
+                    "name": "B9"
+                }
+            },
+            {
+                "id": 12071,
+                "country_id": 1,
+                "sector_id": 2,
+                "bu_id": null,
+                "location_id": 36,
+                "fuel_id": 13,
+                "fuel_consumption": 47.470001220703125,
+                "vehicle_id": "24186",
+                "month": 12,
+                "year": 2024,
+                "distance": 0.15600000321865082,
+                "transaction_date": "2024-12-12",
+                "created_on": "2025-01-08T06:29:40.650Z",
+                "modified_on": "2025-01-08T06:29:40.650Z",
+                "fuelLocation": {
+                    "name": "Topeka"
+                },
+                "fuelConstant": {
+                    "name": "B9"
+                }
+            },
+            {
+                "id": 12072,
+                "country_id": 1,
+                "sector_id": 2,
+                "bu_id": null,
+                "location_id": 36,
+                "fuel_id": 13,
+                "fuel_consumption": 59.209999084472656,
+                "vehicle_id": "24089",
+                "month": 12,
+                "year": 2024,
+                "distance": 497.4049987792969,
+                "transaction_date": "2024-12-12",
+                "created_on": "2025-01-08T06:29:40.650Z",
+                "modified_on": "2025-01-08T06:29:40.650Z",
+                "fuelLocation": {
+                    "name": "Topeka"
+                },
+                "fuelConstant": {
+                    "name": "B9"
+                }
+            },
+            {
+                "id": 12073,
+                "country_id": 1,
+                "sector_id": 2,
+                "bu_id": null,
+                "location_id": 36,
+                "fuel_id": 13,
+                "fuel_consumption": 33.02000045776367,
+                "vehicle_id": "24182",
+                "month": 12,
+                "year": 2024,
+                "distance": 757.447998046875,
+                "transaction_date": "2024-12-12",
+                "created_on": "2025-01-08T06:29:40.650Z",
+                "modified_on": "2025-01-08T06:29:40.650Z",
+                "fuelLocation": {
+                    "name": "Topeka"
+                },
+                "fuelConstant": {
+                    "name": "B9"
+                }
+            },
+            {
+                "id": 12074,
+                "country_id": 1,
+                "sector_id": 2,
+                "bu_id": null,
+                "location_id": 36,
+                "fuel_id": 13,
+                "fuel_consumption": 87.88999938964844,
+                "vehicle_id": "20280",
+                "month": 12,
+                "year": 2024,
+                "distance": 799.0009765625,
+                "transaction_date": "2024-12-12",
+                "created_on": "2025-01-08T06:29:40.650Z",
+                "modified_on": "2025-01-08T06:29:40.650Z",
+                "fuelLocation": {
+                    "name": "Topeka"
+                },
+                "fuelConstant": {
+                    "name": "B9"
+                }
+            }
+        ],
+        "pagination": {
+            "page": 1,
+            "page_size": 10,
+            "total_count": 10544
+        }
+    },
+    "bioDieselLocationListMockData": [
+        {
+            "total_fuel_consumption": 1977.7700006514788,
+            "total_transactions": 50,
+            "total_emissions": 0.04351094001433254,
+            "fuelLocation.name": "Aberdeen",
+            "fuelLocation.latitude": 39.5096,
+            "fuelLocation.longitude": -76.1641,
+            "fuelConstant.name": "B9"
+        },
+        {
+            "total_fuel_consumption": 72110.16038733721,
+            "total_transactions": 1627,
+            "total_emissions": 1.5864235285214185,
+            "fuelLocation.name": "Beloit",
+            "fuelLocation.latitude": 42.50830078125,
+            "fuelLocation.longitude": -89.03179931640625,
+            "fuelConstant.name": "B9"
+        },
+        {
+            "total_fuel_consumption": 31980.90018975921,
+            "total_transactions": 621,
+            "total_emissions": 0.7035798041747026,
+            "fuelLocation.name": "Frankfort",
+            "fuelLocation.latitude": 38.20090103149414,
+            "fuelLocation.longitude": -84.87329864501953,
+            "fuelConstant.name": "B9"
+        },
+        {
+            "total_fuel_consumption": 345793.7911576964,
+            "total_transactions": 5677,
+            "total_emissions": 7.607463405469341,
+            "fuelLocation.name": "Topeka",
+            "fuelLocation.latitude": 39.04890060424805,
+            "fuelLocation.longitude": -95.6780014038086,
+            "fuelConstant.name": "B9"
+        },
+        {
+            "total_fuel_consumption": 148630.02099675685,
+            "total_transactions": 2569,
+            "total_emissions": 3.2698604619286447,
+            "fuelLocation.name": "Wytheville",
+            "fuelLocation.latitude": 36.948699951171875,
+            "fuelLocation.longitude": -81.08480072021484,
+            "fuelConstant.name": "B9"
+        }
+    ],
+    "propaneTransactionMockData": {
+        "count": 192,
+        "rows": [
+            {
+                "service_order": "1128745448",
+                "customer_name": "FRITO LAY - CLEVELAND OH FM-AUTOGAS",
+                "transaction_date": "2024-11-30",
+                "location_id": 41,
+                "fuel_consumption": 447.29998779296875,
+                "fuelLocationName": "Cleveland OH FM-Bulk",
+                "fuelConstantName": "Propane"
+            },
+            {
+                "service_order": "1128734141",
+                "customer_name": "FRITO LAY - SOUTHGATE",
+                "transaction_date": "2024-11-29",
+                "location_id": 38,
+                "fuel_consumption": 107.80000305175781,
+                "fuelLocationName": "Southgate-Autogas",
+                "fuelConstantName": "Propane"
+            },
+            {
+                "service_order": "1128716768",
+                "customer_name": "FRITO LAY - CLEVELAND OH FM-AUTOGAS",
+                "transaction_date": "2024-11-27",
+                "location_id": 42,
+                "fuel_consumption": 99.80000305175781,
+                "fuelLocationName": "Cleveland OH FM-1460 E Turkeyfoot Lake Rd Pole Barn",
+                "fuelConstantName": "Propane"
+            },
+            {
+                "service_order": "1128682058",
+                "customer_name": "FRITO LAY - PLYMOUTH",
+                "transaction_date": "2024-11-25",
+                "location_id": 40,
+                "fuel_consumption": 117.4000015258789,
+                "fuelLocationName": "Plymouth-Autogas Bulk",
+                "fuelConstantName": "Propane"
+            },
+            {
+                "service_order": "1128648439",
+                "customer_name": "FRITO LAY - PLYMOUTH",
+                "transaction_date": "2024-11-21",
+                "location_id": 40,
+                "fuel_consumption": 116.0999984741211,
+                "fuelLocationName": "Plymouth-Autogas Bulk",
+                "fuelConstantName": "Propane"
+            },
+            {
+                "service_order": "1128617485",
+                "customer_name": "FRITO LAY - CINCINNATI OH FM-AUTOGAS",
+                "transaction_date": "2024-11-19",
+                "location_id": 43,
+                "fuel_consumption": 358.6000061035156,
+                "fuelLocationName": "Cincinnati OH FM-BULK",
+                "fuelConstantName": "Propane"
+            },
+            {
+                "service_order": "1128584087",
+                "customer_name": "FRITO LAY - CLEVELAND OH FM-AUTOGAS",
+                "transaction_date": "2024-11-15",
+                "location_id": 42,
+                "fuel_consumption": 102.4000015258789,
+                "fuelLocationName": "Cleveland OH FM-1460 E Turkeyfoot Lake Rd Pole Barn",
+                "fuelConstantName": "Propane"
+            },
+            {
+                "service_order": "1128568751",
+                "customer_name": "FRITO LAY - PLYMOUTH",
+                "transaction_date": "2024-11-14",
+                "location_id": 40,
+                "fuel_consumption": 322.8999938964844,
+                "fuelLocationName": "Plymouth-Autogas Bulk",
+                "fuelConstantName": "Propane"
+            },
+            {
+                "service_order": "1128430797",
+                "customer_name": "FRITO LAY - CLEVELAND OH FM-AUTOGAS",
+                "transaction_date": "2024-11-11",
+                "location_id": 41,
+                "fuel_consumption": 357.29998779296875,
+                "fuelLocationName": "Cleveland OH FM-Bulk",
+                "fuelConstantName": "Propane"
+            },
+            {
+                "service_order": "1128363205",
+                "customer_name": "FRITO LAY - PLYMOUTH",
+                "transaction_date": "2024-11-04",
+                "location_id": 40,
+                "fuel_consumption": 216.3000030517578,
+                "fuelLocationName": "Plymouth-Autogas Bulk",
+                "fuelConstantName": "Propane"
+            }
+        ]
+    }
+}

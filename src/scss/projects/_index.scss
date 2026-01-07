@@ -1,0 +1,176 @@
+@import "../config/variable.module.scss";
+
+.project-screen {
+    .project-screen-wraper {
+        .project-heading {
+            .select-box {
+                .search-icon-img {
+                    position: relative;
+
+                    span {
+                        .search-img {
+                            position: absolute;
+                            z-index: 9;
+                            left: 8px;
+                            top: 32%;
+                            width: 20px;
+                        }
+                    }
+
+                    .css-b62m3t-container,
+                    .css-3iigni-container {
+                        width: 280px;
+
+                        @media (max-width:$xxl) {
+                            width: 200px;
+                        }
+
+                        .css-13cymwt-control,
+                        .css-t3ipsp-control {
+
+                            .css-1fdsijx-ValueContainer,
+                            .css-hlgwow {
+                                padding-left: 25px !important;
+                            }
+                        }
+                    }
+                }
+
+                .css-16xfy0z-control {
+                    .css-1fdsijx-ValueContainer {
+                        padding-left: 25px;
+                    }
+                }
+            }
+        }
+
+        .project-section {
+
+            .modalShiftCard {
+                .pacific-overview {
+                    .total-projects-shown {
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        background-color: $orange;
+                        color: $white;
+                    }
+                }
+                .removeLink {
+                    background-color: transparent;
+                    border: 0;
+                }
+                .quartely-wrapper{
+                    background-color: $white;
+                    border-radius: 0px 0px 24px 24px;
+                }
+                .id-data{
+                    background-color: $gray-200;
+                    border-radius: 24px 24px 0 0;
+                }
+                .inner-data-region{
+                    border-radius: 24px;
+                    border: 1px solid $newGray-100;
+                    background: $white;
+                    box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.03);
+                    .id-data {
+                        h4 {
+                            word-break: break-word;
+                        }
+                    }
+
+                    .priority-btn-wrap {
+                        .quartely {
+                            h5 {
+                                word-break: break-word;
+
+                                span {
+                                    img {
+                                        padding-right: 0px !important;
+                                    }
+                                }
+                            }
+
+                            h4 {
+                                height: 28px;
+                                max-height: 53px;
+                                @media (max-width:1700px) {
+                                    height: 32px;
+                                }
+                                @media (max-width:1500px) {
+                                    height: 39px;
+                                }
+                                
+                                @media (max-width:1430px) {
+                                    height: 53px;
+                                }
+                                @media(max-width:$md){
+                                    height: auto;
+                                }
+
+                            }
+                            h4.distance {
+                                height: auto;
+                            }
+                            h4, h6{
+                                span{
+                                    img{
+                                        width: 12px;
+                                        margin-bottom: 4px;
+                                        padding-right: 0px !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        .priority-btn {
+                            left: 3%;
+                            position: absolute;
+                            top: -14px;
+
+                            label {
+                                background-color: $green;
+                                color: $white;
+                                font-size: 0.75rem;
+                                font-weight: 600;
+                                border-radius: 37px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.removeCardModal {
+    .delete-btn {
+        background-color: $orange;
+        color: $white;
+        border: transparent;
+        border-radius: 4px;
+    }
+
+    .cancel-btn {
+        background-color: $gray-400;
+        border: transparent;
+        color: $dark;
+        border-radius: 4px;
+    }
+    .modal-header{
+        padding: 12px !important;
+        border-bottom: none;
+    }
+    .modal-body{
+        padding: 16px 16px 20px 16px !important;
+       
+        p{
+            text-align: left;
+            margin-bottom: 26px !important;
+        }
+    }
+    
+}
+
+

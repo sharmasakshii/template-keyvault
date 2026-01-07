@@ -1,0 +1,28 @@
+trigger:
+  - develop
+
+pr: none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  - name: PROJECT_VERSION
+    value: "1.0.0"
+
+stages:
+
+# ---------- QUALITY + SONAR ----------
+- stage: Quality
+  displayName: "Quality & Sonar"
+  jobs:
+  - template: templates/test-cases.yml
+    parameters:
+      sonarenabled: true
+
+# ---------- BUILD & DEPLOY ----------
+- stage: Build_and_Deploy
+  displayName: "Build & Deploy"
+  dependsOn: Quality
+  jobs:
+  - template: templates/static_web_app_deploy.yml

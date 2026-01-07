@@ -1,0 +1,67 @@
+@import "../config/variable.module";
+
+.laneSetting-screen {
+    @include mainSectionBg;
+
+    .checkbox-outer {
+        border: 1px solid $gray-500;
+        border-radius: 36px;
+        width: 130px;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .form-check {
+            margin-bottom: 0px !important;
+
+            .form-check-input {
+                margin-top: 0.25rem !important;
+            }
+        }
+
+        &.checked {
+            border: 1px solid $primary;
+        }
+    }
+
+    .fuel-card {
+        border: 1.5px solid $gray-400;
+        border-radius: 24px;
+
+        .different-fuel {
+            border-bottom: 1px solid $gray-400;
+            width: 50%;
+
+            &:last-child,
+            &:nth-last-child(2) {
+                border-bottom: none;
+            }
+
+            &:nth-child(odd) {
+                border-right: 1px solid $gray-400;
+            }
+        }
+
+        &.ev-card {
+            .different-fuel {
+                width: 100% !important;
+            }
+        }
+    }
+
+    span {
+        display: contents;
+
+        .infoImg {
+            filter: brightness(0) saturate(100%) invert(28%) sepia(6%) saturate(349%) hue-rotate(145deg) brightness(92%) contrast(88%);
+            width: 13px;
+        }
+    }
+
+    .radius-view {
+        background-color: $gray-200;
+        border-radius: 24px;
+    }
+
+}

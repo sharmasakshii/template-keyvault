@@ -1,0 +1,138 @@
+{
+    "filterData":{
+        "countryData": [
+            {
+                "country": "USA",
+                "country_code": "USA"
+            },
+            {
+                "country": "CANADA",
+                "country_code": "CAN"
+            }
+        ],
+        "yearData": [
+            {
+                "year": 2023
+            },
+            {
+                "year": 2024
+            },
+            {
+                "year": 2025
+            }
+        ],
+        "monthData": [
+            {
+                "month": 1
+            },
+            {
+                "month": 2
+            },
+            {
+                "month": 3
+            },
+            {
+                "month": 4
+            }
+        ]
+    },
+    "carrierScacs":[
+        {
+            "carrier_scac": "BIAP",
+            "scac_priority": true,
+            "scac_name": "Biagi Bros inc",
+            "scac_image": "/images/company_logo/biagi.png"
+        },
+        {
+            "carrier_scac": "ARMS",
+            "scac_priority": true,
+            "scac_name": "Einride",
+            "scac_image": "/images/company/einride.svg"
+        },
+        {
+            "carrier_scac": "FVAN",
+            "scac_priority": false,
+            "scac_name": "FreightVana, LLC",
+            "scac_image": "/images/company_logo/freightvana.png"
+        },
+        {
+            "carrier_scac": "ODFL",
+            "scac_priority": false,
+            "scac_name": "Old Dominion",
+            "scac_image": "/images/company_logo/odfl.png"
+        }
+    ],
+    "carrierScacsShowAll":[
+        {
+            "carrier_scac": "BIAP",
+            "scac_priority": true,
+            "scac_name": "Biagi Bros inc",
+            "scac_image": "/images/company_logo/biagi.png"
+        },
+        {
+            "carrier_scac": "RBIN",
+            "scac_priority": true,
+            "scac_name": "CH Robinson",
+            "scac_image": "/images/company/robinson.svg"
+        },
+        {
+            "carrier_scac": "CFAA",
+            "scac_priority": true,
+            "scac_name": "Cheema Freightlines, LLC",
+            "scac_image": "/images/company_logo/cheema-freightlines.png"
+        },
+        {
+            "carrier_scac": "ECHS",
+            "scac_priority": true,
+            "scac_name": "Echo Global Logistics",
+            "scac_image": "/images/company_logo/echo-global-logistics.png"
+        },
+        {
+            "carrier_scac": "ARMS",
+            "scac_priority": true,
+            "scac_name": "Einride",
+            "scac_image": "/images/company/einride.svg"
+        },
+        {
+            "carrier_scac": "FOLW",
+            "scac_priority": true,
+            "scac_name": "Foodliner inc",
+            "scac_image": "/images/company_logo/Foodliner.png"
+        },
+        {
+            "carrier_scac": "FVAN",
+            "scac_priority": true,
+            "scac_name": "FreightVana, LLC",
+            "scac_image": "/images/company_logo/freightvana.png"
+        },
+        {
+            "carrier_scac": "HJBT",
+            "scac_priority": false,
+            "scac_name": "JB Hunt",
+            "scac_image": "/images/company/jbHunt.svg"
+        }
+    ],
+    "fuelList" : [
+        {
+            "fuel": "Bio Diesel"
+        },
+        {
+            "fuel": "CNG/RNG"
+        },
+        {
+            "fuel": "EV"
+        },
+        {
+            "fuel": "HVO"
+        },
+        {
+            "fuel": "Hydrogen"
+        },
+        {
+            "fuel": "Renewable Diesel"
+        },
+        {
+            "fuel": "RNG"
+        }
+    ]
+}

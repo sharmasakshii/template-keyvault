@@ -1,0 +1,25 @@
+steps:
+- task: SonarQubePrepare@6
+  condition: ne(variables['skipSonar'], 'true')
+  inputs:
+    SonarQube: 'Sonar Service Connection'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectKey: $(SONAR_PROJECT_KEY)
+    cliProjectName: $(SONAR_PROJECT_NAME)
+    cliSources: '.'
+    extraProperties: |
+      sonar.javascript.lcov.reportPaths=./coverage/lcov.info
+      sonar.exclusions=**/*.test.tsx,**/*.test.ts,src/scss/**,src/interface/**
+      sonar.projectVersion=$(PROJECT_VERSION)
+      sonar.qualitygate.wait=true
+
+- task: SonarQubeAnalyze@6
+  condition: ne(variables['skipSonar'], 'true')
+  inputs:
+    jdkversion: 'JAVA_HOME_21_X64'
+
+- task: SonarQubePublish@6
+  condition: ne(variables['skipSonar'], 'true')
+  inputs:
+    pollingTimeoutSec: '300'

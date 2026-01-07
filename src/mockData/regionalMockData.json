@@ -1,0 +1,431 @@
+{ "RPGgraphMockDataTotalEmission" :{
+    "company_level": [
+        269443.6,
+        50263.2,
+        141913.6,
+        135447.1,
+        140982.4,
+        0,
+        0,
+        0
+    ],
+    "targer_level": [
+        6047.021212168225,
+        6012.82212047987,
+        5978.623028791515,
+        5944.42393710316,
+        5910.224845414806,
+        5876.025753726451,
+        5841.8266620380955,
+        5807.62757034974
+    ],
+    "region_level": [
+        18248.7,
+        3348.5,
+        9212.1,
+        10232.8,
+        10485.8,
+        9437.2,
+        8493.5,
+        7644.2
+    ],
+    "base_level": [
+        23723.3
+    ],
+    "max": 28468,
+    "year": [
+        2022,
+        2023
+    ]
+},
+
+ "RPGgraphMockDataEmissionRegion" :{
+    "company_level": [
+        87.4,
+        87.3,
+        87,
+        87.1,
+        87.1,
+        0,
+        0,
+        0
+    ],
+    "targer_level": [
+        86.4646443486464,
+        85.97564121865405,
+        85.4866380886617,
+        84.99763495866937,
+        84.50863182867703,
+        84.01962869868467,
+        83.53062556869233,
+        83.04162243869999
+    ],
+    "region_level": [
+        88.1,
+        88.8,
+        88.4,
+        88.7,
+        87.7,
+        79,
+        71.1,
+        64
+    ],
+    "base_level": [
+        115.4
+    ],
+    "max": 138.5,
+    "year": [
+        2022,
+        2023
+    ]
+},
+
+ "regionalCardMockData" :
+[{
+    "EMISSION_REDUCTION_TARGET_1": "-22",
+    "EMISSION_REDUCTION_TARGET_1_YEAR": "2030",
+    "EMISSION_REDUCTION_TARGET_2": 7,
+    "EMISSION_REDUCTION_TARGET_2_YEAR": "2024",
+    "GAP_TO_TARGET": 1,
+    "GAP_TO_TARGET_YEAR": "2024",
+    "GAP_TO_TARGET_COLOR": "#d8856b",
+    "rail_intensity": "26.92700782",
+    "contributor_color": "#215254",
+    "detractor_color": "#d8856b",
+    "medium_color": "#929597",
+    "PASSWORD_EXPIRE_DAYS_LIMIT": "60",
+    "PASSWORD_EXPIRE_WARNING_DAYS": "45"
+}],
+
+ "HighChartEmissionIntesnsityMockData" : [
+    {
+        "dataset": [
+            {
+                "total_ton_miles": 207203150.26,
+                "emission": 18248688300.78,
+                "year": "2022",
+                "intensity": 88.1
+            },
+            {
+                "total_ton_miles": 119503170.01,
+                "emission": 10485791922.36,
+                "year": "2023",
+                "intensity": 87.7
+            }
+        ],
+        "label": [
+            2022,
+            2023
+        ],
+        "industrialAverage": 93.352018,
+        "baseLine": 105.7,
+        "max": 88.1,
+        "graphMax": 121.6
+    }
+],
+
+ "HighChartEmissionIntesnsityByRegionMockData" : [
+    {
+        "name": "R3",
+        "year": "2021",
+        "data": [
+            88.5,
+            87.5,
+            87
+        ],
+        "color": "#ffcb77"
+    },
+    {
+        "name": "company_level",
+        "data": [
+            88.5,
+            87.5,
+            87
+        ]
+    },
+    {
+        "name": "target_level",
+        "data": [
+            70.8,
+            70,
+            69.6
+        ]
+    },
+    {
+        "name": "base_level",
+        "data": 101.8
+    },
+    {
+        "name": "Max",
+        "data": 112
+    },
+    {
+        "name": "Unit",
+        "data": "g"
+    },
+    {
+        "name": "lables",
+        "data": [
+            "2021",
+            "2022",
+            "2023"
+        ]
+    },
+    {
+        "name": "list",
+        "data": [
+            {
+                "emission_per_ton": 377023758.63,
+                "emission": 33352943308.11,
+                "year": "2021",
+                "region_id": 3,
+                "region.name": "R3",
+                "intensity": 88.5,
+                "regionName": "R3"
+            }
+        ]
+    }
+],
+
+ "projectCountMockData" :{
+    "Inactive": 0,
+    "active": 0,
+    "Total": 0
+},
+
+
+
+ "totalRegionEmissionMockData":{
+    "contributor": [
+        {
+            "name": "OTHER",
+            "value": 38960.4,
+            "color": "#215254"
+        }
+    ],
+    "detractor": [
+        {
+            "name": "R5",
+            "value": 812.5,
+            "color": "#929597"
+        }
+    ],
+    "unit": "tCO2e",
+    "average": 7420.1
+},
+
+ "regionEmissionMockData": {
+    "contributor": [
+        {
+            "name": "R18",
+            "value": 9.3,
+            "color": "#215254"
+        }
+    ],
+    "detractor": [
+        {
+            "name": "R3",
+            "value": 0.2,
+            "color": "#929597"
+        }
+    ],
+    "unit": "g",
+    "average": 88.2
+},
+
+
+ "totalLaneEmissionMocakData":{
+    "contributor": [
+        {
+            "name": "PORT WENTWORTH, GA_PERRIS, CA",
+            "value": 1196.4,
+            "total_emission": 1197.26502054,
+            "total_intensity": 82.759293,
+            "shipment_count": 323,
+            "color": "#d8856b"
+        }
+    ],
+    "detractor": [
+        {
+            "name": "BLOOMINGTON, CA_NORTH WILKESBORO, NC",
+            "value": 0.9,
+            "total_emission": 0.00046048,
+            "total_intensity": 99.241379,
+            "shipment_count": 4,
+            "color": "#929597"
+        }
+       
+    ],
+    "contributor_count": 10,
+    "detractor_count": 10,
+    "carrier": [
+        {
+            "carrier_name": "ALL FLORIDA FREIGHTWAYS INC",
+            "lane_name": "BLOOMINGTON, CA_NORTH WILKESBORO, NC",
+            "carrier": "AFFI",
+            "emission": 0.00046048000000000004,
+            "intensity": 99.2,
+            "carrier_logo": "/images/company_logo/florida.png",
+            "shipment_count": 4,
+            "SmartwayData": []
+        }
+        
+    ],
+    "unit": "tCO2e",
+    "average": 0.9,
+    "pagination": {
+        "page": 0,
+        "page_size": 10,
+        "total_count": 10
+    }
+},
+ "laneEmissionMocakData":{
+    "contributor": [
+        {
+            "name": "SANFORD, NC_PERRIS, CA",
+            "value": 36.1,
+            "total_emission": 0.03049358,
+            "total_intensity": 132.001125,
+            "shipment_count": 1,
+            "color": "#d8856b"
+        }
+       
+    ],
+    "detractor": [
+        {
+            "name": "EDEN PRAIRIE, MN_NORTH WILKESBORO, NC",
+            "value": 35.9,
+            "total_emission": 0.12826044,
+            "total_intensity": 59.999831,
+            "shipment_count": 3,
+            "color": "#929597"
+        }
+      
+    ],
+    "contributor_count": 10,
+    "detractor_count": 10,
+    "carrier": [
+        {
+            "carrier_name": "CENTRAL TRANSPORT",
+            "lane_name": "ARCHDALE, NC_PERRIS, CA",
+            "carrier": "CTII",
+            "emission": 0.29687915000000004,
+            "intensity": 132,
+            "carrier_logo": "/images/company_logo/Central-Transport.png",
+            "shipment_count": 17,
+            "SmartwayData": [
+                {
+                    "code": "CTII",
+                    "ranking": 3,
+                    "year": 2020
+                },
+                {
+                    "code": "CTII",
+                    "ranking": 3,
+                    "year": 2021
+                }
+            ]
+        }
+    ],
+    "unit": "g",
+    "average": 95.9,
+    "pagination": {
+        "page": 0,
+        "page_size": 10,
+        "total_count": 10
+    }
+},
+
+  "totalFacilityMockData": {
+    "contributor": [
+        {
+            "name": "Perris, CA",
+            "value": 8214.7,
+            "color": "#929597"
+        }
+    ],
+    "detractor": [
+        {
+            "name": "Findlay, OH",
+            "value": 588.4,
+            "color": "#929597"
+        }
+    ],
+    "unit": "tCO2e",
+    "average": 698.6
+},
+ "facilityMockData":{
+    "contributor": [
+        {
+            "name": "Adairsville, GA",
+            "value": 22.2,
+            "color": "#d8856b"
+        } 
+    ],
+    "detractor": [
+        {
+            "name": "Pittston, PA",
+            "value": 1.7,
+            "color": "#929597"
+        }
+    ],
+    "unit": "g",
+    "average": 94.2
+},
+ "totalBusinssMockData":{
+    "contributor": [
+        {
+            "name": "FLNA US",
+            "description": "Frito Lay North America",
+            "value": 0,
+            "color": "#929597"
+        }
+    ],
+    "detractor": [],
+    "unit": "tCO2e",
+    "average": 12.2
+},
+ "businessMockData":{
+    "contributor": [],
+    "detractor": [
+        {
+            "name": "FLNA US",
+            "description": "Frito Lay North America",
+            "value": 0,
+            "color": "#929597"
+        }
+    ],
+    "unit": "g",
+    "average": 123.3
+},
+ "carrierMockData":{
+    "responseData": [
+        {
+            "intensity": 389.9663648124191,
+            "emissions": 0.00904332,
+            "shipment_count": 1,
+            "carrier_name": "FEDEX GROUND (CORPORATE)",
+            "carrier_logo": "/images/company_logo/fedex-ground.png",
+            "carrier": "FDEG",
+            "color": "#d8856b",
+            "SmartwayData": [
+                {
+                    "code": "FDEG",
+                    "ranking": 1,
+                    "year": 2020
+                },
+                {
+                    "code": "FDEG",
+                    "ranking": 1,
+                    "year": 2021
+                }
+            ]
+        }
+    ],
+    "average": 94.7,
+    "pagination": {
+        "page": 0,
+        "page_size": 10,
+        "total_count": 74
+    }
+}}

@@ -1,0 +1,1034 @@
+{"cardsFacilityOverviewMockData" :
+    {
+        "intensity": 90.81275199879968,
+        "emission": 7678.4007006,
+        "shipment_count": 22970,
+        "facility": {
+            "id": 11,
+            "name": "Garysburg, NC"
+        }
+    },
+    "facilityOverviewIntensityMockData": 
+{
+    "company_level": [
+        87.3
+    ],
+    "targer_level": [
+        86.6262887251162,
+        86.12503192554951,
+        85.62377512598282,
+        85.12251832641613,
+        84.62126152684944,
+        84.12000472728275,
+        83.61874792771606,
+        83.11749112814937
+    ],
+    "facility_level": [
+        90.8
+    ],
+    "base_level": [
+        118.1
+    ],
+    "max": 141.7,
+    "year": [
+        2023,
+        2024
+    ]
+},
+"facilityOverviewTotalEmissionMockData" : 
+{
+    "company_level": [
+        140982.4
+    ],
+    "targer_level": [
+        101.69273443739502,
+        101.10429673155001,
+        100.51585902570501,
+        99.92742131986002,
+        99.338983614015,
+        98.75054590817001,
+        98.16210820232502,
+        97.57367049648002
+    ],
+    "region_level": [
+        7.7
+    ],
+    "base_level": [
+        132.2
+    ],
+    "max": 158.6,
+    "year": [
+        2023,
+        2024
+    ]
+},
+ "overviewFacilityEmissionIntensityChart": 
+{
+    "responseData": {
+        "facility_name": "Garysburg, NC",
+        "intensity": 90.8,
+        "data": [
+            {
+                "year": "2023",
+                "intensity": 87.5
+            },
+            {
+                "year": "2023",
+                "intensity": 90.8
+            }
+        ],
+        "industrialAverage": 93.352018,
+        "baseLine": 105,
+        "vendorEmissionData": [
+            {
+                "intensity": 90.8,
+                "emissions": 7678.400700600058,
+                "shipment_count": 22970
+            }
+        ],
+        "totalVendorEmissionData": [
+            {
+                "intensity": 87.5,
+                "emissions": 867702.1744125574,
+                "shipment_count": 2041714
+            }
+        ]
+    }
+},
+"fcailityOverviewInboundfreightTotalEmission":
+{
+    "contributor": [
+        {
+            "name": "PASADENA, TX_GARYSBURG, NC",
+            "value": 89.2132665624,
+            "total_emission": 89.65179006,
+            "total_intensity": 80.704392,
+            "shipment_count": 41,
+            "color": "#d8856b"
+        },
+        {
+            "name": "RATON, NM_GARYSBURG, NC",
+            "value": 88.5668121624,
+            "total_emission": 89.00533566,
+            "total_intensity": 98.94,
+            "shipment_count": 25,
+            "color": "#d8856b"
+        },
+        {
+            "name": "WATKINS GLEN, NY_GARYSBURG, NC",
+            "value": 83.13856800239999,
+            "total_emission": 83.5770915,
+            "total_intensity": 60.488721,
+            "shipment_count": 133,
+            "color": "#929597"
+        }
+    ],
+    "detractor": [
+        {
+            "name": "MCKEES ROCKS, PA_GARYSBURG, NC",
+            "value": 0.4353044476,
+            "total_emission": 0.00321905,
+            "total_intensity": 92.501436,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "RURAL HALL, NC_GARYSBURG, NC",
+            "value": 0.4356851676,
+            "total_emission": 0.00283833,
+            "total_intensity": 132.015348,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "MONROE, OH_GARYSBURG, NC",
+            "value": 0.4363493676,
+            "total_emission": 0.0021741300000000002,
+            "total_intensity": 86.001977,
+            "shipment_count": 2,
+            "color": "#215254"
+        }
+    ],
+    "unit": "tCO2e",
+    "average": 0.4385234976
+},
+"fcailityOverviewInboundfreightEmissionIntensity": 
+{
+    "contributor": [
+        {
+            "name": "RABUN GAP, GA_GARYSBURG, NC",
+            "value": 37.228707000000014,
+            "total_emission": 0.23260316,
+            "total_intensity": 132.001134,
+            "shipment_count": 15,
+            "color": "#d8856b"
+        },
+        {
+            "name": "NEW HOPE, TN_GARYSBURG, NC",
+            "value": 37.228511,
+            "total_emission": 0.23062939999999998,
+            "total_intensity": 132.000938,
+            "shipment_count": 8,
+            "color": "#d8856b"
+        }
+    ],
+    "detractor": [
+        {
+            "name": "NIWOT, CO_GARYSBURG, NC",
+            "value": 34.77251199999999,
+            "total_emission": 0.40472283000000003,
+            "total_intensity": 59.999915,
+            "shipment_count": 13,
+            "color": "#215254"
+        },
+        {
+            "name": "MINNEAPOLIS, MN_GARYSBURG, NC",
+            "value": 34.772546999999996,
+            "total_emission": 0.24012312,
+            "total_intensity": 59.99988,
+            "shipment_count": 3,
+            "color": "#215254"
+        },
+        {
+            "name": "PLAINFIELD, CT_GARYSBURG, NC",
+            "value": 34.77256899999999,
+            "total_emission": 0.0848956,
+            "total_intensity": 59.999858,
+            "shipment_count": 5,
+            "color": "#215254"
+        }
+    ],
+    "unit": "g",
+    "average": 94.772427
+}, 
+"fcailityOverviewOutBoundboundfreightTotalEmission":
+{
+    "contributor": [
+        {
+            "name": "GARYSBURG, NC_MYRTLE BEACH, SC",
+            "value": 102.0439581015,
+            "total_emission": 102.48902509,
+            "total_intensity": 98.939998,
+            "shipment_count": 152,
+            "color": "#d8856b"
+        },
+        {
+            "name": "GARYSBURG, NC_FREDERICKSBURG, VA",
+            "value": 49.4974139115,
+            "total_emission": 49.9424809,
+            "total_intensity": 98.940005,
+            "shipment_count": 180,
+            "color": "#d8856b"
+        },
+        {
+            "name": "GARYSBURG, NC_RICHMOND, VA",
+            "value": 40.7468367915,
+            "total_emission": 41.191903780000004,
+            "total_intensity": 98.939994,
+            "shipment_count": 223,
+            "color": "#929597"
+        }
+    ],
+    "detractor": [
+        {
+            "name": "GARYSBURG, NC_NORTH WILKESBORO, NC",
+            "value": 0.42248778849999996,
+            "total_emission": 0.0225792,
+            "total_intensity": 112,
+            "shipment_count": 1,
+            "color": "#929597"
+        },
+        {
+            "name": "GARYSBURG, NC_W. JEFFERSON, NC",
+            "value": 0.4412548885,
+            "total_emission": 0.0038121,
+            "total_intensity": 59.995278,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "GARYSBURG, NC_FINDLAY, OH",
+            "value": 0.4439344285,
+            "total_emission": 0.00113256,
+            "total_intensity": 390.537931,
+            "shipment_count": 1,
+            "color": "#215254"
+        }
+    ],
+    "unit": "tCO2e",
+    "average": 0.4450669885
+},
+"fcailityOverviewOutBoundboundfreightEmissionIntensity":
+{
+    "contributor": [
+        {
+            "name": "GARYSBURG, NC_FINDLAY, OH",
+            "value": 291.55775,
+            "total_emission": 0.00113256,
+            "total_intensity": 390.537931,
+            "shipment_count": 1,
+            "color": "#d8856b"
+        },
+        {
+            "name": "GARYSBURG, NC_ROCHESTER HILLS, MI",
+            "value": 33.02641899999999,
+            "total_emission": 0.01060013,
+            "total_intensity": 132.0066,
+            "shipment_count": 1,
+            "color": "#d8856b"
+        },
+        {
+            "name": "GARYSBURG, NC_PLEASANT VIEW, TN",
+            "value": 13.019007000000002,
+            "total_emission": 0.017950110000000002,
+            "total_intensity": 111.999188,
+            "shipment_count": 1,
+            "color": "#929597"
+        }
+    ],
+    "detractor": [
+        {
+            "name": "GARYSBURG, NC_NAMPA, ID",
+            "value": 38.979811000000005,
+            "total_emission": 0.01945152,
+            "total_intensity": 60.00037,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "GARYSBURG, NC_CLOVIS, CA",
+            "value": 38.980176,
+            "total_emission": 0.56573345,
+            "total_intensity": 60.000005,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "GARYSBURG, NC_HAMBURG, NY",
+            "value": 38.980181,
+            "total_emission": 0.0038951999999999997,
+            "total_intensity": 60,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "GARYSBURG, NC_POCOMOKE CITY, MD",
+            "value": 38.980181,
+            "total_emission": 0.0068328,
+            "total_intensity": 60,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "GARYSBURG, NC_MATAMORAS, PA",
+            "value": 38.980356,
+            "total_emission": 0.07216779,
+            "total_intensity": 59.999825,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "GARYSBURG, NC_BREWER, ME",
+            "value": 38.980819000000004,
+            "total_emission": 0.026355319999999998,
+            "total_intensity": 59.999362,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "GARYSBURG, NC_MONTOURSVILLE, PA",
+            "value": 38.983112,
+            "total_emission": 0.0061425,
+            "total_intensity": 59.997069,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "GARYSBURG, NC_W. JEFFERSON, NC",
+            "value": 38.984903,
+            "total_emission": 0.0038121,
+            "total_intensity": 59.995278,
+            "shipment_count": 1,
+            "color": "#215254"
+        }
+    ],
+    "unit": "g",
+    "average": 98.980181
+},
+"facilityCarrierEmissionMockData":
+{
+    "contributor": [
+        {
+            "name": "ptdd",
+            "value": 1932.7243395974835,
+            "total_emission": 1933.1647663899923,
+            "total_intensity": 98.93999976728263,
+            "shipment_count": 4314,
+            "color": "#d8856b"
+        },
+        {
+            "name": "G&P Trucking Company",
+            "value": 1929.2694563274893,
+            "total_emission": 1929.709883119998,
+            "total_intensity": 98.93999979820356,
+            "shipment_count": 7345,
+            "color": "#d8856b"
+        },
+        {
+            "name": "J.B. Hunt (Transport)",
+            "value": 442.38097692749125,
+            "total_emission": 442.82140372000015,
+            "total_intensity": 96.99999979847405,
+            "shipment_count": 876,
+            "color": "#d8856b"
+        },
+        {
+            "name": "Quantum Premium Transport",
+            "value": 439.27542531749094,
+            "total_emission": 439.71585210999984,
+            "total_intensity": 82.50000164825195,
+            "shipment_count": 578,
+            "color": "#d8856b"
+        },
+        {
+            "name": "Western Express",
+            "value": 339.19552853749104,
+            "total_emission": 339.63595532999994,
+            "total_intensity": 60.000000482281145,
+            "shipment_count": 820,
+            "color": "#d8856b"
+        },
+        {
+            "name": "J.B. Hunt (Logistics)",
+            "value": 300.9015276274912,
+            "total_emission": 301.3419544200001,
+            "total_intensity": 98.94000021669873,
+            "shipment_count": 386,
+            "color": "#d8856b"
+        },
+        {
+            "name": "cargo transporters",
+            "value": 298.8145835374914,
+            "total_emission": 299.2550103300003,
+            "total_intensity": 73.00000059033272,
+            "shipment_count": 953,
+            "color": "#d8856b"
+        },
+        {
+            "name": "EPES Transport System",
+            "value": 269.91128493749096,
+            "total_emission": 270.35171172999986,
+            "total_intensity": 78.99999852725173,
+            "shipment_count": 818,
+            "color": "#d8856b"
+        },
+        {
+            "name": "XPO Logistics",
+            "value": 249.39853476749093,
+            "total_emission": 249.83896155999983,
+            "total_intensity": 102.50000182977857,
+            "shipment_count": 257,
+            "color": "#d8856b"
+        },
+        {
+            "name": "Schneider National",
+            "value": 230.57333999749122,
+            "total_emission": 231.01376679000012,
+            "total_intensity": 75.82331774872999,
+            "shipment_count": 472,
+            "color": "#d8856b"
+        },
+        {
+            "name": "llwd",
+            "value": 0.5082192974911061,
+            "total_emission": 0.9486460900000001,
+            "total_intensity": 98.93994534892211,
+            "shipment_count": 21,
+            "color": "#d8856b"
+        },
+        {
+            "name": "Robert Bearden Inc.",
+            "value": 0.425114347491106,
+            "total_emission": 0.86554114,
+            "total_intensity": 78.99997809463484,
+            "shipment_count": 2,
+            "color": "#d8856b"
+        },
+        {
+            "name": "Abilene Motor Express",
+            "value": 0.2650052074911059,
+            "total_emission": 0.705432,
+            "total_intensity": 68,
+            "shipment_count": 2,
+            "color": "#d8856b"
+        },
+        {
+            "name": "Coyote Logistics",
+            "value": 0.203149477491106,
+            "total_emission": 0.6435762700000001,
+            "total_intensity": 107.49992817483914,
+            "shipment_count": 2,
+            "color": "#d8856b"
+        },
+        {
+            "name": "aslm",
+            "value": 0.002390377491105933,
+            "total_emission": 0.44281717,
+            "total_intensity": 98.94007073896073,
+            "shipment_count": 1,
+            "color": "#929597"
+        }
+    ],
+    "detractor": [
+        {
+            "name": "Convoy",
+            "value": 0.10197647250889402,
+            "total_emission": 0.33845032,
+            "total_intensity": 98.94009518352647,
+            "shipment_count": 18,
+            "color": "#929597"
+        },
+        {
+            "name": "West Motor Freight of Pennsylvania",
+            "value": 0.19376195250889405,
+            "total_emission": 0.24666484,
+            "total_intensity": 98.94019822949214,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "Christal Lines",
+            "value": 0.3480029225088941,
+            "total_emission": 0.09242386999999999,
+            "total_intensity": 98.94006251739567,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "Metropolitan Trucking",
+            "value": 0.36203515250889406,
+            "total_emission": 0.07839164,
+            "total_intensity": 72.99986962918817,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "FedEx Ground",
+            "value": 0.41147221250889404,
+            "total_emission": 0.02895458,
+            "total_intensity": 390.0132004310345,
+            "shipment_count": 5,
+            "color": "#215254"
+        }
+    ],
+    "unit": "tCO2e",
+    "average": 0.44042679250889405
+},
+"facilityCarrierIntensityMockData":
+{
+    "contributor": [
+        {
+            "name": "FedEx Ground",
+            "value": 294.0168700727693,
+            "total_emission": 0.02895458,
+            "total_intensity": 390.0132004310345,
+            "shipment_count": 5,
+            "color": "#d8856b"
+        },
+        {
+            "name": "Central Transport",
+            "value": 36.00364735307522,
+            "total_emission": 146.28064345999994,
+            "total_intensity": 131.99997771134042,
+            "shipment_count": 1761,
+            "color": "#d8856b"
+        },
+        {
+            "name": "Southeastern Freight Lines",
+            "value": 16.00366257975722,
+            "total_emission": 6.819619089999999,
+            "total_intensity": 111.99999293802242,
+            "shipment_count": 66,
+            "color": "#d8856b"
+        },
+        {
+            "name": "Echo Global Logistics",
+            "value": 11.503694154866295,
+            "total_emission": 3.42061638,
+            "total_intensity": 107.50002451313149,
+            "shipment_count": 6,
+            "color": "#d8856b"
+        },
+        {
+            "name": "Coyote Logistics",
+            "value": 11.503597816573944,
+            "total_emission": 0.6435762700000001,
+            "total_intensity": 107.49992817483914,
+            "shipment_count": 2,
+            "color": "#d8856b"
+        },
+        {
+            "name": "XPO Logistics",
+            "value": 6.503671471513371,
+            "total_emission": 249.83896155999983,
+            "total_intensity": 102.50000182977857,
+            "shipment_count": 257,
+            "color": "#d8856b"
+        },
+        {
+            "name": "CH Robinson",
+            "value": 4.588748418893985,
+            "total_emission": 34.45080188,
+            "total_intensity": 100.58507877715918,
+            "shipment_count": 70,
+            "color": "#d8856b"
+        },
+        {
+            "name": "Dupre Logistics",
+            "value": 4.207530187778218,
+            "total_emission": 27.71319433,
+            "total_intensity": 100.20386054604342,
+            "shipment_count": 18,
+            "color": "#d8856b"
+        },
+        {
+            "name": "West Motor Freight of Pennsylvania",
+            "value": 2.943867871226942,
+            "total_emission": 0.24666484,
+            "total_intensity": 98.94019822949214,
+            "shipment_count": 1,
+            "color": "#d8856b"
+        },
+        {
+            "name": "Convoy",
+            "value": 2.943764825261269,
+            "total_emission": 0.33845032,
+            "total_intensity": 98.94009518352647,
+            "shipment_count": 18,
+            "color": "#929597"
+        }
+    ],
+    "detractor": [
+        {
+            "name": "cargo transporters",
+            "value": 22.99632976793248,
+            "total_emission": 299.2550103300003,
+            "total_intensity": 73.00000059033272,
+            "shipment_count": 953,
+            "color": "#929597"
+        },
+        {
+            "name": "PAM Transport",
+            "value": 22.996330358265183,
+            "total_emission": 2.13540038,
+            "total_intensity": 73.00000000000001,
+            "shipment_count": 12,
+            "color": "#215254"
+        },
+        {
+            "name": "Outwest Express",
+            "value": 22.996330494610774,
+            "total_emission": 5.354042639999999,
+            "total_intensity": 72.99999986365442,
+            "shipment_count": 10,
+            "color": "#215254"
+        },
+        {
+            "name": "US Xpress",
+            "value": 22.99633406003798,
+            "total_emission": 18.14265769,
+            "total_intensity": 72.99999629822722,
+            "shipment_count": 39,
+            "color": "#215254"
+        },
+        {
+            "name": "Heartland Express",
+            "value": 22.996336996053728,
+            "total_emission": 42.45088167999999,
+            "total_intensity": 72.99999336221147,
+            "shipment_count": 75,
+            "color": "#215254"
+        },
+        {
+            "name": "Metropolitan Trucking",
+            "value": 22.99646072907703,
+            "total_emission": 0.07839164,
+            "total_intensity": 72.99986962918817,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "Abilene Motor Express",
+            "value": 27.996330358265197,
+            "total_emission": 0.705432,
+            "total_intensity": 68,
+            "shipment_count": 2,
+            "color": "#215254"
+        },
+        {
+            "name": "Western Express",
+            "value": 35.99632987598405,
+            "total_emission": 339.63595532999994,
+            "total_intensity": 60.000000482281145,
+            "shipment_count": 820,
+            "color": "#215254"
+        },
+        {
+            "name": "Estes Express Lines",
+            "value": 35.99633195202049,
+            "total_emission": 22.211690410000003,
+            "total_intensity": 59.99999840624471,
+            "shipment_count": 249,
+            "color": "#215254"
+        },
+        {
+            "name": "Total Transportation of Mississippi",
+            "value": 35.99633316450506,
+            "total_emission": 4.70380298,
+            "total_intensity": 59.99999719376014,
+            "shipment_count": 7,
+            "color": "#215254"
+        }
+    ],
+    "unit": "g",
+    "average": 95.9963303582652
+},
+"facilityLaneEmissionMockdata":
+{
+    "contributor": [
+        {
+            "name": "LUBBOCK, TX_GARYSBURG, NC",
+            "value": 225.88919163749102,
+            "total_emission": 226.32961842999993,
+            "total_intensity": 100.32586009101921,
+            "shipment_count": 73,
+            "color": "#d8856b"
+        },
+        {
+            "name": "PORT WENTWORTH, GA_GARYSBURG, NC",
+            "value": 145.66020976749112,
+            "total_emission": 146.10063656000003,
+            "total_intensity": 72.48531086614025,
+            "shipment_count": 277,
+            "color": "#d8856b"
+        },
+        {
+            "name": "CHESAPEAKE, VA_GARYSBURG, NC",
+            "value": 108.19820188749112,
+            "total_emission": 108.63862868000001,
+            "total_intensity": 82.5909898113788,
+            "shipment_count": 741,
+            "color": "#d8856b"
+        },
+        {
+            "name": "GARYSBURG, NC_MYRTLE BEACH, SC",
+            "value": 102.04859829749117,
+            "total_emission": 102.48902509000006,
+            "total_intensity": 98.9399988506286,
+            "shipment_count": 152,
+            "color": "#d8856b"
+        },
+        {
+            "name": "GARYSBURG, NC_WILMINGTON, NC",
+            "value": 100.89315940749111,
+            "total_emission": 101.3335862,
+            "total_intensity": 98.93999617298444,
+            "shipment_count": 193,
+            "color": "#d8856b"
+        },
+        {
+            "name": "PALMETTO, GA_GARYSBURG, NC",
+            "value": 95.88403004749114,
+            "total_emission": 96.32445684000002,
+            "total_intensity": 77.11564952466114,
+            "shipment_count": 233,
+            "color": "#d8856b"
+        },
+        {
+            "name": "MCALLEN, TX_GARYSBURG, NC",
+            "value": 91.41921492749108,
+            "total_emission": 91.85964171999997,
+            "total_intensity": 88.41742663262049,
+            "shipment_count": 88,
+            "color": "#d8856b"
+        },
+        {
+            "name": "MCDONOUGH, GA_GARYSBURG, NC",
+            "value": 90.04808914749108,
+            "total_emission": 90.48851593999997,
+            "total_intensity": 71.34546302313102,
+            "shipment_count": 194,
+            "color": "#d8856b"
+        },
+        {
+            "name": "WHITE MARSH, MD_GARYSBURG, NC",
+            "value": 89.22454633749113,
+            "total_emission": 89.66497313000002,
+            "total_intensity": 99.68066838907001,
+            "shipment_count": 135,
+            "color": "#d8856b"
+        },
+        {
+            "name": "PASADENA, TX_GARYSBURG, NC",
+            "value": 89.21136326749108,
+            "total_emission": 89.65179005999997,
+            "total_intensity": 80.70439265283315,
+            "shipment_count": 41,
+            "color": "#929597"
+        }
+    ],
+    "detractor": [
+        {
+            "name": "GARYSBURG, NC_HAMBURG, NY",
+            "value": 0.4365315925088883,
+            "total_emission": 0.0038951999999999997,
+            "total_intensity": 59.99999999999999,
+            "shipment_count": 1,
+            "color": "#929597"
+        },
+        {
+            "name": "GARYSBURG, NC_W. JEFFERSON, NC",
+            "value": 0.4366146925088883,
+            "total_emission": 0.0038121,
+            "total_intensity": 59.995278564683666,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "ELK GROVE VILLAGE, IL_GARYSBURG, NC",
+            "value": 0.4368306925088883,
+            "total_emission": 0.0035961000000000005,
+            "total_intensity": 90.71897073662967,
+            "shipment_count": 2,
+            "color": "#215254"
+        },
+        {
+            "name": "CHILTON, WI_GARYSBURG, NC",
+            "value": 0.4371545425088883,
+            "total_emission": 0.00327225,
+            "total_intensity": 91.96880269814503,
+            "shipment_count": 3,
+            "color": "#215254"
+        },
+        {
+            "name": "MCKEES ROCKS, PA_GARYSBURG, NC",
+            "value": 0.4372077425088883,
+            "total_emission": 0.00321905,
+            "total_intensity": 92.50143678160921,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "RURAL HALL, NC_GARYSBURG, NC",
+            "value": 0.4375884625088883,
+            "total_emission": 0.00283833,
+            "total_intensity": 132.0153488372093,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "MONROE, OH_GARYSBURG, NC",
+            "value": 0.4382526625088883,
+            "total_emission": 0.0021741300000000002,
+            "total_intensity": 86.00197784810126,
+            "shipment_count": 2,
+            "color": "#215254"
+        },
+        {
+            "name": "GARYSBURG, NC_FINDLAY, OH",
+            "value": 0.43929423250888827,
+            "total_emission": 0.00113256,
+            "total_intensity": 390.53793103448277,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "HOLLAND, MI_GARYSBURG, NC",
+            "value": 0.4397109825088883,
+            "total_emission": 0.00071581,
+            "total_intensity": 92.0064267352185,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "WOOD RIDGE, NJ_GARYSBURG, NC",
+            "value": 0.44013680250888826,
+            "total_emission": 0.00028999,
+            "total_intensity": 92.35350318471338,
+            "shipment_count": 1,
+            "color": "#215254"
+        }
+    ],
+    "unit": "tCO2e",
+    "average": 0.4404267925088883
+},
+"facilityLaneEmissionIntensityMockdata":
+{
+    "contributor": [
+        {
+            "name": "GARYSBURG, NC_FINDLAY, OH",
+            "value": 294.54160067621757,
+            "total_emission": 0.00113256,
+            "total_intensity": 390.53793103448277,
+            "shipment_count": 1,
+            "color": "#d8856b"
+        },
+        {
+            "name": "SILER CITY, NC_GARYSBURG, NC",
+            "value": 36.02376976309401,
+            "total_emission": 0.01740553,
+            "total_intensity": 132.0201001213592,
+            "shipment_count": 5,
+            "color": "#d8856b"
+        },
+        {
+            "name": "RURAL HALL, NC_GARYSBURG, NC",
+            "value": 36.019018478944105,
+            "total_emission": 0.00283833,
+            "total_intensity": 132.0153488372093,
+            "shipment_count": 1,
+            "color": "#d8856b"
+        },
+        {
+            "name": "THOMASVILLE, GA_GARYSBURG, NC",
+            "value": 36.01257412095768,
+            "total_emission": 0.019569,
+            "total_intensity": 132.00890447922288,
+            "shipment_count": 2,
+            "color": "#d8856b"
+        },
+        {
+            "name": "GARYSBURG, NC_ROCHESTER HILLS, MI",
+            "value": 36.0102698908008,
+            "total_emission": 0.01060013,
+            "total_intensity": 132.006600249066,
+            "shipment_count": 1,
+            "color": "#d8856b"
+        },
+        {
+            "name": "GREENEVILLE, TN_GARYSBURG, NC",
+            "value": 36.00641375332867,
+            "total_emission": 0.01731744,
+            "total_intensity": 132.00274411159387,
+            "shipment_count": 1,
+            "color": "#d8856b"
+        },
+        {
+            "name": "GAFFNEY, SC_GARYSBURG, NC",
+            "value": 36.00523441977512,
+            "total_emission": 0.21005145,
+            "total_intensity": 132.00156477804032,
+            "shipment_count": 12,
+            "color": "#d8856b"
+        },
+        {
+            "name": "COLLEGE PARK, GA_GARYSBURG, NC",
+            "value": 36.00485825268083,
+            "total_emission": 0.14659260000000002,
+            "total_intensity": 132.00118861094603,
+            "shipment_count": 5,
+            "color": "#d8856b"
+        },
+        {
+            "name": "RABUN GAP, GA_GARYSBURG, NC",
+            "value": 36.00480463177527,
+            "total_emission": 0.23260316,
+            "total_intensity": 132.00113499004047,
+            "shipment_count": 15,
+            "color": "#d8856b"
+        },
+        {
+            "name": "NEW HOPE, TN_GARYSBURG, NC",
+            "value": 36.00460829716812,
+            "total_emission": 0.23062939999999998,
+            "total_intensity": 132.00093865543332,
+            "shipment_count": 8,
+            "color": "#929597"
+        }
+    ],
+    "detractor": [
+        {
+            "name": "ANTONITO, CO_GARYSBURG, NC",
+            "value": 35.996384521817454,
+            "total_emission": 0.664653,
+            "total_intensity": 59.99994583644774,
+            "shipment_count": 5,
+            "color": "#929597"
+        },
+        {
+            "name": "BLUFFDALE, UT_GARYSBURG, NC",
+            "value": 35.99640257873303,
+            "total_emission": 0.42370209000000003,
+            "total_intensity": 59.999927779532165,
+            "shipment_count": 11,
+            "color": "#215254"
+        },
+        {
+            "name": "NIWOT, CO_GARYSBURG, NC",
+            "value": 35.9964148604215,
+            "total_emission": 0.40472283000000003,
+            "total_intensity": 59.999915497843695,
+            "shipment_count": 13,
+            "color": "#215254"
+        },
+        {
+            "name": "MINNEAPOLIS, MN_GARYSBURG, NC",
+            "value": 35.99645029649702,
+            "total_emission": 0.24012312,
+            "total_intensity": 59.99988006176818,
+            "shipment_count": 3,
+            "color": "#215254"
+        },
+        {
+            "name": "PLAINFIELD, CT_GARYSBURG, NC",
+            "value": 35.99647170801395,
+            "total_emission": 0.0848956,
+            "total_intensity": 59.99985865025125,
+            "shipment_count": 5,
+            "color": "#215254"
+        },
+        {
+            "name": "GARYSBURG, NC_MATAMORAS, PA",
+            "value": 35.996504950882425,
+            "total_emission": 0.07216779,
+            "total_intensity": 59.99982540738277,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "GARYSBURG, NC_BREWER, ME",
+            "value": 35.996967793952486,
+            "total_emission": 0.026355319999999998,
+            "total_intensity": 59.99936256431271,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "WELLSBURG, WV_GARYSBURG, NC",
+            "value": 35.997800045956566,
+            "total_emission": 0.00979776,
+            "total_intensity": 59.99853031230863,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "GARYSBURG, NC_MONTOURSVILLE, PA",
+            "value": 35.999260618081564,
+            "total_emission": 0.0061425,
+            "total_intensity": 59.99706974018363,
+            "shipment_count": 1,
+            "color": "#215254"
+        },
+        {
+            "name": "GARYSBURG, NC_W. JEFFERSON, NC",
+            "value": 36.00105179358153,
+            "total_emission": 0.0038121,
+            "total_intensity": 59.995278564683666,
+            "shipment_count": 1,
+            "color": "#215254"
+        }
+    ],
+    "unit": "g",
+    "average": 95.9963303582652
+}
+}

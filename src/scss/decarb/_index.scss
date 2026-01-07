@@ -1,0 +1,239 @@
+@import "../config/variable.module.scss";
+
+.decarb-screen {
+  .decarb-screen-wraper {
+    .decarb-section {
+      @include mainSectionBg;
+
+      .decarb-heading {
+        margin-bottom: 16px;
+
+        button {
+          background-color: transparent;
+          img {
+            padding-right: 0px !important;
+            filter: grayscale(100%) !important;
+            width: 26px;
+            @media (max-width: 1550px) {
+              width: auto;
+            }
+          }
+        }
+        .activeView {
+          button {
+            img {
+              filter: inherit !important;
+            }
+          }
+        }
+      }
+
+      .inner-data-region {
+        border-radius: 24px;
+        border: 1px solid $newGray-100;
+        background: $white;
+        box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.03);
+
+        .priority-btn-wrap {
+          position: relative;
+
+          .priority-btn {
+            position: absolute;
+            top: -14px;
+            left: 6%;
+
+            button {
+              background-color: $primary;
+              color: $white;
+              font-size: 0.875rem;
+              font-weight: 600;
+              border-radius: 0px;
+              border: $primary;
+            }
+          }
+
+          .priority {
+            color: $white;
+            font-size: 0.875rem;
+            font-weight: 600;
+            border-radius: 100px;
+            &.high_priority {
+              background-color: $orange;
+            }
+
+            &.medium_priority {
+              background-color: $gray-600;
+              color: $white !important;
+            }
+
+            &.low_priority {
+              background-color: $primary;
+            }
+
+            @media (max-width: $xxl) {
+              font-size: 0.75rem;
+            }
+          }
+
+          .id-data {
+            background-color: $gray-300;
+            border-radius: 24px 24px 0 0;
+            @media (max-width: 1400px) {
+              min-height: 153px;
+            }
+
+            h4 {
+              span {
+                font-size: 0.75rem;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+
+      .priority {
+        color: $white;
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: 3px 4px;
+        min-width: 79.64px;
+        text-align: center;
+        border-radius: 4px;
+        &.high_priority {
+          background-color: $orange;
+        }
+
+        &.medium_priority {
+          background-color: $gray-600;
+          color: $white !important;
+        }
+
+        &.low_priority {
+          background-color: $primary;
+        }
+
+        @media (max-width: $xxl) {
+          font-size: 0.75rem;
+        }
+      }
+
+      .static-table {
+        @media (max-width: $md) {
+          overflow-x: auto;
+        }
+        table {
+          @media (max-width: $md) {
+            width: 780px !important;
+          }
+          th:first-child,
+          td:first-child {
+            width: 400px;
+
+            @media (max-width: $xxl) {
+              width: 280px;
+            }
+          }
+
+          th:last-child,
+          td:last-child {
+            @media (max-width: $xxl) {
+              width: 118px !important;
+            }
+
+            width: auto !important;
+          }
+
+          thead {
+            tr {
+              th {
+                padding: 0.7rem 0.5rem !important;
+
+                span {
+                  img {
+                    width: 16px;
+                    padding-right: 0px !important;
+                  }
+                }
+              }
+            }
+          }
+
+          tbody {
+            tr {
+              td {
+                padding: 1rem 0.5rem;
+              }
+            }
+          }
+        }
+      }
+
+      .quartely-wrapper {
+        .quartely {
+          h4 {
+            min-height: 20px;
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+.mainGrayCards.chart-map {
+  height: calc(100vh - 120px) !important;
+}
+.highchartMap {
+  height: 100%;
+}
+.decarb-view-state {
+  display: flex;
+  justify-content: space-between;
+}
+
+.legends {
+  border: 1px solid #cacaca;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      font-size: 14px;
+      span {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border-radius: 4px;
+        background-color: $gray-500;
+        &.low-priority {
+          background-color: $primary;
+        }
+        &.medium-priority {
+          background-color: #929597;
+        }
+        &.high-priority {
+          background-color: #d8856b;
+        }
+      }
+    }
+  }
+}
+
+.custom-select {
+  &.miles-selected {
+    .css-13cymwt-control, .css-t3ipsp-control{ 
+        min-width:200px;
+        min-height: 45px;
+    border-radius: 24px;}
+
+  }
+}

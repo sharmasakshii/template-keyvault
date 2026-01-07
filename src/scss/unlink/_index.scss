@@ -1,0 +1,28 @@
+@import "../config/variable.module.scss";
+
+.unlink{
+    @include mainSectionBg;
+    min-height: 95vh;
+    .static-table{
+        table {
+            background-color: #ededf61a;
+            th,td{
+                padding: 1rem;
+                font-size: 1rem;
+            }
+            tbody{
+                tr{
+                    &:hover {
+                        background: rgba(193, 211, 192, 0.4);
+                    }
+                    &:nth-child(odd){
+                        background-color: $gray-100;
+                        &:hover {
+                            background: rgba(193, 211, 192, 0.4);
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}

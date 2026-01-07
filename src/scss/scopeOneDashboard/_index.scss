@@ -1,0 +1,343 @@
+@import "../config/variable.module";
+
+.scopeOneDashboard {
+
+    .primaryCard {
+        min-height: 143px;
+    }
+    .react-datepicker-wrapper input {
+        width: 140px;
+        @media(max-width:$sm){
+            width: 100%;
+        }
+    }
+    .selected-location{
+        border: 1px solid $primary;
+        padding: 6px 12px;
+        border-radius: 20px;
+        button{
+            height: auto !important;
+        }
+        img{
+            padding-bottom: 2px;
+        }
+    }
+.map-outer-wrap{
+    >div{
+        height: 400px;
+    }
+}
+.search-icon-img span .search-img {
+    @media(max-width:$sm){
+        top: 33% !important;
+    }
+
+}
+.crossBtn {
+    border-radius: 31px !important;
+    width: 20px !important;
+    height: 20px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .mainGrayCards>div>div>div {
+        border-radius: 26px;
+    }
+
+    .highcharts-title {
+        font-family: $fontPoppins !important;
+    }
+
+    .graphTitle {
+        white-space: normal;
+    }
+    .lane-pagination{
+        .select-box {
+            >div{
+                @media(max-width:$sm){
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .select-box {
+        button {
+        height: inherit;
+        }
+        >div{
+            @media(max-width:$sm){
+                width: 100%;
+                .custom-select {
+                    width: 100% !important;
+                }
+            }
+        }
+        
+        button{
+            @media(max-width:$sm){
+                width: 100%;
+            }
+        }
+        .locationDropdown.css-b62m3t-container,
+        .locationDropdown.css-3iigni-container {
+            width: 140px;
+        }
+
+        .vehicleDropdown.css-b62m3t-container,
+        .vehicleDropdown.css-3iigni-container {
+            width: 150px;
+        }
+    }
+
+    .highcharts-label.highcharts-tooltip {
+        span {
+            font-size: 11px !important;
+            font-weight: 400;
+            color:$white !important;
+        }
+    }
+
+    .static-table {
+        @media(max-width:1200px) {
+            overflow-x: auto;
+        }
+
+        table {
+            @media(max-width:1200px) {
+                width: 1000px;
+            }
+            th {
+                font-weight: 500;
+
+                &:last-child {
+                    width: auto;
+                }
+            }
+
+            td {
+                &:last-child {
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .map-outer-wrap {
+        .gm-style-iw-chr {
+            button {
+                width: 23px !important;
+                height: 21px !important;
+
+                span {
+                    margin: 0px !important;
+                }
+            }
+
+            .gm-style-iw-ch {
+                padding-top: 0px;
+            }
+        }
+    }
+
+    .download-img {
+        img {
+            width: 19px;
+
+            @media(max-width:1550px) {
+                width: 13px;
+            }
+        }
+
+        height: auto !important;
+
+    }
+
+    .index-wrapper {
+        width: 16.25rem;
+
+        &.bioDiesel {
+            .highIndex {
+                span {
+                    color: #215154;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .highcharts-label-box.highcharts-tooltip-box {
+        fill: $green !important;
+    color: $white !important;
+    }
+
+    .highcharts-label {
+        &.highcharts-tooltip {
+            text {
+                fill: $white !important;
+            }
+        }
+
+        &.highcharts-data-label {
+            text {
+                fill: $gray-700 !important;
+                font-size: 0.87rem !important;
+
+                @media(max-width:1550px) {
+                    font-size: 0.75rem !important;
+                }
+            }
+        }
+    }
+
+    .form-check-input[type=checkbox] {
+        border-radius: 2rem;
+    }
+
+    .react-datepicker-wrapper input {
+        height: 45px;
+        border: 1px solid $silver;
+        background-color: $white;
+    }
+
+    .form-check-input {
+        margin-top: 0.2em;
+        width: 1.1rem;
+        height: 1.1rem;
+
+        @media(max-width:1400px) {
+            margin-top: 0.2em;
+            width: 0.8rem;
+            height: 0.8rem;
+        }
+    }
+
+    .chart-Labels {
+        font-size: 1rem;
+
+        @media(max-width:1550px) {
+            font-size: 0.75rem;
+        }
+    }
+
+    .cards {
+        .co-txt {
+            h4 {
+                display: none;
+            }
+        }
+    }
+
+    .btn-reset {
+        border: 1px solid $gray-700;
+        background-color: transparent;
+        color: $gray-700;
+    }
+
+    button {
+        height: 45px;
+    }
+
+    .reagion-card {
+        .primaryCard {
+            .by-date {
+                text-align: left !important;
+                margin-bottom: 10px;
+
+                .cardDate {
+                    font-size: 1.25rem !important;
+
+                    @media(max-width:1550px) {
+                        font-size: 1rem !important;
+                    }
+                }
+
+                .cardSub {
+                    font-size: 1rem !important;
+
+                    @media(max-width:1550px) {
+                        font-size: 0.75rem !important;
+                    }
+                }
+            }
+
+            img {
+                height: 65px !important;
+                width: 65px !important;
+
+                @media(max-width:1550px) {
+                    height: 54px !important;
+                    width: 50px !important;
+                }
+
+                @media(max-width:1400px) {
+                    height: 54px !important;
+                    width: 40px !important;
+                }
+            }
+
+            .co-txt {
+                justify-content: flex-start !important;
+
+                .titleMain {
+                    font-size: 1.75rem !important;
+                    text-align: left !important;
+                    font-weight: 600;
+
+                    .matrix-value {
+                        color: $gray-700;
+                    }
+
+                    @media(max-width:1550px) {
+                        font-size: 1.25rem !important;
+                    }
+
+                    @media(max-width:1400px) {
+                        font-size: 1.125rem !important;
+                    }
+
+                    @media(max-width:$lg) {
+                        font-size: 0.875rem !important;
+                    }
+
+                    .divider {
+                        color: $gray-600;
+                    }
+                }
+            }
+
+            .primaryCardInnerWprpper {
+                img {
+                    filter: brightness(0) saturate(100%) invert(36%) sepia(97%) saturate(700%) hue-rotate(111deg) brightness(98%) contrast(99%);
+                }
+            }
+
+            &.redcolor {
+                .primaryCardInnerWprpper {
+                    img {
+                        filter: brightness(0) saturate(100%) invert(68%) sepia(70%) saturate(1384%) hue-rotate(316deg) brightness(99%) contrast(71%);
+                    }
+                }
+
+                &:hover {
+                    .primaryCardInnerWprpper {
+                        img {
+                            filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(102%) contrast(102%);
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .primaryCardInnerWprpper {
+                    img {
+                        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(102%) contrast(102%);
+
+                    }
+                }
+            }
+        }
+    }
+}

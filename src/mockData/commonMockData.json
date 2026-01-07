@@ -1,0 +1,683 @@
+{
+  "regionMockdata": {
+    "regions": [
+      {
+        "id": 1,
+        "user_id": null,
+        "name": "R1",
+        "region": 0,
+        "status": false,
+        "createdAt": null,
+        "updatedAt": "2023-08-29T20:14:51.000Z"
+      },
+      {
+        "id": 2,
+        "user_id": null,
+        "name": "R2",
+        "region": 1,
+        "status": false,
+        "createdAt": null,
+        "updatedAt": "2023-08-29T20:14:51.000Z"
+      },
+      {
+        "id": 19,
+        "user_id": null,
+        "name": "OTHER",
+        "region": 32,
+        "status": false,
+        "createdAt": null,
+        "updatedAt": "2023-08-29T20:14:51.000Z"
+      }
+    ]
+  },
+  "divisionMockdata": [
+    {
+      "id": 1,
+      "name": "NORTH"
+    },
+    {
+      "id": 2,
+      "name": "OUTBOUND-Test"
+    }
+  ],
+  "yearMockData": {
+    "data": {
+      "emission_dates": {
+        "start_date": "2021-01-04T00:00:00.000Z",
+        "end_date": "2025-03-29T00:00:00.000Z"
+      },
+      "benchmark_dates": {
+        "start_date": "2020-01-04T00:00:00.000Z",
+        "end_date": "2023-03-29T00:00:00.000Z"
+      }
+    }
+  },
+  "countryListMockData": [
+    {
+      "country_name": "USA",
+      "country_code": "USA"
+    },
+    {
+      "country_name": "Canada",
+      "country_code": "CAN"
+    }
+  ],
+  "authMockData": {
+    "loggedIn": true,
+    "userdata": {
+      "id": 5,
+      "email": "chris.cassell@lowes.com",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjo1LCJuYW1lIjoiY2hyaXMgY2Fzc2VsIiwiZW1haWwiOiJjaHJpcy5jYXNzZWxsQGxvd2VzLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEyJG9Uei9GeHNsT28wLllPbDU2R2pZSU9TSHZ4Y0c1MmRrc1Z5bW1YUjNEWU1DTUtnTUZXb3UuIiwicm9sZSI6NCwic3RhdHVzIjoxLCJsb2dpbl9jb3VudCI6NTg5LCJyZWdpb25faWQiOjIsImlzX2Jsb2NrZWQiOjAsImJsb2NrZWRfdGltZSI6bnVsbCwiYmxvY2tlZF9vbiI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyMy0wOC0zMVQwOTowMDoxNC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyNC0wMi0wM1QxOTowOToxNi4zOTRaIiwicHJvZmlsZSI6eyJmaXJzdF9uYW1lIjoiY2hyaXMiLCJsYXN0X25hbWUiOiJjYXNzZWwiLCJjb3VudHJ5X2NvZGUiOiIrMSIsImltYWdlIjoiL2ltYWdlcy9wcm9maWxlL2ltYWdlLTE3MDY4NTUyOTg5MDQuanBnIiwicGhvbmVfbnVtYmVyIjpudWxsfSwiY29tcGFuaWVzIjpbeyJuYW1lIjoiTG93ZXMiLCJkYl9hbGlhcyI6Imxvd2VzIiwibG9nbyI6Ii9pbWFnZXMvY29tcGFueV9sb2dvL0xvd2VzLUxvZ28ucG5nIiwic2x1ZyI6IkxXIiwiVXNlckNvbXBhbnkiOnsiY29tcGFueV9pZCI6MSwidXNlcl9pZCI6NSwiY3JlYXRlZEF0IjoiMjAyMy0wOC0zMVQwOTowNjoyMy4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wOC0zMVQwOTowNjoyMy4wMDBaIn19XX0sImlhdCI6MTcwNjk4NzM1NiwiZXhwIjoxNzA3MDMwNTU2fQ.s6rRIjqMjkEOndrL9WyptuuOtvXvcwd9uSPjTVZY-uY",
+      "name": "chris cassel",
+      "role": 3,
+      "login_count": 589,
+      "profile": {
+        "first_name": "chris",
+        "last_name": "cassel",
+        "country_code": "+1",
+        "image": "/images/profile/image-1706855298904.jpg",
+        "phone_number": null
+      },
+      "region_id": null,
+      "Company": {
+        "name": "Pepsi",
+        "db_alias": "pepsi",
+        "logo": "/images/company_logo/Lowes-Logo.png",
+        "slug": "PEP",
+        "UserCompany": {
+          "company_id": 1,
+          "user_id": 5,
+          "createdAt": "2023-08-31T09:06:23.000Z",
+          "updatedAt": "2023-08-31T09:06:23.000Z"
+        }
+      },
+      "permissionsData": [
+        {
+          "id": 1,
+          "title": "Administrator Access",
+          "parent_id": 0,
+          "slug": "ADA",
+          "isChecked": true,
+          "child": [
+            {
+              "id": 2,
+              "title": "User Management",
+              "parent_id": 1,
+              "slug": "USM",
+              "isChecked": true,
+              "child": []
+            },
+            {
+              "id": 3,
+              "title": "Data Management",
+              "parent_id": 1,
+              "slug": "DAM",
+              "isChecked": true,
+              "child": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Application Access",
+          "parent_id": 0,
+          "slug": "APA",
+          "isChecked": true,
+          "child": [
+            {
+              "id": 6,
+              "title": "Visibility",
+              "parent_id": 5,
+              "slug": "VIS",
+              "isChecked": true,
+              "child": [
+                {
+                  "id": 9,
+                  "title": "Segmentation",
+                  "parent_id": 6,
+                  "slug": "SEG",
+                  "isChecked": true,
+                  "child": []
+                },
+                {
+                  "id": 10,
+                  "title": "Benchmarks",
+                  "parent_id": 6,
+                  "slug": "BEN",
+                  "isChecked": true,
+                  "child": []
+                },
+                {
+                  "id": 16,
+                  "title": "EV Dashboard",
+                  "parent_id": 6,
+                  "slug": "EVD",
+                  "isChecked": true,
+                  "child": []
+                }
+              ]
+            },
+            {
+              "id": 7,
+              "title": "Recommendations",
+              "parent_id": 5,
+              "slug": "REC",
+              "isChecked": true,
+              "child": [
+                {
+                  "id": 13,
+                  "title": "Carrier Shift",
+                  "parent_id": 7,
+                  "slug": "CAS",
+                  "isChecked": true,
+                  "child": []
+                },
+                {
+                  "id": 15,
+                  "title": "Alternative Fuel & Modal Shift",
+                  "parent_id": 7,
+                  "slug": "AMS",
+                  "isChecked": true,
+                  "child": []
+                },
+                {
+                  "id": 17,
+                  "title": "Bid Planning",
+                  "parent_id": 7,
+                  "slug": "BIP",
+                  "isChecked": true,
+                  "child": []
+                }
+              ]
+            },
+            {
+              "id": 8,
+              "title": "Manage",
+              "parent_id": 5,
+              "slug": "MAN",
+              "isChecked": true,
+              "child": [
+                {
+                  "id": 14,
+                  "title": "Project Management",
+                  "parent_id": 8,
+                  "slug": "PRM",
+                  "isChecked": true,
+                  "child": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "is_password_expired": 0,
+      "password_reset_days": 0
+    },
+    "login_count": 1
+  },
+  "authMockDataL": {
+    "loggedIn": true,
+    "userdata": {
+      "id": 5,
+      "email": "chris.cassell@lowes.com",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjo1LCJuYW1lIjoiY2hyaXMgY2Fzc2VsIiwiZW1haWwiOiJjaHJpcy5jYXNzZWxsQGxvd2VzLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEyJG9Uei9GeHNsT28wLllPbDU2R2pZSU9TSHZ4Y0c1MmRrc1Z5bW1YUjNEWU1DTUtnTUZXb3UuIiwicm9sZSI6NCwic3RhdHVzIjoxLCJsb2dpbl9jb3VudCI6NTg5LCJyZWdpb25faWQiOjIsImlzX2Jsb2NrZWQiOjAsImJsb2NrZWRfdGltZSI6bnVsbCwiYmxvY2tlZF9vbiI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyMy0wOC0zMVQwOTowMDoxNC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyNC0wMi0wM1QxOTowOToxNi4zOTRaIiwicHJvZmlsZSI6eyJmaXJzdF9uYW1lIjoiY2hyaXMiLCJsYXN0X25hbWUiOiJjYXNzZWwiLCJjb3VudHJ5X2NvZGUiOiIrMSIsImltYWdlIjoiL2ltYWdlcy9wcm9maWxlL2ltYWdlLTE3MDY4NTUyOTg5MDQuanBnIiwicGhvbmVfbnVtYmVyIjpudWxsfSwiY29tcGFuaWVzIjpbeyJuYW1lIjoiTG93ZXMiLCJkYl9hbGlhcyI6Imxvd2VzIiwibG9nbyI6Ii9pbWFnZXMvY29tcGFueV9sb2dvL0xvd2VzLUxvZ28ucG5nIiwic2x1ZyI6IkxXIiwiVXNlckNvbXBhbnkiOnsiY29tcGFueV9pZCI6MSwidXNlcl9pZCI6NSwiY3JlYXRlZEF0IjoiMjAyMy0wOC0zMVQwOTowNjoyMy4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wOC0zMVQwOTowNjoyMy4wMDBaIn19XX0sImlhdCI6MTcwNjk4NzM1NiwiZXhwIjoxNzA3MDMwNTU2fQ.s6rRIjqMjkEOndrL9WyptuuOtvXvcwd9uSPjTVZY-uY",
+      "name": "chris cassel",
+      "role": 3,
+      "login_count": 589,
+      "profile": {
+        "first_name": "chris",
+        "last_name": "cassel",
+        "country_code": "+1",
+        "image": "/images/profile/image-1706855298904.jpg",
+        "phone_number": null
+      },
+      "region_id": null,
+      "Company": {
+        "name": "lowes",
+        "db_alias": "lowes",
+        "logo": "/images/company_logo/Lowes-Logo.png",
+        "slug": "lowes",
+        "UserCompany": {
+          "company_id": 1,
+          "user_id": 5,
+          "createdAt": "2023-08-31T09:06:23.000Z",
+          "updatedAt": "2023-08-31T09:06:23.000Z"
+        }
+      },
+      "permissionsData": [
+        {
+          "id": 1,
+          "title": "Administrator Access",
+          "parent_id": 0,
+          "slug": "ADA",
+          "isChecked": true,
+          "child": [
+            {
+              "id": 2,
+              "title": "User Management",
+              "parent_id": 1,
+              "slug": "USM",
+              "isChecked": true,
+              "child": []
+            },
+            {
+              "id": 3,
+              "title": "Data Management",
+              "parent_id": 1,
+              "slug": "DAM",
+              "isChecked": true,
+              "child": []
+            }
+          ]
+        }
+       
+      ],
+      "is_password_expired": 0,
+      "password_reset_days": 0
+    },
+    "login_count": 1
+  },
+  "pepAuthMockData": {
+    "userdata": {
+      "id": 11,
+      "email": "pepsi.tester@pepsi.com",
+      "token": "jotGNPBkRjT7h0UfQhAK_498274062170",
+      "name": "Pepsi Tester",
+      "role": 9,
+      "login_count": 1279,
+      "profile": {
+        "first_name": "Pepsi",
+        "last_name": "Tester",
+        "country_code": "+1",
+        "image": "/images/profile/image-1701423526516.webp",
+        "phone_number": null,
+        "title": "Head of Sustainability"
+      },
+      "region_id": null,
+      "Company": {
+        "name": "Pepsi",
+        "db_alias": "pepsi",
+        "logo": "/images/company_logo/pepsico.png",
+        "slug": "PEP",
+        "UserCompany": {
+          "company_id": 3,
+          "user_id": 11,
+          "createdAt": "2023-11-02T09:02:02.000Z",
+          "updatedAt": "2023-11-02T09:02:02.000Z"
+        }
+      },
+      "permissionsData": [
+        {
+          "id": 1,
+          "title": "Administrator Access",
+          "parent_id": 0,
+          "slug": "ADA",
+          "isChecked": true,
+          "child": [
+            {
+              "id": 2,
+              "title": "User Management",
+              "parent_id": 1,
+              "slug": "USM",
+              "isChecked": true,
+              "child": []
+            },
+            {
+              "id-": 3,
+              "title": "Data Management",
+              "parent_id": 1,
+              "slug": "DAM",
+              "isChecked": true,
+              "child": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Application Access",
+          "parent_id": 0,
+          "slug": "APA",
+          "isChecked": true,
+          "child": [
+            {
+              "id": 6,
+              "title": "Visibility",
+              "parent_id": 5,
+              "slug": "VIS",
+              "isChecked": true,
+              "child": [
+                {
+                  "id": 9,
+                  "title": "Segmentation",
+                  "parent_id": 6,
+                  "slug": "SEG",
+                  "isChecked": true,
+                  "child": []
+                },
+                {
+                  "id": 10,
+                  "title": "Benchmarks",
+                  "parent_id": 6,
+                  "slug": "BEN",
+                  "isChecked": true,
+                  "child": []
+                },
+                {
+                  "id": 16,
+                  "title": "EV Dashboard",
+                  "parent_id": 6,
+                  "slug": "EVD",
+                  "isChecked": true,
+                  "child": []
+                }
+              ]
+            },
+            {
+              "id": 7,
+              "title": "Recommendations",
+              "parent_id": 5,
+              "slug": "REC",
+              "isChecked": true,
+              "child": [
+                {
+                  "id": 13,
+                  "title": "Carrier Shift",
+                  "parent_id": 7,
+                  "slug": "CAS",
+                  "isChecked": true,
+                  "child": []
+                },
+                {
+                  "id": 15,
+                  "title": "Alternative Fuel & Modal Shift",
+                  "parent_id": 7,
+                  "slug": "AMS",
+                  "isChecked": true,
+                  "child": []
+                },
+                {
+                  "id": 17,
+                  "title": "Bid Planning",
+                  "parent_id": 7,
+                  "slug": "BIP",
+                  "isChecked": true,
+                  "child": []
+                }
+              ]
+            },
+            {
+              "id": 8,
+              "title": "Manage",
+              "parent_id": 5,
+              "slug": "MAN",
+              "isChecked": true,
+              "child": [
+                {
+                  "id": 14,
+                  "title": "Project Management",
+                  "parent_id": 8,
+                  "slug": "PRM",
+                  "isChecked": true,
+                  "child": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "authDataWithPasswordExpiry": {
+    "loggedIn": true,
+    "userdata": {
+      "id": 5,
+      "email": "chris.cassell@lowes.com",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjo1LCJuYW1lIjoiY2hyaXMgY2Fzc2VsIiwiZW1haWwiOiJjaHJpcy5jYXNzZWxsQGxvd2VzLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEyJG9Uei9GeHNsT28wLllPbDU2R2pZSU9TSHZ4Y0c1MmRrc1Z5bW1YUjNEWU1DTUtnTUZXb3UuIiwicm9sZSI6NCwic3RhdHVzIjoxLCJsb2dpbl9jb3VudCI6NTg5LCJyZWdpb25faWQiOjIsImlzX2Jsb2NrZWQiOjAsImJsb2NrZWRfdGltZSI6bnVsbCwiYmxvY2tlZF9vbiI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyMy0wOC0zMVQwOTowMDoxNC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyNC0wMi0wM1QxOTowOToxNi4zOTRaIiwicHJvZmlsZSI6eyJmaXJzdF9uYW1lIjoiY2hyaXMiLCJsYXN0X25hbWUiOiJjYXNzZWwiLCJjb3VudHJ5X2NvZGUiOiIrMSIsImltYWdlIjoiL2ltYWdlcy9wcm9maWxlL2ltYWdlLTE3MDY4NTUyOTg5MDQuanBnIiwicGhvbmVfbnVtYmVyIjpudWxsfSwiY29tcGFuaWVzIjpbeyJuYW1lIjoiTG93ZXMiLCJkYl9hbGlhcyI6Imxvd2VzIiwibG9nbyI6Ii9pbWFnZXMvY29tcGFueV9sb2dvL0xvd2VzLUxvZ28ucG5nIiwic2x1ZyI6IkxXIiwiVXNlckNvbXBhbnkiOnsiY29tcGFueV9pZCI6MSwidXNlcl9pZCI6NSwiY3JlYXRlZEF0IjoiMjAyMy0wOC0zMVQwOTowNjoyMy4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wOC0zMVQwOTowNjoyMy4wMDBaIn19XX0sImlhdCI6MTcwNjk4NzM1NiwiZXhwIjoxNzA3MDMwNTU2fQ.s6rRIjqMjkEOndrL9WyptuuOtvXvcwd9uSPjTVZY-uY",
+      "name": "chris cassel",
+      "role": 3,
+      "login_count": 589,
+      "profile": {
+        "first_name": "chris",
+        "last_name": "cassel",
+        "country_code": "+1",
+        "image": "/images/profile/image-1706855298904.jpg",
+        "phone_number": null
+      },
+      "region_id": 2,
+      "Company": {
+        "name": "Pepsi",
+        "db_alias": "pepsi",
+        "logo": "/images/company_logo/Lowes-Logo.png",
+        "slug": "PEP",
+        "UserCompany": {
+          "company_id": 1,
+          "user_id": 5,
+          "createdAt": "2023-08-31T09:06:23.000Z",
+          "updatedAt": "2023-08-31T09:06:23.000Z"
+        }
+      },
+      "is_password_expired": 1,
+      "password_reset_days": 10
+    }
+  },
+  "roleMockData": [
+    {
+      "id": 1,
+      "name": "Sustainable",
+      "description": "lipsum text",
+      "status": 1,
+      "created_by": 5,
+      "is_deleted": false,
+      "createdAt": "2024-02-06T06:58:12.000Z",
+      "updatedAt": "2024-02-06T06:58:12.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Regional",
+      "description": "lipsum text",
+      "status": 1,
+      "created_by": 5,
+      "is_deleted": false,
+      "createdAt": "2024-02-06T10:11:35.000Z",
+      "updatedAt": "2024-02-06T10:11:35.000Z"
+    }
+  ],
+  "timeMappingListMockData": [
+    {
+      "id": 37,
+      "name": "P11"
+    },
+    {
+      "id": 38,
+      "name": "P12"
+    },
+    {
+      "id": 39,
+      "name": "P13"
+    }
+  ],
+  "userProfileMockData": {
+    "email": "pepsi.tester@pepsi.com",
+    "profile": {
+      "first_name": "Blob",
+      "last_name": "Pepsicos",
+      "country_code": "+1",
+      "image": "/images/profile/1732770898814-dummy-profile-pic-male1.jpg",
+      "phone_number": "",
+      "title": "Blob User"
+    },
+    "Company": {
+      "name": "Pepsi",
+      "db_alias": "pepsi",
+      "logo": "/images/company_logo/pepsico.png",
+      "slug": "PEP",
+      "is_onboarded": true,
+      "UserCompany": {
+        "company_id": 3,
+        "user_id": 11
+      }
+    },
+    "scope_1": true
+  },
+  "authPMockData": {
+    "loggedIn": true,
+    "userdata": {
+      "id": 5,
+      "email": "chris.cassell@lowes.com",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjo1LCJuYW1lIjoiY2hyaXMgY2Fzc2VsIiwiZW1haWwiOiJjaHJpcy5jYXNzZWxsQGxvd2VzLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEyJG9Uei9GeHNsT28wLllPbDU2R2pZSU9TSHZ4Y0c1MmRrc1Z5bW1YUjNEWU1DTUtnTUZXb3UuIiwicm9sZSI6NCwic3RhdHVzIjoxLCJsb2dpbl9jb3VudCI6NTg5LCJyZWdpb25faWQiOjIsImlzX2Jsb2NrZWQiOjAsImJsb2NrZWRfdGltZSI6bnVsbCwiYmxvY2tlZF9vbiI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyMy0wOC0zMVQwOTowMDoxNC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyNC0wMi0wM1QxOTowOToxNi4zOTRaIiwicHJvZmlsZSI6eyJmaXJzdF9uYW1lIjoiY2hyaXMiLCJsYXN0X25hbWUiOiJjYXNzZWwiLCJjb3VudHJ5X2NvZGUiOiIrMSIsImltYWdlIjoiL2ltYWdlcy9wcm9maWxlL2ltYWdlLTE3MDY4NTUyOTg5MDQuanBnIiwicGhvbmVfbnVtYmVyIjpudWxsfSwiY29tcGFuaWVzIjpbeyJuYW1lIjoiTG93ZXMiLCJkYl9hbGlhcyI6Imxvd2VzIiwibG9nbyI6Ii9pbWFnZXMvY29tcGFueV9sb2dvL0xvd2VzLUxvZ28ucG5nIiwic2x1ZyI6IkxXIiwiVXNlckNvbXBhbnkiOnsiY29tcGFueV9pZCI6MSwidXNlcl9pZCI6NSwiY3JlYXRlZEF0IjoiMjAyMy0wOC0zMVQwOTowNjoyMy4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wOC0zMVQwOTowNjoyMy4wMDBaIn19XX0sImlhdCI6MTcwNjk4NzM1NiwiZXhwIjoxNzA3MDMwNTU2fQ.s6rRIjqMjkEOndrL9WyptuuOtvXvcwd9uSPjTVZY-uY",
+      "name": "chris cassel",
+      "role": 3,
+      "login_count": 589,
+      "profile": {
+        "first_name": "chris",
+        "last_name": "cassel",
+        "country_code": "+1",
+        "image": "/images/profile/image-1706855298904.jpg",
+        "phone_number": null
+      },
+      "region_id": null,
+      "Company": {
+        "name": "Lowes",
+        "db_alias": "lowes",
+        "logo": "/images/company_logo/Lowes-Logo.png",
+        "slug": "LW",
+        "UserCompany": {
+          "company_id": 1,
+          "user_id": 5,
+          "createdAt": "2023-08-31T09:06:23.000Z",
+          "updatedAt": "2023-08-31T09:06:23.000Z"
+        }
+      },
+      "permissionsData": [
+        {
+          "id": 1,
+          "title": "Administrator Access",
+          "parent_id": 0,
+          "slug": "ADA",
+          "isChecked": true,
+          "child": [
+            {
+              "id": 2,
+              "title": "User Management",
+              "parent_id": 1,
+              "slug": "USM",
+              "isChecked": true,
+              "child": []
+            },
+            {
+              "id": 3,
+              "title": "Data Management",
+              "parent_id": 1,
+              "slug": "DAM",
+              "isChecked": true,
+              "child": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Application Access",
+          "parent_id": 0,
+          "slug": "APA",
+          "isChecked": true,
+          "child": [
+            {
+              "id": 6,
+              "title": "Visibility",
+              "parent_id": 5,
+              "slug": "VIS",
+              "isChecked": true,
+              "child": [
+                {
+                  "id": 9,
+                  "title": "Segmentation",
+                  "parent_id": 6,
+                  "slug": "SEG",
+                  "isChecked": true,
+                  "child": []
+                },
+                {
+                  "id": 10,
+                  "title": "Benchmarks",
+                  "parent_id": 6,
+                  "slug": "BEN",
+                  "isChecked": true,
+                  "child": []
+                },
+                {
+                  "id": 16,
+                  "title": "EV Dashboard",
+                  "parent_id": 6,
+                  "slug": "EVD",
+                  "isChecked": true,
+                  "child": []
+                }
+              ]
+            },
+            {
+              "id": 7,
+              "title": "Recommendations",
+              "parent_id": 5,
+              "slug": "REC",
+              "isChecked": true,
+              "child": [
+                {
+                  "id": 13,
+                  "title": "Carrier Shift",
+                  "parent_id": 7,
+                  "slug": "CAS",
+                  "isChecked": true,
+                  "child": []
+                },
+                {
+                  "id": 15,
+                  "title": "Alternative Fuel & Modal Shift",
+                  "parent_id": 7,
+                  "slug": "AMS",
+                  "isChecked": true,
+                  "child": []
+                },
+                {
+                  "id": 17,
+                  "title": "Bid Planning",
+                  "parent_id": 7,
+                  "slug": "BIP",
+                  "isChecked": true,
+                  "child": []
+                }
+              ]
+            },
+            {
+              "id": 8,
+              "title": "Manage",
+              "parent_id": 5,
+              "slug": "MAN",
+              "isChecked": true,
+              "child": [
+                {
+                  "id": 14,
+                  "title": "Project Management",
+                  "parent_id": 8,
+                  "slug": "PRM",
+                  "isChecked": true,
+                  "child": []
+                }
+              ]
+            },
+            {
+              "id": 28,
+              "title": "Scope 3 Dashboard",
+              "parent_id": 5,
+              "slug": "SCD3",
+              "isChecked": false,
+              "child": []
+            }
+          ]
+        }
+      ],
+      "is_password_expired": 0,
+      "password_reset_days": 0
+    },
+    "login_count": 1
+  }
+}

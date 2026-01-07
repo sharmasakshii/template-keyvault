@@ -1,0 +1,741 @@
+@import "../config/variable.module";
+
+.decarbRecomend-screen {
+  .fuel-innner-div {
+    .formGroup {
+      margin-bottom: 0px !important;
+    }
+
+    >div {
+      @media(max-width:$sm) {
+        width: 100%;
+
+        button {
+          width: 98%;
+        }
+      }
+    }
+  }
+
+  .fuel-outer {
+    position: relative;
+
+    &.Alternative {
+      &::after {
+        display: none !important;
+      }
+    }
+
+    &::after {
+      width: 1px;
+      height: 100%;
+      content: "";
+      position: absolute;
+      background: $gray-400;
+      right: -3px;
+      top: 14px;
+      bottom: 0px;
+    }
+
+    &.Electric {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .fuel-inner {
+    width: auto;
+    font-size: 1rem;
+    @media(max-width:1550px) {
+      width: auto;
+    }
+
+    @media(max-width:1400px) {
+      font-size: 0.75rem;
+    }
+  }
+
+  .decarb-heading {
+    margin-bottom: 16px;
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+
+      >.full-width {
+        grid-column: span 4;
+      }
+
+      >.span {
+        grid-column: span 2;
+      }
+
+      @media (max-width: $md) {
+        display: flex;
+        flex-wrap: wrap;
+
+        >div {
+          width: 100%;
+        }
+      }
+    }
+
+    .fuel-inner {
+      @media(max-width:1400px){
+        height: 35px;
+        padding: 10px !important;
+      }
+
+
+      .form-check-input {
+        width: 1rem !important;
+        height: 1rem !important;
+        margin-top: 0.3em;
+      }
+    }
+
+    .select-box {
+      padding: 0px !important;
+
+      .disabled-button {
+        height: 38px;
+      }
+
+      .css-b62m3t-container,
+      .css-3iigni-container {
+
+        .css-13cymwt-control,
+        .css-16xfy0z-control {
+          min-height: 38px;
+        }
+      }
+
+      .css-t3ipsp-control {
+        min-height: 38px;
+      }
+    }
+
+    .form-check-label {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.875rem !important;
+
+      @media(max-width:1550px) {
+        font-size: 0.75rem !important;
+      }
+    }
+
+    .form-check-input {
+      margin-top: 0px !important;
+    }
+
+    .decarb-filtercheckbox {
+      .line {
+        font-size: 1.25rem;
+        color: $gray-400;
+      }
+
+      .select-box {
+        padding: 0px !important;
+      }
+
+      .disabled-button,
+      .btn-deepgreen {
+        height: 45px;
+        width: 72px;
+        padding: 0 !important;
+      }
+
+      @media(max-width:1980px) {
+        display: block !important;
+
+        >div {
+          margin-bottom: 14px !important;
+        }
+      }
+
+      .search-icon-img {
+
+        .css-b62m3t-container,
+        .css-3iigni-container {
+          width: 258px !important;
+
+          @media(max-width:1520px) {
+            width: 199px !important;
+          }
+
+          @media(max-width:1324px) {
+            width: 220px !important;
+          }
+
+        }
+      }
+    }
+
+    .backBtn {
+      padding-block: inherit !important;
+    }
+
+    .gridViewBtn {
+      background-color: transparent;
+
+      img {
+        padding-right: 0px !important;
+        filter: grayscale(100%) !important;
+      }
+    }
+
+    .activeView {
+      button {
+        img {
+          filter: inherit !important;
+        }
+      }
+    }
+
+    .fuel-inner {
+      margin-bottom: 0px !important;
+
+      &.checked {
+        border: 1px solid $primary !important;
+      }
+
+      .fuelIcon {
+        width: 39px;
+        height: 30px;
+
+        @media(max-width:1550px) {
+          width: 24px;
+          height: 20px;
+        }
+
+      }
+
+      .carrierIcon {
+        @media(max-width:1550px) {
+          width: 30px;
+        }
+
+        width: 46px;
+      }
+
+      .railIcon {
+        @media(max-width:1550px) {
+          width: 23px;
+        }
+
+        width: 37px;
+      }
+    }
+
+    .filter-btns {
+      @media(max-width:$sm) {
+        width: 100%;
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+
+    .search-icon-img {
+      @media(max-width:$sm) {
+        width: 100%;
+      }
+
+      .searchdropdown {
+        @media(max-width:$sm) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .decarbRecomend-section {
+    @include mainSectionBg;
+
+    // problem lanes css
+
+
+    .inner-data-region {
+      border-radius: 24px;
+      border: 1px solid $newGray-100;
+      background: $white;
+      box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.03);
+
+      .priority-btn-wrap {
+        position: relative;
+
+        .priority-btn {
+          position: absolute;
+          top: -14px;
+          left: 6%;
+
+          button {
+            background-color: $primary;
+            color: $white;
+            font-size: 0.875rem;
+            font-weight: 600;
+            border-radius: 0px;
+            border: $primary;
+          }
+        }
+
+        .id-data {
+          background-color: $gray-300;
+          border-radius: 24px 24px 0 0;
+
+          .laneName {
+            min-height: 40px;
+          }
+
+          h4 {
+            span {
+              font-size: 0.75rem;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    .priority {
+      color: $white;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 3px 4px;
+      min-width: 79.64px;
+      text-align: center;
+      border-radius: 24px;
+
+      &.high_priority {
+        background-color: $orange;
+      }
+
+      &.medium_priority {
+        background-color: $gray-600;
+        color: $white !important;
+      }
+
+      &.low_priority {
+        background-color: $primary;
+      }
+
+      @media(max-width: $xxl) {
+        font-size: 0.75rem;
+      }
+    }
+
+    .quartely-icon {
+      img {
+        filter: brightness(0) saturate(100%) invert(35%) sepia(50%) saturate(2089%) hue-rotate(126deg) brightness(99%) contrast(99%);
+      }
+
+      .fuelIcon {
+        width: 36px;
+        height: 34px;
+
+        @media(max-width:1550px) {
+          width: 27px;
+          height: 23px;
+        }
+
+      }
+
+      .railIcon {
+        width: 35px;
+
+        @media(max-width:1550px) {
+          width: 28px;
+        }
+      }
+
+      .carrierIcon {
+        width: 48px;
+
+        @media(max-width:1550px) {
+          width: 38px;
+        }
+      }
+
+    }
+
+    .static-table {
+      @media(max-width:$xl) {
+        overflow-x: auto;
+      }
+
+      table {
+        @media(max-width:$md) {
+          width: 900px !important;
+        }
+
+        th:first-child,
+        td:first-child {
+          width: 400px !important;
+
+          @media(max-width:$xxl) {
+            width: 345px !important;
+          }
+
+          @media(max-width:$xl) {
+            width: 300px !important;
+          }
+        }
+
+        thead {
+          tr {
+            th {
+              padding: 0.7rem 0.5rem !important;
+
+              &:nth-last-child(2) {
+                width: 183px;
+              }
+
+              span {
+                img {
+                  width: 16px;
+                  padding-right: 0px !important;
+                }
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+
+            &:hover {
+              background: rgba(193, 211, 192, 0.4);
+
+              td:last-child {
+                h4 {
+                  display: block;
+                  cursor: pointer;
+                }
+              }
+            }
+
+            td {
+              .recomended-Icons {
+                img {
+                  filter: brightness(0) saturate(100%) invert(35%) sepia(50%) saturate(2089%) hue-rotate(126deg) brightness(99%) contrast(99%);
+                }
+
+                .fuelIcon {
+                  width: 20px;
+                }
+
+                .railIcon {
+                  width: 28px;
+                }
+
+                .carrierIcon {
+                  width: 38px;
+                }
+
+              }
+
+              padding: 1rem 0.5rem;
+
+              &:nth-last-child(2) {
+                width: 127px;
+              }
+
+              &:last-child {
+                h4 {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// modal create project css
+.create-project-modal.modal-dialog {
+  max-width: calc(100% - 550px);
+  margin-right: auto;
+  margin-left: auto;
+  height: 100vh;
+
+  @media(max-width:$xxl) {
+    height: auto;
+  }
+
+  @media (max-width: 1200px) {
+    max-width: calc(100% - 80px) !important;
+  }
+
+  .modal-content {
+    background-color: $info;
+    border-radius: 8px;
+
+    .modal-header {
+      border-bottom: none;
+
+      .modal-title {
+        width: 100%;
+
+        a {
+          font-size: 0.875rem;
+          color: $dark;
+        }
+      }
+    }
+
+    .modal-body {
+      h5 {
+        color: $dark;
+        font-size: 1.25rem;
+      }
+
+      .create-project-body {
+        border: 1px solid $gray-200;
+        background-color: $white;
+
+        .heading {
+          h6 {
+            font-size: 0.875rem;
+          }
+
+          h2 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      .invite-people-wrapper {
+        background-color: $info;
+
+        h5 {
+          font-size: 1.25rem;
+          color: $primary;
+        }
+
+        .invite-people-name {
+          h3 {
+            font-size: 1.25rem;
+            color: $primary;
+          }
+
+          .letter-icon {
+            img {
+              width: 30px;
+            }
+          }
+
+          img {
+            width: 15px;
+            padding-right: 0px !important;
+          }
+
+          a {
+            color: $primary;
+            text-decoration: none;
+            font-size: 0.875rem;
+          }
+
+          .form-select {
+            color: $primary;
+            background-color: transparent;
+            border: transparent;
+            border-radius: 0rem;
+            width: 116px;
+          }
+        }
+      }
+
+      .add-btn {
+        button {
+          height: 40px;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .form-check-input[type="checkbox"] {
+      border-radius: 0em;
+    }
+
+    .modal-footer {
+      border-top: none;
+    }
+
+    .message {
+      .form-control {
+        height: auto;
+      }
+    }
+
+    .form-control {
+      font-weight: 400;
+      color: $dark;
+      border-radius: 26px;
+      padding: 14px;
+      height: 45px;
+      resize: none;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+      color: $dark;
+      border: 1px solid $gray-300;
+      outline: 0;
+      box-shadow: none;
+    }
+
+    .form-select {
+      color: $primary;
+      font-weight: 500;
+      border-radius: 0rem;
+    }
+
+    .select-input-wrap {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      margin-bottom: 0 !important;
+
+      @media (max-width: 768px) {
+        position: unset;
+      }
+    }
+
+    .input-email {
+      margin-bottom: 0px !important;
+    }
+  }
+}
+
+.edit-dlt-btn {
+  img {
+    filter: invert(0%) sepia(3%) saturate(7500%) hue-rotate(17deg) brightness(0%) contrast(100%);
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    padding: 0px;
+  }
+}
+
+.save-create-modal {
+  background-color: $white;
+  border-radius: 8px;
+
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+
+  @media (max-width: 1400px) {
+    width: 100%;
+  }
+
+  .heading {
+    h3 {
+      color: $primary;
+    }
+
+    img {
+      width: 20px;
+    }
+  }
+
+  .experience {
+    background-color: $primary;
+  }
+
+  .feedback-btn {
+    button {
+      background-color: $primary;
+      border-color: $primary;
+      border-radius: 0px;
+    }
+  }
+}
+
+.btn-enroutes .gm-control-active.gm-fullscreen-control {
+  display: none !important;
+}
+
+.modal-dialog.actionModal {
+  max-width: var(--bs-modal-width);
+  margin-right: auto;
+  margin-left: auto;
+  --bs-modal-width: 530px !important;
+
+  .modal-body {
+    .line {
+      font-size: 1.25rem;
+      color: $gray-400;
+    }
+
+    .formGroup {
+      margin-bottom: 0px !important;
+    }
+
+    @media (max-width: 1550px) {
+      .fuel-inner {
+        height: 44px;
+        width: auto;
+      }
+
+    }
+.fuel-inner .form-check-input {
+    width: 1rem !important;
+    height: 1rem !important;
+     margin-top: 0em !important; 
+}
+    .formsection {
+      .row {
+        flex-direction: column;
+      }
+
+      img {
+        filter: brightness(0) saturate(100%) invert(35%) sepia(50%) saturate(2089%) hue-rotate(126deg) brightness(99%) contrast(99%);
+      }
+
+      .fuelIcon {
+        width: 24px;
+        height: 28px;
+
+      }
+
+      .carrierIcon {
+        width: 30px;
+      }
+
+      .railIcon {
+        width: 23px;
+      }
+    }
+
+    .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .disabled-button {
+      height: 38px;
+    }
+  }
+
+  .search-icon-img span .search-img {
+    top: 32%;
+  }
+}
+.highestpriority{
+background-color: $orange;
+}

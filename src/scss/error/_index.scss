@@ -1,0 +1,16 @@
+@import "../config/variable.module";
+.error-page-wrap{
+    .h-100vh{
+        min-height: 100vh;
+    }
+    .error-inner{
+        background-color: $primary;
+        min-height: 650px;
+        .btn-lightGreen{
+            background-color: $lightgreen;
+            border: 1px solid $lightgreen;
+            color: $primary;
+            font-weight: 600;
+        }
+    }
+}

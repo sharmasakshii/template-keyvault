@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "schedule:weekly"
+  ],
+  "baseBranches": ["develop"],
+  "assignees": ["kumarniraj1"],
+  "reviewers": ["kumarniraj1"],
+  "labels": ["Renovate"],
+  "automerge": false
+}

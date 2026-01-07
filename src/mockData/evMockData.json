@@ -1,0 +1,194 @@
+{
+    "listOfCarriers": [
+        {
+            "id": 5,
+            "name": "Old Dominion",
+            "scac": "ODFL",
+            "image": "/images/company/odfl.svg",
+            "scac_priority": true
+        },
+        {
+            "id": 4,
+            "name": "CH Robinson",
+            "scac": "RBIN",
+            "image": "/images/company/robinson.svg",
+            "scac_priority": true
+        },
+        {
+            "id": 1,
+            "name": "Schneider",
+            "scac": "SCNN",
+            "image": "/images/company/schneider.svg",
+            "scac_priority": true
+        },
+        {
+            "id": 3,
+            "name": "Werner",
+            "scac": "WENP",
+            "image": "/images/company/werner.svg",
+            "scac_priority": true
+        }
+    ],
+    "masterCarrierMockData": [
+        {
+            "ev_emission": 0,
+            "total_shipment": 107,
+            "kwh": 17378,
+            "total_ev_lanes": 3,
+            "emissions_saved": 3.1,
+            "SCAC": "ARMS",
+            "carrier": {
+                "name": "Einride",
+                "image": "/images/company/einride.svg"
+            }
+        },
+        {
+            "ev_emission": 0,
+            "total_shipment": 2,
+            "kwh": 76.14,
+            "total_ev_lanes": 2,
+            "emissions_saved": 0.06,
+            "SCAC": "ECHS",
+            "carrier": {
+                "name": "Echo Global Logistics",
+                "image": "/images/company_logo/echo-global-logistics.png"
+            }
+        },
+        {
+            "ev_emission": 0,
+            "total_shipment": 12,
+            "kwh": 2616,
+            "total_ev_lanes": 1,
+            "emissions_saved": 1.29,
+            "SCAC": "KTAJ",
+            "carrier": {
+                "name": "Khalsa",
+                "image": "/images/company_logo/khalsa-transportation.png"
+            }
+        },
+        {
+            "ev_emission": 0,
+            "total_shipment": 56,
+            "kwh": 1131.2,
+            "total_ev_lanes": 1,
+            "emissions_saved": 0.12,
+            "SCAC": "ODFL",
+            "carrier": {
+                "name": "Old Dominion",
+                "image": "/images/company_logo/odfl.png"
+            }
+        },
+        {
+            "ev_emission": 0,
+            "total_shipment": 5,
+            "kwh": 2680,
+            "total_ev_lanes": 1,
+            "emissions_saved": 0.98,
+            "SCAC": "WENP",
+            "carrier": {
+                "name": "Werner",
+                "image": "/images/company/werner.svg"
+            }
+        }
+    ],
+    "evShipmentLaneListMockData": {
+        "responseData": [
+            {
+                "ev_intensity": 345.38,
+                "ev_emission": 0.09,
+                "shipment": 7,
+                "total_ton_miles": 1884.95,
+                "loaded_ton_miles": 336,
+                "total_hours": 672,
+                "name": "SOUTH EL MONTE, CA_MIRA LOMA, CA",
+                "origin": "SOUTH EL MONTE, CA",
+                "destination": "MIRA LOMA, CA"
+            },
+            {
+                "ev_intensity": 49.34,
+                "ev_emission": 0.02,
+                "shipment": 1,
+                "total_ton_miles": 331.11,
+                "loaded_ton_miles": 60,
+                "total_hours": 120,
+                "name": "LONG BEACH, CA_MIRA LOMA, CA",
+                "origin": "LONG BEACH, CA",
+                "destination": "MIRA LOMA, CA"
+            }
+        ],
+        "pagination": {
+            "page": 0,
+            "page_size": 10,
+            "total_count": 100
+        }
+    },
+    "evNetworkListMockData": {
+        "data": [
+            {
+                "origin": "O'BRIEN, FL, 32071",
+                "destination": "PERRY, FL, 32348",
+                "distance": 962.77,
+                "id": 267156
+            },
+            {
+                "origin": "AYER, MA, 01432",
+                "destination": "NEWPORT NEWS, VA, 23603",
+                "distance": 951.69,
+                "id": 273765
+            },
+            {
+                "origin": "EDGEWOOD, NY, 11717",
+                "destination": "GARNER, NC, 27529",
+                "distance": 917.53,
+                "id": 270965
+            },
+            {
+                "origin": "VALHALLA, NY, 10595",
+                "destination": "GREENBORO, NC, 27407",
+                "distance": 916.33,
+                "id": 278082
+            },
+            {
+                "origin": "AYER, MA, 01432",
+                "destination": "YOUNGWOOD, PA, 15697",
+                "distance": 905.62,
+                "id": 281462
+            },
+            {
+                "origin": "CRANSTON, RI, 02920",
+                "destination": "NEWPORT NEWS, VA, 23603",
+                "distance": 901.09,
+                "id": 276909
+            },
+            {
+                "origin": "DETROIT, MI, 48207",
+                "destination": "ROANOKE, VA, 24019",
+                "distance": 879.06,
+                "id": 281992
+            },
+            {
+                "origin": "CINCINNATI, OH, 45246",
+                "destination": "TOMAH, WI, 54660",
+                "distance": 877.17,
+                "id": 273342
+            },
+            {
+                "origin": "AYER, MA, 01432",
+                "destination": "RICHMOND, VA, 23237",
+                "distance": 874.54,
+                "id": 281839
+            },
+            {
+                "origin": "CARLISLE, PA, 17013",
+                "destination": "LEWISTON, ME, 04240",
+                "distance": 859.93,
+                "id": 271488
+            }
+        ],
+        "pagination": {
+            "page": 1,
+            "page_size": 10,
+            "total": 3683
+        }
+    }
+}

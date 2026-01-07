@@ -1,0 +1,413 @@
+@import "../config/variable.module.scss";
+
+.login {
+    @media(max-width:$md){
+        height: 100vh;
+    }
+    // login left side banner css starts
+    .left-side-wrapper {
+        .img-logo{
+            .img-btn{
+                text-align: start;
+            }
+        }
+        background: $primary;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        .greensight-logo {
+            width: 25%;
+            @media(max-width:$md){
+                width: 40%;
+            }
+            @media(max-width:$sm){
+                width: 55%;
+            }
+        }
+
+        @media (max-width: $md) {
+            height: auto;
+        }
+        .powereb-by {
+            @media(max-width:1600px) {
+                width: 120px;
+            }
+
+            @media(max-width:1300px) {
+                width: 100px;
+            }
+        }
+
+        .login-map>div:first-child {
+
+            svg {
+                width: 93% !important;
+
+                @media (max-width: $md) {
+                    width: 30% !important;
+                }
+
+            }
+        }
+
+        .login-map {
+            height: calc(100vh - 102px);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            @media (max-width: $md) {
+                height: auto;
+                padding: 8px 0;
+                display: none;
+            }
+
+            .login-heading {
+                line-height: normal;
+                color: $white;
+                font-family: $fontPoppins;
+
+                @media (max-width: $xxl) {
+                    line-height: normal;
+                }
+
+                @media (max-width: $md) {
+                    font-size: 1.25rem !important;
+                }
+            }
+        }
+    }
+
+    // login left side banner css ends
+
+    // right side form css starts
+    .right-side-wrapper {
+        width: 75%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        @media (max-width: $md) {
+            width: 100%;
+            height: auto;
+        }
+
+        h4 {
+            color: $dark;
+            font-family: $fontPoppins;
+            line-height: normal;
+
+            @media(max-width:$md) {
+                font-size: 1.75rem !important;
+                margin-bottom: 20px;
+            }
+        }
+
+        .forgotPassword {
+            h6 {
+                color: $primary;
+            }
+        }
+
+        .privacyPolicy {
+            p {
+                span {
+                    color: $primary;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .fields-wrapper {
+            gap: 30px;
+            margin-bottom: 20px;
+
+            @media(max-width:$xxl) {
+                gap: 20px;
+            }
+
+            @media(max-width:$md) {
+                gap: 16px;
+            }
+
+            .mail {
+                label {
+                    color: $dark;
+                    line-height: normal;
+                    margin-bottom: 12px;
+
+                    @media(max-width:$md) {
+                        margin-bottom: 4px;
+                    }
+                }
+
+                .form-control {
+                    padding: 18px;
+                    border: 1px solid $gray-300;
+
+                    @media(max-width:$xxl) {
+                        padding: 12px 18px;
+                    }
+
+                    @media(max-width:$md) {
+                        padding: 8px 18px;
+                    }
+
+
+                    &::placeholder {
+                        color: $gray-500;
+                    }
+
+                    &:focus {
+                        border: 1px solid $gray-300;
+                    }
+                }
+
+                img {
+                    position: absolute;
+                    right: 21px;
+                    top: 22px;
+
+                    @media(max-width: $xxl) {
+                        top: 16px;
+                    }
+                }
+
+                .eyeicon {
+                    top: 19px;
+
+                    @media(max-width: $xxl) {
+                        top: 12px;
+                    }
+                }
+            }
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: $dark;
+            transition: background-color 5000s ease-in-out 0s;
+            box-shadow: inset 0 0 20px 20px $white;
+        }
+
+        input:-webkit-autofill::first-line,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+            font-size: 1rem;
+        }
+    }
+
+    // right side form css ends
+}
+
+// password expire
+.passwordExpire {
+    height: 100vh;
+    --bs-modal-width: 500px !important;
+
+    .modal-content {
+        padding: 16px 22px 22px 20px;
+
+        .modal-header {
+            .modal-title {
+                font-size: 1.25rem;
+                font-weight: 600;
+            }
+
+            border-bottom: none;
+        }
+
+        .modal-body {
+            p {
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: $primary;
+                text-align: center;
+                margin-bottom: 1.5rem !important;
+            }
+
+            .disabled-button {
+                width: 100% !important;
+                padding: 11px 15px !important;
+            }
+        }
+
+        .gray-btn {
+            background-color: $gray-200 !important;
+            border-radius: 4px;
+        }
+    }
+}
+
+// modal css starts
+.modal-dialog {
+    position: relative;
+    width: auto;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    pointer-events: none;
+
+    .modal-body {
+        .authentication-txt {
+            margin-bottom: 24px;
+
+            p {
+                color: $gray-600;
+            }
+
+            h4 {
+                color: $primary;
+            }
+        }
+
+        .inputotp {
+            div {
+                gap: 13px;
+                justify-content: center;
+
+                input {
+                    width: 73px !important;
+                    height: 73px;
+                    border: 1px solid $gray-500;
+                    border-radius: 8px;
+                    font-size: 1.75rem;
+                    font-weight: 500;
+
+                    @media (max-width: $sm) {
+                        width: 50px !important;
+                        height: 50px;
+                    }
+
+                    &:focus-visible {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .mail {
+            img {
+                position: absolute;
+                right: 14px;
+                top: 16px;
+            }
+        }
+
+        .recieveCode {
+            gap: 3px !important;
+
+            p {
+                color: $gray-700;
+            }
+
+            button {
+                background: transparent !important;
+                border: none;
+                width: auto;
+                padding: 0;
+                color: $primary;
+
+                &:hover {
+                    border: none;
+                    padding: 0;
+                    color: $primary;
+                }
+            }
+
+        }
+
+
+        .form-control {
+            padding: 18px;
+
+            @media(max-width: $sm) {
+                padding: 15px 10px;
+            }
+        }
+
+    }
+
+    .border-modal-login {
+        border-bottom: transparent !important;
+    }
+
+    .border-bottom-modal {
+        margin-top: 28px;
+
+        button {
+            background-color: $primary;
+            border: 1px solid $primary;
+            width: 100%;
+
+            &:hover {
+                background-color: $white;
+                border: 1px solid $primary;
+                color: $primary;
+            }
+        }
+    }
+}
+
+.modalLogin.modal {
+    --bs-modal-width: 570px !important;
+}
+
+// modal css ends
+
+// bucket login css
+.bucketLogin {
+    .h100vh {
+        height: 100vh;
+    }
+
+    .mail {
+        img {
+            position: absolute;
+            top: 21px;
+            left: 12px;
+        }
+
+        .password-icon {
+            top: 18px !important;
+        }
+    }
+
+    .bucketloginWrap {
+        background: $primary;
+        border-radius: 8px;
+        padding: 98px 40px;
+        text-align: center;
+        color: $white;
+
+        .login-heading {
+            color: $white !important;
+        }
+
+        .upload-btn {
+            outline: 0;
+            box-shadow: none;
+            border: 1px solid $white;
+            background: $white;
+            padding: 10px 35px !important;
+            border-radius: 4px;
+            color: $primary;
+            font-weight: 500;
+        }
+
+    }
+
+    .right-side-wrapper .btn-check:focus+.btn,
+    .btn:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,108 @@
+@import "../config/variable.module";
+
+.carrierOverview-screen {
+  .tab-content > .active {
+    display: block;
+    overflow: auto;
+}
+  .table-responsive {
+    overflow: hidden;
+
+    @media screen and (max-width: $md) {
+      overflow-x: auto;
+      width: 800px;
+    }
+    th , td{
+      &:first-child{
+        padding-left: 1rem ;
+      }
+    }
+  }
+  .co-txt{
+    justify-content: flex-start !important;
+    .titleMain {
+      text-align: left !important;
+    }
+  }
+  .verticalLineTwo {
+    width: 1px;
+    height: 15.5px;
+    background-color: $lightSilver;
+
+    @media(max-width:$md) {
+      display: none;
+    }
+    &.bigline{
+      height: 27.5px;
+    }
+  }
+.primaryCardInnerWprpper{
+  width: 306px;
+  @media(max-width:$sm){
+      width: 223px;
+  }
+}
+  .carrierOverview-screen-wraper {
+    .carrierOverview-section {
+      .nav-tabs .nav-item.show .nav-link,
+      .nav-tabs .nav-link.active {
+        color: $white;
+        font-weight: 700;
+        border-radius: 15px !important;
+        background-color: $primary;
+        border-color: var(--bs-nav-tabs-link-active-border-color);
+      }
+
+      .nav-link {
+        font-size: 0.75rem;
+        color: $dark;
+        padding: 5px 10px;
+      }
+
+      .nav-link:focus,
+      .nav-link:hover {
+        color: $primary;
+      }
+
+      .delay-project {
+        border: 1px solid $lightgreen;
+        border-radius: 8px;
+
+        .id-data {
+          background-color: $gray-300;
+          border-radius: 8px 8px 0px 0px;
+        }
+      }
+
+      .showlink {
+        color: $dark;
+      }
+
+      .regionWiseTxt {
+        .static-table {
+          table {
+            tr {
+
+              th,
+              td {
+                span {
+                  img {
+                    width: 17px;
+                  }
+                }
+
+                &:last-child {
+                  width: auto;
+                }
+              }
+
+              td {
+                word-break: break-word;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

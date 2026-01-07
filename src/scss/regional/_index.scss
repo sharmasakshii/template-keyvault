@@ -1,0 +1,75 @@
+@import "../config/variable.module";
+
+
+.region-screen {
+    .region-screen-wraper {
+        .filters{
+            .select-box{
+                @media(max-width:$sm){
+                    width: 100%;
+                }
+                >div {
+                    @media(max-width:$sm){
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .disabled-button {
+            color: $gray-700;
+            opacity: 0.5;
+            font-weight: 400 !important
+        }
+        .region-section {
+            .mainGrayCards {
+                .regionWiseTxt {
+                    h6 {
+                        font-size: 0.875rem;
+
+                        span {
+                            font-size: 0.875rem;
+                            padding-left: 3px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .static-table {
+            
+            td {
+                &:first-child {
+                    word-break: break-word;
+                }
+            }
+            th:last-child,
+            td:last-child {
+                width: auto;
+            }
+
+            .fs-10 {
+                @media (max-width:1300px) {
+                    font-size: 0.5625rem;
+                }
+            }
+
+            span {
+                img {
+                    width: 17px;
+                    cursor: pointer;
+                    padding-right: 0px !important;
+                }
+            }
+        }
+    }
+}
+
+// .highchart-bar .highcharts-point.highcharts-negative {
+//     clip-path: inset(1px round 0px 0px 38px 38px);
+//     -webkit-clip-path: inset(1px round 0px 0px 38px 38px);
+// }
+
+// .highchart-bar .highcharts-point {
+//     clip-path: inset(12% 0% -9px 0% round 38px);
+//     -webkit-clip-path: inset(12% 0% -9px 0% round 38px);
+// }

@@ -1,0 +1,79 @@
+{
+    "alternativeCarrierListData": {
+        "data": [
+            {
+                "name": "Biagi Bros inc",
+                "scac": "BIAP",
+                "image": "/images/company_logo/biagi.png",
+                "color": "#71BA9A",
+                "scac_priority": true
+            },
+            {
+                "name": "Foodliner inc",
+                "scac": "FOLW",
+                "image": "/images/company_logo/Foodliner.png",
+                "color": "#367C90",
+                "scac_priority": true
+            }
+        ]
+    },
+    "listOfAllLanesByShipmentsDtoData": {
+        "data": {
+            "list": [
+                {
+                    "lane_name": "Mira Loma, CA_Riverside, CA",
+                    "shipment": 204
+                },
+                {
+                    "lane_name": "Riverside, CA_Ontario, CA",
+                    "shipment": 26
+                }
+            ],
+            "pagination": {
+                "page": 1,
+                "page_size": 10,
+                "total_count": 500
+            }
+        }
+    },
+    "lanesByFuelUsageAndMileageDtoData":{"data":{
+        "list": [
+            {
+                "lane_name": "Mira Loma, CA_Riverside, CA",
+                "fuel_type": "Diesel",
+                "fuel_consumption": 29,
+                "fuel_mileage": 275.5,
+                "emission": 0.380277
+            },
+            {
+                "lane_name": "San Bernardino, CA_Walnut, CA",
+                "fuel_type": "Diesel",
+                "fuel_consumption": 3,
+                "fuel_mileage": 122.4,
+                "emission": 0.039339
+            }
+        ],
+        "pagination": {
+            "page": 1,
+            "page_size": 10,
+            "total_count": 500,
+            "totalPages": 50
+        }
+    }},
+    "alternativeFuelFiltersDto" : {
+        "data": [
+            {
+                "id": "7",
+                "name": "HVO"
+            },
+            {
+                "id": "2",
+                "name": "HYDROGEN"
+            },
+            {
+                "id": "1",
+                "name": "RD"
+            }
+        ]
+    }
+}

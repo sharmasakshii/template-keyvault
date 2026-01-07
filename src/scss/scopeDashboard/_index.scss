@@ -1,0 +1,170 @@
+@import "../config/variable.module";
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    @media(max-width:1279px){
+        overflow-y: auto;
+    }
+}
+.scope{
+    .left-side-wrapper {
+            .img-logo{
+            .img-btn{
+                text-align: start;
+            }
+        }
+        .greensight-logo{
+            width: 25%;
+            @media(max-width:$md){
+                width: 40%;
+            }
+            @media(max-width:$sm){
+                width: 55%;
+            }
+        }
+        background: $primary;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        @media (max-width: 1400px) {
+            height: 100%;
+        }
+        .powereb-by {
+            @media(max-width:1600px) {
+                width: 120px;
+            }
+
+            @media(max-width:1300px) {
+                width: 100px;
+            }
+        }
+
+        .login-map>div:first-child {
+
+            svg {
+                width: 93% !important;
+                @media (max-width: $md) {
+                    width: 30% !important;
+                }
+
+            }
+        }
+
+        .login-map {
+            height: calc(100vh - 102px);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            @media (max-width: $md) {
+                height: auto;
+                padding: 8px 0;
+                display: none;
+            }
+
+            .login-heading {
+                line-height: normal;
+                color: $white;
+                font-family: $fontPoppins;
+
+                @media (max-width: $xxl) {
+                    line-height: normal;
+                }
+
+                @media (max-width: $md) {
+                    font-size: 1.25rem !important;
+                }
+            }
+        }
+    }
+    .scopeDashboard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    
+        .btn-deepgreen {
+            img {
+                transform: rotate(180deg);
+            }
+        }
+    
+        .gray-btn {
+            img {
+                filter: brightness(0) saturate(100%) invert(27%) sepia(11%) saturate(176%) hue-rotate(145deg) brightness(94%) contrast(89%);
+            }
+        }
+    
+        .chooseScope {
+            border: 1px solid $newGray-100;
+            box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.03);
+            background: $white;
+            border-radius: 24px;
+            min-height: 170px;
+            position: relative;
+            @media(max-width:1550px){
+                min-height: 155.5px;
+            }
+            .form-check{
+                @media(max-width:1550px){
+                    right: 14px;
+                    top: 10px;
+                }
+                position: absolute;
+                right: 17px;
+                top: 16px;            
+            }
+    
+            &.disabled {
+                background-color: $newGray-100;
+                opacity: 0.7;
+            }
+    
+            img {
+                height: 60px;
+            }
+    
+            .form-check-input {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 2rem;
+                display: none;
+    
+                &:checked {
+                    background-color: $primary;
+                    border-color: $primary;
+                }
+            }
+    
+            &.checked {
+                cursor: pointer;
+                border: 1px solid $primary;
+                background: $primary;
+    
+                h3,
+                p,
+                h2 {
+                    color: $white;
+                }
+    
+                .form-check-input {
+                    display: block;
+    
+                    &:checked {
+                        background-color: $white;
+                        border-color: $white;
+                    }
+    
+                }
+    
+                .form-check-input:checked[type=checkbox] {
+                    --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 20 20%27%3e%3cpath fill=%27none%27 stroke=%27%23215154%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%273%27 d=%27m6 10 3 3 6-6%27/%3e%3c/svg%3e");
+                }
+    
+            }
+        }
+    }
+}
+

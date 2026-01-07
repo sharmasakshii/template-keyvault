@@ -1,0 +1,312 @@
+{
+    "bandRangeMockData": [
+        {
+            "band_name": "0-50",
+            "band_no": 1
+        },
+        {
+            "band_name": "50-150",
+            "band_no": 2
+        },
+        {
+            "band_name": "150-400",
+            "band_no": 3
+        },
+        {
+            "band_name": "400 and above",
+            "band_no": 4
+        }
+    ],
+    "CompanyBenchmarkDetailsMockData": {
+        "mileBands": {
+            "industry_intensity": 82.446134,
+            "company_intensity": 93.809595,
+            "industry_shipments": 731248,
+            "company_shipment": 29864,
+            "industry_lane_count": 77266,
+            "company_lane_count": 13234
+        },
+        "interModelIndex": {
+            "company_intermodal_index": 0.574592,
+            "intermodal_index": 0.338875
+        },
+        "alternateIndex": {
+            "company_alternate_index": 2.7,
+            "alternate_index": 2
+        }
+    },
+    "ttwCompanyBenchmarkDetailsMockData": {
+        "mileBands": {
+            "industry_intensity": 67.413628,
+            "company_intensity": 76.705356,
+            "industry_shipments": 731248,
+            "company_shipment": 29864,
+            "industry_lane_count": 77266,
+            "company_lane_count": 13234
+        },
+        "interModelIndex": {
+            "company_intermodal_index": 0.574592,
+            "intermodal_index": 0.338875
+        },
+        "alternateIndex": {
+            "company_alternate_index": 2.7,
+            "alternate_index": 2
+        }
+    },
+    "benchmarkEmissionTrendGraphData": [
+        {
+            "industry_intensity": 87.818405,
+            "company_intensity": 99.666459,
+            "month": "Jan",
+            "month_no": 1
+        }
+    ],
+    "benchmarkLaneTableMockData": {
+        "emissionIntensityLanes": [
+            {
+                "industrial_intensity": 75.8696,
+                "company_intensity": 39.874047,
+                "name": "BETHLEHEM,PA_NORTH BERGEN, NJ"
+            }
+        ],
+        "emissionIntensityAverage": {
+            "industrial_average": 93.809595
+        },
+        "pagination": {
+            "page": 0,
+            "page_size": 5,
+            "total_count": 3378
+        }
+    },
+    "benchmarkCarrierEmissionMockData": {
+        "intensity": {
+            "industry_intensity": 99.924254,
+            "company_intensity": 120.600694
+        },
+        "company_carrier": [
+            {
+                "name": "Riverside Transport",
+                "carrier_logo": "/images/company_logo/riverside-transportation.png",
+                "carrier": "RVTS",
+                "total_emission": 33.7916624159,
+                "emission_intensity": 94.800001,
+                "total_shipment": 63,
+                "SmartwayData": [
+                    {
+                        "code": "RVTS",
+                        "ranking": 2,
+                        "year": 2021
+                    },
+                    {
+                        "code": "RVTS",
+                        "ranking": 3,
+                        "year": 2020
+                    }
+                ]
+            }
+        ],
+        "industry_carrier": [
+            {
+                "name": "Riverside Transport",
+                "carrier_logo": "/images/company_logo/riverside-transportation.png",
+                "carrier": "RVTS",
+                "total_emission": 33.7916624159,
+                "emission_intensity": 94.800001,
+                "total_shipment": 63,
+                "SmartwayData": [
+                    {
+                        "code": "RVTS",
+                        "ranking": 2,
+                        "year": 2021
+                    },
+                    {
+                        "code": "RVTS",
+                        "ranking": 3,
+                        "year": 2020
+                    }
+                ]
+            }
+        ],
+        "pagination": {
+            "page": 5,
+            "page_size": 10,
+            "total_count": 150
+        }
+    },
+    "ttwbenchmarkEmissionTrendGraphData": [
+        {
+            "industry_intensity": 71.806375,
+            "company_intensity": 81.494342,
+            "month": "Jan",
+            "month_no": 1
+        }
+    ],
+    "ttwBenchmarkLaneTableMockData": {
+        "emissionIntensityLanes": [
+            {
+                "industrial_intensity": 62.036324,
+                "company_intensity": 32.603839,
+                "name": "BETHLEHEM,PA_NORTH BERGEN, NJ"
+            }
+        ],
+        "emissionIntensityAverage": {
+            "industrial_average": 76.705356
+        },
+        "pagination": {
+            "page": 0,
+            "page_size": 5,
+            "total_count": 3378
+        }
+    },
+    "ttwbenchmarkCarrierEmissionMockData": {
+        "intensity": {
+            "industry_intensity": 67.413628,
+            "company_intensity": 76.705356
+        },
+        "company_carrier": [
+            {
+                "name": "System Transport",
+                "carrier_logo": "/images/company_logo/system-transport-inc.png",
+                "carrier": "SYTP",
+                "total_emission": 206.4558513699,
+                "emission_intensity": 58.999999,
+                "total_shipment": 1240,
+                "SmartwayData": [
+                    {
+                        "code": "SYTP",
+                        "ranking": 1,
+                        "year": 2020
+                    },
+                    {
+                        "code": "SYTP",
+                        "ranking": 1,
+                        "year": 2021
+                    }
+                ]
+            }
+        ],
+        "industry_carrier": [
+            {
+                "name": "System Transport",
+                "carrier_logo": "/images/company_logo/system-transport-inc.png",
+                "carrier": "SYTP",
+                "total_emission": 206.4558513699,
+                "emission_intensity": 58.999999,
+                "total_shipment": 1240,
+                "SmartwayData": [
+                    {
+                        "code": "SYTP",
+                        "ranking": 1,
+                        "year": 2020
+                    },
+                    {
+                        "code": "SYTP",
+                        "ranking": 1,
+                        "year": 2021
+                    }
+                ]
+            }
+        ],
+        "pagination": {
+            "page": 0,
+            "page_size": 5,
+            "total_count": 144
+        }
+    },
+    "benchmarkRegionMockData": [
+        {
+            "region_name": "Northwest",
+            "slug": "northwest",
+            "id": 1
+        }
+    ],
+    "toogleHighBenchmarkLaneTableMockData": {
+        "emissionIntensityLanes": [
+            {
+                "industrial_intensity": 2686500.007657,
+                "company_intensity": 2686500.007657,
+                "name": "MILTON,PA_PITTSTON, PA"
+            }
+        ],
+        "emissionIntensityAverage": {
+            "industrial_average": 93.809595
+        },
+        "pagination": {
+            "page": 0,
+            "page_size": 5,
+            "total_count": 3378
+        }
+    },
+    "benchmarkToogleHighCarrierEmissionMockData": {
+        "intensity": {
+            "industry_intensity": 82.446134,
+            "company_intensity": 93.809595
+        },
+        "company_carrier": [
+            {
+                "name": "FedEx Ground",
+                "carrier_logo": "/images/company_logo/fedex-ground.png",
+                "carrier": "FDEG",
+                "total_emission": 0.071202408,
+                "emission_intensity": 467.975077,
+                "total_shipment": 37,
+                "SmartwayData": [
+                    {
+                        "code": "FDEG",
+                        "ranking": 1,
+                        "year": 2020
+                    },
+                    {
+                        "code": "FDEG",
+                        "ranking": 1,
+                        "year": 2021
+                    }
+                ]
+            }
+        ],
+        "industry_carrier": [
+            {
+                "name": "FedEx Ground",
+                "carrier_logo": "/images/company_logo/fedex-ground.png",
+                "carrier": "FDEG",
+                "total_emission": 0.071202408,
+                "emission_intensity": 467.975077,
+                "total_shipment": 37,
+                "SmartwayData": [
+                    {
+                        "code": "FDEG",
+                        "ranking": 1,
+                        "year": 2020
+                    },
+                    {
+                        "code": "FDEG",
+                        "ranking": 1,
+                        "year": 2021
+                    }
+                ]
+            }
+        ],
+        "pagination": {
+            "page": 0,
+            "page_size": 5,
+            "total_count": 144
+        }
+    },
+    "ttwHighBenchmarkLaneTableMockData": {
+        "emissionIntensityLanes": [
+            {
+                "industrial_intensity": 2196666.666666,
+                "company_intensity": 2196672.295418,
+                "name": "MILTON,PA_PITTSTON, PA"
+            }
+        ],
+        "emissionIntensityAverage": {
+            "industrial_average": 76.705356
+        },
+        "pagination": {
+            "page": 0,
+            "page_size": 5,
+            "total_count": 3378
+        }
+    }
+}

@@ -1,0 +1,178 @@
+{"businessOverviewCardsMockData" :{
+  "carrierDto": [
+    {
+      "intensity": 109,
+      "emissions": 155894.0801176486,
+      "shipment_count": 153162
+    }
+  ],
+  "businessUnit": {
+    "name": "QUAKER",
+    "description": "Quaker Food and Beverage"
+  }
+}, "ReductionOverviewEmissionsGraphMockData": {
+  "company_level": [232643.7, 261205.5, 258277, 102263.3],
+  "targer_level": [
+    102396.79093845506, 101271.5514775929, 100146.31201673076,
+    99021.07255586862, 97895.83309500648, 96770.59363414434, 95645.35417328219,
+    94520.11471242005
+  ],
+  "region_level": [155894.1, 170204.8, 173884, 66282.4],
+  "base_level": [226049.2],
+  "max": 271259,
+  "year": [2023, 2024]
+}, "ReductionOverviewIntensityGraphMockData": {
+  "company_level": [108.8, 110.1, 110.5, 111.3],
+  "targer_level": [
+    100.76597339995789, 99.65865501094737, 98.55133662193684, 97.44401823292631,
+    96.33669984391578, 95.22938145490525, 94.12206306589474, 93.0147446768842
+  ],
+  "region_level": [109, 108.8, 110.2, 112.8],
+  "base_level": [146.6],
+  "max": 175.9,
+  "year": [2023, 2024]
+}, "carrierTotalEmsissionGraphMockData": {
+  "contributor": [
+    {
+      "name": "CH Robinson",
+      "value": 19630.3,
+      "total_emission": 19656.607778189467,
+      "total_intensity": 98.99997784564088,
+      "shipment_count": 13866,
+      "color": "#d8856b"
+    }
+  ],
+  "detractor": [
+
+    {
+      "name": "S M G LOGISTICS INC",
+      "value": 25.8,
+      "total_emission": 0.481117465325,
+      "total_intensity": 143.5,
+      "shipment_count": 1,
+      "color": "#215254"
+    }
+  ],
+  "unit": "tCO2e",
+  "average": 26.3
+}, "carrierEmissionIntensityGraphMockData": {
+  "contributor": [
+    {
+      "name": "CPQF",
+      "value": 36.1,
+      "total_emission": 77.3449254032,
+      "total_intensity": 143.5,
+      "shipment_count": 896,
+      "color": "#929597"
+    }
+  ],
+  "detractor": [
+    {
+      "name": "American Central Transport",
+      "value": 35.9,
+      "total_emission": 134.21994123394998,
+      "total_intensity": 71.49999999999999,
+      "shipment_count": 164,
+      "color": "#929597"
+    }
+  ],
+  "unit": "g",
+  "average": 107.4
+}, "laneTotalEmissionGraphMockData": {
+  "contributor": [
+    {
+      "name": "TACOMA, WA_LANCASTER, TX",
+      "value": 3009.3,
+      "total_emission": 3010.342444567,
+      "total_intensity": 140.187803,
+      "shipment_count": 470,
+      "color": "#d8856b"
+    }
+  ],
+  "detractor": [
+    {
+      "name": "CARLISLE, PA_CARLISLE, PA",
+      "value": 1.1,
+      "total_emission": 0,
+      "total_intensity": null,
+      "shipment_count": 7,
+      "color": "#929597"
+    }
+  ],
+  "unit": "tCO2e",
+  "average": 1.1,
+  "pagination": {
+    "page": 0,
+    "page_size": 10,
+    "total_count": 10
+  }
+}, "laneEmissionIntensityGraphMockData": {
+  "data": {
+    "contributor": [
+      {
+        "name": "ADDISON, IL_HANOVER TOWNSHIP, PA",
+        "value": 37.3,
+        "total_emission": 78.866061393,
+        "total_intensity": 143.5,
+        "shipment_count": 43,
+        "color": "#d8856b"
+      }    
+    ],
+    "detractor": [
+      {
+        "name": "ATLANTA, GA_BURLINGTON, NC",
+        "value": 76.2,
+        "total_emission": 0.204076692,
+        "total_intensity": 30,
+        "shipment_count": 1,
+        "color": "#929597"
+      }
+    ],
+    "unit": "g",
+    "average": 106.2,
+    "pagination": {
+      "page": 0,
+      "page_size": 10,
+      "total_count": 10
+    }
+  }
+}, "regionEmissionGraphMockData": {
+  "contributor": [
+    {
+      "name": "QFB",
+      "value": 88391.2,
+      "color": "#d8856b"
+    },
+    {
+      "name": "OTHERS",
+      "value": 36054.1,
+      "color": "#929597"
+    }
+  ],
+  "detractor": [
+    {
+      "name": "PBC",
+      "value": 9915.3,
+      "color": "#929597"
+    }    
+  ],
+  "unit": "tCO2e",
+  "average": 12991.2
+}, "regionIntensityGraphMockData" :{
+  "contributor": [
+    {
+      "name": "PTRA",
+      "value": 36.6,
+      "color": "#d8856b"
+    }
+  ],
+  "detractor": [
+    {
+      "name": "PFG",
+      "value": 0,
+      "color": "#929597"
+    }
+  ],
+  "unit": "g",
+  "average": 106.9
+}}

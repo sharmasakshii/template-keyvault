@@ -1,0 +1,36 @@
+jobs:
+- job: Build_and_Deploy
+  displayName: "Build & Deploy Frontend"
+  steps:
+
+  - task: NodeTool@0
+    displayName: "Install Node.js"
+    inputs:
+      versionSpec: '20.15.0'
+
+  # 🔴 React env vars MUST be here (build time)
+  - script: |
+      npm install
+      npm run build
+    displayName: "Build App"
+    env:
+      REACT_APP_BASE_URL: $(REACT_APP_BASE_URL)
+      REACT_APP_EN_KEY: $(REACT_APP_EN_KEY)
+      REACT_APP_GOOGLE_API_KEY: $(REACT_APP_GOOGLE_API_KEY)
+      REACT_APP_BASE_URL_ASSET: $(REACT_APP_BASE_URL_ASSET)
+      REACT_APP_BASE_URL_ASSET_TOKEN: $(REACT_APP_BASE_URL_ASSET_TOKEN)
+      REACT_APP_INGETION_URL: $(REACT_APP_INGETION_URL)
+      REACT_APP_DOMAIN_URL: $(REACT_APP_DOMAIN_URL)
+      REACT_APP_PROGRESS_TIME: $(REACT_APP_PROGRESS_TIME)
+      REACT_APP_BASE_URL_CHATBOT: $(REACT_APP_BASE_URL_CHATBOT)
+      GENERATE_SOURCEMAP: $(GENERATE_SOURCEMAP)
+      REACT_APP_IS_DEV: $(REACT_APP_IS_DEV)
+
+  # ✅ Correct app_location (THIS FIXES YOUR ERROR)
+  - task: AzureStaticWebApp@0
+    displayName: "Deploy to Azure Static Web App"
+    inputs:
+      app_location: 'build'
+      skip_app_build: true
+      skip_api_build: true
+      azure_static_web_apps_api_token: $(STATIC_WEB_APP_TOKEN)

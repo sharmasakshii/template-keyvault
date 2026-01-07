@@ -1,0 +1,97 @@
+trigger:
+  - qa
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+pr: none
+
+stages:
+- stage: Quality_and_Functional_check
+  displayName: Quality_and_Functional_check 
+  jobs:  
+  - job: Quality_and_Functional_check
+    displayName: Quality_and_Functional_check
+    steps:
+    - bash: echo "##vso[task.setvariable variable=PROJECT_VERSION]$(cat ./package.json | jq -r .version)"
+      displayName: Set new variable value
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '20.15.0'
+      displayName: 'Install Node.js'
+
+    - script: |
+          npm install
+          npm run test
+      displayName: 'Excuting Test Cases'
+      
+    - task: PublishCodeCoverageResults@2
+      inputs:
+        summaryFileLocation: 'coverage/clover.xml'
+      displayName: 'Publish Code Coverage'
+
+    - task: SonarQubePrepare@6
+      condition: ne(variables['skipSonar'], 'true')  # Skip if skipSonar is true
+      inputs:
+        SonarQube: 'Sonar Service Connection'
+        scannerMode: 'CLI'
+        configMode: 'manual'
+        cliProjectKey: $(SONAR_PROJECT_KEY)
+        cliProjectName: $(SONAR_PROJECT_NAME)
+        cliSources: '.'
+        extraProperties: |
+            sonar.javascript.lcov.reportPaths=./coverage/lcov.info
+            sonar.exclusions=**/*.test.tsx,**/*.test.ts,src/scss/**,src/interface/**
+            sonar.projectVersion=$(PROJECT_VERSION)
+            sonar.qualitygate.wait=true
+            
+    - task: SonarQubeAnalyze@6
+      condition: ne(variables['skipSonar'], 'true')  # Skip if skipSonar is true
+      inputs:
+        jdkversion: 'JAVA_HOME_21_X64'
+    
+    - task: SonarQubePublish@6
+      condition: ne(variables['skipSonar'], 'true')  # Skip if skipSonar is true
+      inputs:
+        pollingTimeoutSec: '300'
+
+
+- stage: Build_and_Deploy 
+  displayName:  Build_and_Deploy  
+  jobs:  
+  - job:  Build_and_Deploy 
+    displayName:  Build_and_Deploy 
+    steps:
+    
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '20.15.0'
+      displayName: 'Install Node.js'
+
+    - script: |
+        npm install
+        npm run build
+      displayName: 'Build App'
+    
+    - task: AzureStaticWebApp@0
+      inputs:
+        app_location: '/build'
+        skip_app_build: true
+        skip_api_build: true
+        azure_static_web_apps_api_token: '$(STATIC_WEB_APP_TOKEN)'
+      env:
+        REACT_APP_BASE_URL: $(REACT_APP_BASE_URL)
+        REACT_APP_EN_KEY: $(REACT_APP_EN_KEY)
+        REACT_APP_GOOGLE_API_KEY: $(REACT_APP_GOOGLE_API_KEY)
+        REACT_APP_BASE_URL_ASSET: $(REACT_APP_BASE_URL_ASSET)
+        REACT_APP_BASE_URL_ASSET_TOKEN: $(REACT_APP_BASE_URL_ASSET_TOKEN)
+        REACT_APP_DUMMY_EMAIL: $(REACT_APP_DUMMY_EMAIL)
+        REACT_APP_DUMMY_PASSWORD: $(REACT_APP_DUMMY_PASSWORD)
+        REACT_APP_INGETION_URL: $(REACT_APP_INGETION_URL)
+        REACT_APP_DOMAIN_URL: $(REACT_APP_DOMAIN_URL)
+        REACT_APP_PROGRESS_TIME: $(REACT_APP_PROGRESS_TIME)
+        REACT_APP_BASE_URL_CHATBOT: $(REACT_APP_BASE_URL_CHATBOT)
+        REACT_APP_BASE_URL_CA: $(REACT_APP_BASE_URL_CA)
+        REACT_APP_NODE_PREFIX: $(REACT_APP_NODE_PREFIX)
+        GENERATE_SOURCEMAP: $(GENERATE_SOURCEMAP)
+        REACT_APP_IS_DEV: $(REACT_APP_IS_DEV)

@@ -1,0 +1,30 @@
+@import "../config/variable.module";
+
+
+.facility-screen {
+    .facility-screen-wraper {
+        .disabled-button{
+            color: $gray-700;
+            font-size: 0.875rem;
+            opacity: 0.5;
+            font-weight: 400 !important
+        }
+        .facility-section {
+            .mainGrayCards {
+                .regionWiseTxt {
+                    h6 {
+                        font-size: 0.875rem;
+                        span {
+                            font-size: 0.875rem;
+                            padding-left: 3px;
+                        }
+                    }
+                }       
+            }
+            th:last-child,
+            td:last-child {
+                width: auto;
+            }
+        }
+    }
+}

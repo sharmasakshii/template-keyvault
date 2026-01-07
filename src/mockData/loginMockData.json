@@ -1,0 +1,59 @@
+{
+    "loginMockData": {
+        "status": true,
+        "message": "User Logged In Successfully.",
+        "data": {
+            "id": 5,
+            "email": "chris.cassell@lowes.com",
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjo1LCJuYW1lIjoiY2hyaXMgY2Fzc2VsIiwiZW1haWwiOiJjaHJpcy5jYXNzZWxsQGxvd2VzLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEyJG9Uei9GeHNsT28wLllPbDU2R2pZSU9TSHZ4Y0c1MmRrc1Z5bW1YUjNEWU1DTUtnTUZXb3UuIiwicm9sZSI6NCwic3RhdHVzIjoxLCJsb2dpbl9jb3VudCI6NzQ4LCJyZWdpb25faWQiOjAsImlzX2Jsb2NrZWQiOjAsImJsb2NrZWRfdGltZSI6bnVsbCwiYmxvY2tlZF9vbiI6bnVsbCwiaXNfZGVsZXRlZCI6ZmFsc2UsInVwZGF0ZWRfYnkiOm51bGwsImNyZWF0ZWRBdCI6IjIwMjMtMDgtMzFUMDk6MDA6MTQuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDItMTJUMDk6MDU6NTAuNDQ1WiIsInByb2ZpbGUiOnsiZmlyc3RfbmFtZSI6ImNocmlzIiwibGFzdF9uYW1lIjoiY2Fzc2VsIiwiY291bnRyeV9jb2RlIjoiIiwiaW1hZ2UiOiIvaW1hZ2VzL3Byb2ZpbGUvaW1hZ2UtMTcwNjg1NTI5ODkwNC5qcGciLCJwaG9uZV9udW1iZXIiOiIifSwiY29tcGFuaWVzIjpbeyJuYW1lIjoiTG93ZXMiLCJkYl9hbGlhcyI6Imxvd2VzIiwibG9nbyI6Ii9pbWFnZXMvY29tcGFueV9sb2dvL0xvd2VzLUxvZ28ucG5nIiwic2x1ZyI6IkxXIiwiVXNlckNvbXBhbnkiOnsiY29tcGFueV9pZCI6MSwidXNlcl9pZCI6NSwiY3JlYXRlZEF0IjoiMjAyMy0wOC0zMVQwOTowNjoyMy4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wOC0zMVQwOTowNjoyMy4wMDBaIn19XX0sImlhdCI6MTcwNzcyODc1MCwiZXhwIjoxNzA3NzcxOTUwfQ.HumvxkYkpn_GPjWQOXtZNEa-1n9UyHh6ctJgW37qSD8",
+            "name": "chris cassel",
+            "role": 4,
+            "login_count": 748,
+            "profile": {
+                "first_name": "chris",
+                "last_name": "cassel",
+                "country_code": "",
+                "image": "/images/profile/image-1706855298904.jpg",
+                "phone_number": ""
+            },
+            "region_id": 0,
+            "Company": {
+                "name": "Lowes",
+                "db_alias": "lowes",
+                "logo": "/images/company_logo/Lowes-Logo.png",
+                "slug": "LW",
+                "UserCompany": {
+                    "company_id": 1,
+                    "user_id": 5,
+                    "createdAt": "2023-08-31T09:06:23.000Z",
+                    "updatedAt": "2023-08-31T09:06:23.000Z"
+                }
+            },
+            "is_password_expired": 0,
+            "password_reset_days": 0
+        }
+    },
+    "userProfileMockData": {
+        "email": "pepsi.tester@pepsi.com",
+        "profile": {
+            "first_name": "pepsi",
+            "last_name": "test",
+            "country_code": "1",
+            "image": null,
+            "phone_number": "",
+            "title": null
+        },
+        "Company": {
+            "name": "Pepsi",
+            "db_alias": "pepsi",
+            "logo": "/images/company_logo/pepsico.png",
+            "slug": "PEP",
+            "is_onboarded": true,
+            "UserCompany": {
+                "company_id": 3,
+                "user_id": 81
+            }
+        },
+        "scope_1": true
+    }
+}

@@ -1,0 +1,404 @@
+{
+    "fileListMockData": {
+        "path": [
+            {
+                "type": "folder",
+                "name": "Test_dev",
+                "base_path": "/",
+                "id": 88,
+                "updated_on": "2024-11-21T06:48:09.377Z",
+                "user_id": 55,
+                "fileStatus": {
+                    "status_name": "Uploaded",
+                    "status_code": 2
+                },
+                "user": {
+                    "first_name": "test user",
+                    "last_name": "four",
+                    "user_id": 55
+                }
+            },
+            {
+                "type": "folder",
+                "name": "Dev_Test",
+                "base_path": "/",
+                "id": 87,
+                "updated_on": "2024-11-13T11:49:14.223Z",
+                "user_id": 55,
+                "fileStatus": {
+                    "status_name": "Uploaded",
+                    "status_code": 2
+                },
+                "user": {
+                    "first_name": "test user",
+                    "last_name": "four",
+                    "user_id": 55
+                }
+            },
+            {
+                "type": "folder",
+                "name": "Test 345",
+                "base_path": "/",
+                "id": 86,
+                "updated_on": "2024-09-17T10:26:52.987Z",
+                "user_id": 11,
+                "fileStatus": {
+                    "status_name": "Uploaded",
+                    "status_code": 2
+                },
+                "user": {
+                    "first_name": "Blob",
+                    "last_name": "Pepsicos",
+                    "user_id": 11
+                }
+            },
+            {
+                "type": "folder",
+                "name": "dsjfksdjf %% klsfkl **",
+                "base_path": "/",
+                "id": 82,
+                "updated_on": "2024-09-11T09:19:55.120Z",
+                "user_id": 11,
+                "fileStatus": {
+                    "status_name": "Uploaded",
+                    "status_code": 2
+                },
+                "user": {
+                    "first_name": "Blob",
+                    "last_name": "Pepsicos",
+                    "user_id": 11
+                }
+            },
+            {
+                "type": "folder",
+                "name": "%%NMDJD",
+                "base_path": "/",
+                "id": 81,
+                "updated_on": "2024-09-09T09:39:16.737Z",
+                "user_id": 11,
+                "fileStatus": {
+                    "status_name": "Uploaded",
+                    "status_code": 2
+                },
+                "user": {
+                    "first_name": "Blob",
+                    "last_name": "Pepsicos",
+                    "user_id": 11
+                }
+            },
+            {
+                "type": "folder",
+                "name": "New test ",
+                "base_path": "/",
+                "id": 61,
+                "updated_on": "2024-08-15T13:30:20.733Z",
+                "user_id": 11,
+                "fileStatus": {
+                    "status_name": "Uploaded",
+                    "status_code": 2
+                },
+                "user": {
+                    "first_name": "Blob",
+                    "last_name": "Pepsicos",
+                    "user_id": 11
+                }
+            },
+            {
+                "type": "folder",
+                "name": "test",
+                "base_path": "/",
+                "id": 55,
+                "updated_on": "2024-08-15T12:37:31.483Z",
+                "user_id": 11,
+                "fileStatus": {
+                    "status_name": "Uploaded",
+                    "status_code": 2
+                },
+                "user": {
+                    "first_name": "Blob",
+                    "last_name": "Pepsicos",
+                    "user_id": 11
+                }
+            },
+            {
+                "type": "folder",
+                "name": "bid_planning",
+                "base_path": "/",
+                "id": 5,
+                "updated_on": "2024-11-14T05:23:00.760Z",
+                "user_id": 11,
+                "fileStatus": {
+                    "status_name": "Uploaded",
+                    "status_code": 2
+                },
+                "user": {
+                    "first_name": "Blob",
+                    "last_name": "Pepsicos",
+                    "user_id": 11
+                }
+            },
+            {
+                "type": "file",
+                "name": "1727426874807_bid_sample_file (1).xlsx",
+                "base_path": "/",
+                "id": 90,
+                "updated_on": "2024-12-06T09:46:12.187Z",
+                "user_id": 55,
+                "fileStatus": {
+                    "status_name": "Analyzed",
+                    "status_code": 5
+                },
+                "user": {
+                    "first_name": "test user",
+                    "last_name": "four",
+                    "user_id": 55
+                }
+            },
+            {
+                "type": "file",
+                "name": "bid_sample_file (12).xlsx",
+                "base_path": "/",
+                "id": 85,
+                "updated_on": "2024-09-27T09:05:58.900Z",
+                "user_id": 11,
+                "fileStatus": {
+                    "status_name": "Analyzed",
+                    "status_code": 5
+                },
+                "user": {
+                    "first_name": "Blob",
+                    "last_name": "Pepsicos",
+                    "user_id": 11
+                }
+            },
+            {
+                "type": "file",
+                "name": "bid_sample_file_uploaded (12).xlsx",
+                "base_path": "/",
+                "id": 34,
+                "updated_on": "2024-09-27T09:05:58.900Z",
+                "user_id": 11,
+                "fileStatus": {
+                    "status_name": "Uploading",
+                    "status_code": 6
+                },
+                "user": {
+                    "first_name": "Blob",
+                    "last_name": "Pepsicos",
+                    "user_id": 11
+                }
+            }
+        ],
+        "failed_count": 20,
+        "pagination": {
+            "page": 0,
+            "page_size": 10,
+            "total_count": 200
+        }
+    },
+    "fileStatusListMockData": [
+        {
+            "status_name": "Cancelled",
+            "id": 1
+        },
+        {
+            "status_name": "Uploaded",
+            "id": 2
+        },
+        {
+            "status_name": "Ingested",
+            "id": 3
+        },
+        {
+            "status_name": "Failed",
+            "id": 4
+        },
+        {
+            "status_name": "Analyzed",
+            "id": 5
+        },
+        {
+            "status_name": "Uploading",
+            "id": 6
+        },
+        {
+            "status_name": "Partially Ingested",
+            "id": 7
+        },
+        {
+            "status_name": "Ingestion Failed",
+            "id": 9
+        }
+    ],
+    "folderListMockData": [
+        {
+            "base_path": "/"
+        },
+        {
+            "base_path": "bid_planning/"
+        },
+        {
+            "base_path": "test/"
+        },
+        {
+            "base_path": "New test /"
+        },
+        {
+            "base_path": "%%NMDJD/"
+        },
+        {
+            "base_path": "dsjfksdjf %% klsfkl **/"
+        },
+        {
+            "base_path": "Test 345/"
+        },
+        {
+            "base_path": "Dev_Test/"
+        },
+        {
+            "base_path": "Test_dev/"
+        }
+    ],
+    "fileLogListMockData": [
+        {
+            "file_management_id": 90,
+            "created_on": "2025-02-11T08:52:39.333Z",
+            "fileManagement": {
+                "type": "file",
+                "name": "1727426874807_bid_sample_file (1).xlsx",
+                "base_path": "/",
+                "id": 90
+            },
+            "status": {
+                "status_name": "Analyzed",
+                "id": 5
+            }
+        },
+        {
+            "file_management_id": 90,
+            "created_on": "2025-02-11T08:52:24.243Z",
+            "fileManagement": {
+                "type": "file",
+                "name": "1727426874807_bid_sample_file (1).xlsx",
+                "base_path": "/",
+                "id": 90
+            },
+            "status": {
+                "status_name": "Analyzed",
+                "id": 5
+            }
+        },
+        {
+            "file_management_id": 90,
+            "created_on": "2024-12-06T09:46:12.430Z",
+            "fileManagement": {
+                "type": "file",
+                "name": "1727426874807_bid_sample_file (1).xlsx",
+                "base_path": "/",
+                "id": 90
+            },
+            "status": {
+                "status_name": "Analyzed",
+                "id": 5
+            }
+        },
+        {
+            "file_management_id": 90,
+            "created_on": "2024-12-06T09:36:39.270Z",
+            "fileManagement": {
+                "type": "file",
+                "name": "1727426874807_bid_sample_file (1).xlsx",
+                "base_path": "/",
+                "id": 90
+            },
+            "status": {
+                "status_name": "Analyzed",
+                "id": 5
+            }
+        },
+        {
+            "file_management_id": 90,
+            "created_on": "2024-12-06T09:36:16.787Z",
+            "fileManagement": {
+                "type": "file",
+                "name": "1727426874807_bid_sample_file (1).xlsx",
+                "base_path": "/",
+                "id": 90
+            },
+            "status": {
+                "status_name": "Analyzed",
+                "id": 5
+            }
+        },
+        {
+            "file_management_id": 90,
+            "created_on": "2024-12-06T09:30:39.750Z",
+            "fileManagement": {
+                "type": "file",
+                "name": "1727426874807_bid_sample_file (1).xlsx",
+                "base_path": "/",
+                "id": 90
+            },
+            "status": {
+                "status_name": "Analyzed",
+                "id": 5
+            }
+        },
+        {
+            "file_management_id": 90,
+            "created_on": "2024-12-06T09:24:21.327Z",
+            "fileManagement": {
+                "type": "file",
+                "name": "1727426874807_bid_sample_file (1).xlsx",
+                "base_path": "/",
+                "id": 90
+            },
+            "status": {
+                "status_name": "Analyzed",
+                "id": 5
+            }
+        },
+        {
+            "file_management_id": 90,
+            "created_on": "2024-12-06T09:19:45.223Z",
+            "fileManagement": {
+                "type": "file",
+                "name": "1727426874807_bid_sample_file (1).xlsx",
+                "base_path": "/",
+                "id": 90
+            },
+            "status": {
+                "status_name": "Analyzed",
+                "id": 5
+            }
+        },
+        {
+            "file_management_id": 90,
+            "created_on": "2024-12-06T09:12:59.050Z",
+            "fileManagement": {
+                "type": "file",
+                "name": "1727426874807_bid_sample_file (1).xlsx",
+                "base_path": "/",
+                "id": 90
+            },
+            "status": {
+                "status_name": "Analyzed",
+                "id": 5
+            }
+        },
+        {
+            "file_management_id": 90,
+            "created_on": "2024-09-27T08:57:57.213Z",
+            "fileManagement": {
+                "type": "file",
+                "name": "1727426874807_bid_sample_file (1).xlsx",
+                "base_path": "/",
+                "id": 90
+            },
+            "status": {
+                "status_name": "Uploaded",
+                "id": 2
+            }
+        }
+    ]
+}
