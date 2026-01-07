@@ -24,16 +24,16 @@ stages:
 # # =========================================================
 # # BUILD & PUSH  
 # # =========================================================
-# - stage: Build_And_Push
-#   displayName: "Build & Push Image"
-#   dependsOn: Quality
-#   jobs:
-#     - template: templates/docker_build_and_push.yml
-#       parameters:
-#         acrname: $(ACR_NAME)
-#         acrrepository: $(ACR_REPOSITORY)
-#         apiversion: $(API_VERSION)
-#         dockerfilePath: $(DOCKERFILE_PATH)
+- stage: Build_And_Push
+  displayName: "Build & Push Image"
+  dependsOn: Quality
+  jobs:
+    - template: templates/docker_build_and_push.yml
+      parameters:
+        acrname: $(ACR_NAME)
+        acrrepository: $(ACR_REPOSITORY)
+        apiversion: $(API_VERSION)
+      
 
 
 # # =========================================================
