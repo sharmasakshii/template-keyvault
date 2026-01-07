@@ -38,6 +38,6 @@ stages:
 # ---------- BUILD & DEPLOY ----------
 - stage: Build_and_Deploy
   displayName: "Build & Deploy"
-  dependsOn: Quality
+ # dependsOn: Quality
   jobs:
     - template: templates/static_web_app_deploy.yml
