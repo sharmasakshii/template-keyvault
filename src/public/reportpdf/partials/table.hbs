@@ -1,0 +1,45 @@
+<div class="outer-section">
+    <div class="section-title">{{title}}</div>
+    <div class="{{containClass}}">
+        <table>
+            <caption class="table-caption">{{dateRange}}</caption>
+            <thead>
+                <tr>
+                    {{#each headers}}
+                    <th>{{this}}</th>
+                    {{/each}}
+                </tr>
+            </thead>
+            <tbody>
+                {{#each rows}}
+                <tr>
+                    {{#each ../headers}}
+                    <td>
+                        {{#if (eq this 'SCAC')}}
+                        <div class="company-logo">
+                            <div class="image-outer">
+                                {{#if (isEmpty (lookup ../this 'carrier_logo'))}}
+                                <!-- Display first two letters of SCAC if carrier_logo is empty -->
+                                <div class="image-txt">
+                                    {{substring (lookup ../this 'scac') 0 2}}
+                                </div>
+                                {{else}}
+                                <!-- Display logo if carrier_logo is not empty -->
+                                <img src="{{lookup ../this 'carrier_logo'}}" alt="logo" />
+                                {{/if}}
+                            </div>
+                            {{lookup ../this 'scac'}}
+                        </div>
+                        {{else}}
+                        <!-- Default case for other headers -->
+                        {{lookup ../this (toLowerCase this)}}
+                        {{/if}}
+                    </td>
+                    {{/each}}
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    {{> footer }}
+</div>

@@ -1,0 +1,78 @@
+trigger:
+  - qa
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+pr: none
+
+variables:
+  ACR_NAME: "gsacrregistoryqaeastus001"
+  ACR_REPOSITORY: "gs-backend-qa-001"
+  API_VERSION: "1.0.$(Build.BuildId)"
+
+
+
+stages:
+
+# ---------- QUALITY ----------
+- stage: Quality
+  displayName: "Quality Checks + Sonar"
+  jobs:
+  - template: templates/test_cases.yml
+
+# ---------- BUILD & PUSH ----------
+- stage: Build_And_Push
+  displayName: "Build & Push Image"
+  dependsOn: Quality
+  jobs:
+  - template: templates/docker_build_and_push.yml
+    parameters:
+      acrname: $(ACR_NAME)
+      acrrepository: $(ACR_REPOSITORY)
+      apiversion: $(API_VERSION)
+      dockerfilePath: $(DOCKERFILE_PATH)
+
+# ---------- TRIVY SCAN ----------
+- stage: Trivy_Scan
+  displayName: "Security Scan (Trivy)"
+  dependsOn: Build_And_Push
+  jobs:
+  - template: templates/trivy.yml
+    parameters:
+      acrname: $(ACR_NAME)
+      acrrepository: $(ACR_REPOSITORY)
+      apiversion: $(API_VERSION)
+
+# ---------- DEPLOY ----------
+- stage: Deploy
+  displayName: "Deploy to QA"
+  dependsOn: Trivy_Scan
+  jobs:
+  - template: templates/container_app_deploy.yml
+    parameters:
+      acrname: $(ACR_NAME)
+      image: "$(ACR_NAME).azurecr.io/$(ACR_REPOSITORY):$(API_VERSION)"
+      containerapp: $(CONTAINER_APP_NAME)
+      rgName: $(RG_NAME)
+
+# ---------- POST DEPLOY ----------
+- stage: PostDeploy
+  displayName: "Post Deployment Tasks"
+  dependsOn: Deploy
+  jobs:
+  - job: PostDeploy
+    displayName: "Run APIM updates"
+    steps:
+    - script: echo "Post-Deployment started..."
+      displayName: "Initialization step"
+
+    - task: AzureCLI@2
+      displayName: "Run APIM updates"
+      inputs:
+        azureSubscription: "Azure Service Manager Endpoint"
+        scriptType: bash
+        scriptLocation: inlineScript
+        inlineScript: |
+          sleep 30
+          $(APIMUPDATES)

@@ -1,37 +1,118 @@
+# 🌍 Greensight_Backend
 
-﻿# Project Info
-## Project Name: Greensight_Frontend
+## 📌 General Information
 
-## General Information
-**Project Details:** GreenSight helps organizations reduce their carbon footprint through data-driven shipping optimizations. Seamlessly integrated, it provides automated recommendations for sustainable decisions.
+* **Framework**: Express.js
+* **Language**: TypeScript
+* **Database**: Microsoft SQL Server (MSSQL)
+* **ORM**: Sequelize
+* **Authentication**: JWT / OAuth with cookies
+* **Testing**: Jest
+* **Node.js Version**: `20.15.0`
 
-## Technologies Used
-- Node.js
-- TypeScript
-- Redux store manegment
-- SonarQube
+---
 
-## Features
-The application consists of several key functional areas, which are outlined below:
-- Reporting emissions usage across various criteria for a specific organization
-- Recommending alternate distribution channels to reduce overall emissions
-- Creating actionable projects based on recommendations or user analysis to track the impact of adjustments
+## 🚀 Features
 
-# Setup
-## Setup Info
-- Node.js version 18.17
-- Run `npm install` inside the root directory
+* RESTful API design with Express & TypeScript
+* **Authentication & Authorization** using JWT/OAuth with cookies
+* MSSQL database integration with Sequelize ORM
+* Centralized error handling & validation
+* Unit and integration testing with Jest
+* Secure environment variable management
+* Scalable project structure for enterprise readiness
 
-## Steps
-1. Copy `.env.example` file into `.env` and update the local values.
-2. Run the `npm start` command to run the react app.
+---
 
-# Usage
-## Testing Added Code
-- Test cases for the frontend are located in the `test` folder at the root of the structure.
-- To test cases, use the `npm test` command.
+## 📂 Project Structure
 
-# Contact
-- For environment variables: [Kumar Deepak](mailto:KumarNiraj@mooglelabs.com)
-- For access-related concerns: [Singh Paramveer](mailto:singhparamveer@mooglelabs.com)
-- Repo owner: [Singh Paramveer](mailto:singhparamveer@mooglelabs.com)
+```
+greensight-backend/
+│-- src/
+│   │-- controllers/     # API request handlers
+│   │-- routes/          # Route definitions
+│   │-- models/          # Sequelize models
+│   │-- middlewares/     # Auth & error middlewares
+│   │-- services/        # Business logic layer
+│   │-- utils/           # Helper functions
+│   └-- app.ts           # App entry point
+│
+│-- tests/               # Jest test cases
+│-- .env.example         # Example environment variables
+│-- package.json
+│-- tsconfig.json
+│-- README.md
+```
+
+---
+
+## ⚙️ Setup & Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/Scope23-GreenSight/greensight_backend_ca.git
+   cd greensight_backend_ca
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Setup environment variables**
+
+   * Copy `.env.example` to `.env`
+   * Update values for:
+
+     * Database connection (MSSQL)
+     * JWT secret key
+     * OAuth client details
+     * Cookie/session settings
+
+
+4. **Start the server**
+
+   ```bash
+   npm run dev   # Development mode
+   npm start     # build
+   ```
+
+---
+
+## 🧪 Testing
+
+* Test framework: **Jest**
+* Location: `tests/` directory
+
+Run tests:
+
+```bash
+npm test
+```
+
+Generate coverage:
+
+```bash
+npm run test:coverage
+```
+
+---
+
+
+## 👨‍💻 Contributing
+
+1. Fork the repo
+2. Create a feature branch (`git checkout -b feature/GD-ticket-number`)
+3. Commit changes (`git commit -m "Added new feature"`)
+4. Push branch (`git push origin feature/GD-ticket-number`)
+5. Open a Pull Request
+
+---
+
+## 📞 Contact
+
+* **Environment Variables**: Vikrant
+* **Access-related Concerns**: Singh Paramveer
+* **Repository Owner**: Singh Paramveer

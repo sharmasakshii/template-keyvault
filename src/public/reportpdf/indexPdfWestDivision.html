@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi West Division Emissions Report</title>
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            color: #3e3e3e;
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer-section {
+            margin: 0 auto;
+            width: 98%;
+            max-width: 1200px;
+        }
+
+        .header .logo {
+            height: 40px;
+            vertical-align: middle;
+            margin-right: 10px;
+            position: absolute;
+            top: 10px;
+            left: 18px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+            vertical-align: middle;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 20px;
+            margin: 0px 0 10px;
+            color: #000;
+            font-weight: 600;
+            padding-top: 24px;
+        }
+
+        .subsection-title {
+            text-align: center;
+            font-size: 14px;
+            color: #3e3e3e;
+            margin: 0 0 8px;
+            font-weight: 500;
+        }
+
+        .table-container {
+            margin: 0 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            font-size: 12px;
+        }
+
+        tr {
+            border-bottom: 1px solid #192B4F33;
+        }
+
+        th {
+
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        .logo {
+            width: 90px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 8px;
+            object-fit: contain;
+        }
+
+        .company-logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .company-logo img {
+            max-height: 20px;
+            max-width: 80px;
+            object-fit: contain;
+        }
+
+        .footer {
+            background-color: #215154;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .image-outer  {
+            width: 80px;
+            max-height: 25px;
+        }
+
+        .image-outer img{
+            max-width: 70px;
+            max-height: 37px;
+            object-fit: contain;
+        }
+
+        .image-txt {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #215154;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .new-page {
+            page-break-before: always;
+        }
+
+        .no-break {
+            page-break-inside: avoid;
+        }
+
+        .break-after {
+            page-break-after: always;
+        }
+
+        .header-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .background-img {
+            position: relative;
+            width: 100%;
+            height: 130px;
+        }
+
+        .bg-heading {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            color: white;
+            z-index: 9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overview-section {
+            background-color: #F7F7F7;
+            border-radius: 16px;
+            padding: 30px;
+            margin: 30px;
+        }
+
+        .color-green {
+            color: #215154;
+        }
+
+        .overview-section h5 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 22px;
+            margin-bottom: 0px;
+        }
+
+        .overview-section li {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        .overview-section li span {
+            font-weight: 600;
+        }
+
+        .overview-section h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 0px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .overview-section ol{
+            margin-top: 8px;
+        }
+
+        .graph-padding {
+          padding: 0px 30px;
+        }
+
+        .graph-padding .section-title{
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .table-caption{
+            margin-bottom: 16px;
+        }
+
+        .carrierName{
+            padding-left: 8px;
+        }
+
+        .top-lanes table th:nth-child(3){
+         width: 100px;
+        }
+        .top-lanes table td:nth-child(3){
+         width: 100px;
+        }
+        .top-lanes table tr td:first-child {
+            padding-left: 30px;
+        }
+        
+        .top-lanes table tr th:first-child {
+            padding-left: 30px;
+        }
+
+        .top-carriers table th:nth-child(4){
+         width: 100px;
+        }
+        .top-carriers table td:nth-child(4){
+         width: 100px;
+        }
+        .top-carriers table th:nth-child(3){
+         width: 80px;
+        }
+        .top-carriers table td:nth-child(3){
+         width: 80px;
+        }
+        .top-carriers table tr td:first-child {
+            padding-left: 30px;
+        }
+        
+        .top-carriers table tr th:first-child {
+            padding-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    {{> header }}
+    <div class="break-after">
+        <!-- Overview of Metrics and Rankings -->
+        <div class='overview-section'>
+            <h2>Overview of Metrics and Rankings</h2>
+
+            <div>
+                <h5 class="color-green">Metrics</h5>
+                <div>
+                    <ol>
+                        <li>
+                            <span>Volume: </span> The Total volume represents the number of shipments.
+                        </li>
+                        <li>
+                            <span>Emissions (CO2e): </span> Total greenhouse gas emissions in metric tons.
+                        </li>
+                        <li>
+                            <span>Avg. Emissions Intensity (gCO2e/Ton-Mile): </span> Sum of Emissions /
+                            (shipment weight × distance travelled).
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div>
+                <h5 class="color-green">Ranking Criteria</h5>
+                <div>
+                    <ol>
+                        <li>
+                            <span>Top 10: </span>Ranked by the highest number of total shipments.
+                        </li>
+                        <li>
+                            <span>Bottom 10: </span> Ranked by the lowest total shipments, considering only those with at least 20 shipments.
+                        </li>
+                        <li>
+                            <span>EV Carriers Ranking: </span> Ranked by the highest emissions saved
+                            carriers.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div>
+                <h5 class="color-green">Columns Explained</h5>
+                <div>
+                    <ol>
+                        <li>
+                            <span>Lane Name: </span>Indicates the origin and destination of shipments (for
+                            lane-based rankings).
+                        </li>
+                        <li>
+                            <span>SCAC: </span>Standard Carrier Alpha Code identifying the carrier
+                        </li>
+                        <li>
+                            <span>Carrier Name: </span>Name of the carrier (for carrier-based rankings).
+                        </li>
+                        <li>
+                            <span>Emissions (CO2e): </span>Total greenhouse gas emissions in metric tons.
+                        </li>
+                        <li>
+                            <span>Avg. Emissions Intensity (gCO2e/Ton-Mile): </span>Efficiency metric per
+                            ton-mile.
+                        </li>
+                        <li>
+                            <span>Total Shipments: </span>Count of shipments completed in the respective
+                            category
+                        </li>
+                        <li>
+                            <span>Emissions Saved (CO2e): </span>The reduction in emissions compared to
+                            shipments powered by diesel.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        {{> footer }}
+    </div>
+
+    <!--  Top 10 Lanes emission intensity and emissions -->
+    {{> header }}
+    <div class="break-after">
+        {{#each topLanesTable}}
+        {{> table containClass="table-container top-lanes" }}
+        {{/each}}
+    </div>
+
+
+    <!-- Graphs for Top 10 Lanes emission intensity -->
+    {{> header }}
+    {{> graph title="Lane-Wise Emissions Intensity Trends Over Periods/Weeks" firstGraph=firstBarIntensityImage secondGraph=secondBarIntensityImage }}
+
+
+    <!-- Graphs for Top  10 Lanes emissions -->
+    {{> header }}
+    {{> graph title="Lane-Wise Emissions Over Periods/Weeks" firstGraph=firstBarEmissionImage secondGraph=secondBarEmissionImage }}
+
+    <!-- bottom lanes-->
+    {{#each bottomLanes}}
+    {{> header }}
+    <div class="break-after">
+        {{> table containClass="table-container top-lanes"}}
+    </div>
+    {{/each}}
+
+    <!-- Top Carriers-->
+    {{#each topCarriers}}
+    {{> header }}
+    <div class="break-after">
+        {{> table containClass="table-container top-carriers" }}
+    </div>
+    {{/each}}
+
+
+    <!-- Graphs for carriers Top intensity-->
+    {{> header }}
+    {{> graph title="Carrier-Wise Emissions Intensity Trends Over Periods/Weeks" firstGraph=firstBarCarrierIntensityImage secondGraph=secondBarCarrierIntensityImage }}
+
+     <!-- Graphs for carriers Top emissions-->
+    {{> header }}
+    {{> graph title="Carrier-Wise Emissions Over Periods/Weeks" firstGraph=firstBarCarrierEmissionImage secondGraph=secondBarCarrierEmissionImage }}
+
+
+    <!-- Bottom carriers -->
+    {{#each tables}}
+    {{> header }}
+    <div class="break-after">
+        {{> table containClass="table-container top-carriers" }}
+    </div>
+    {{/each}}
+
+    <!-- EV and alternative tables -->
+    {{#if show}}
+    <!-- Ev Emissions -->
+    {{#each evtable}}
+    <div class="break-after">
+        {{> header }}
+        <div class="outer-section">
+            <div class="section-title">{{title}}</div>
+            <div class="table-container">
+                <table>
+                    <caption class="table-caption">{{dateRange}}</caption>
+                    <thead>
+                        <tr>
+                            {{#each headers}}
+                            <th>{{this}}</th>
+                            {{/each}}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each rows}}
+                        <tr>
+                            {{#each ../headers}}
+                            <td>
+                                {{#if (eq this 'Carrier Name')}}
+                                <div class="company-logo">
+                                    <div class="image-outer">
+                                        {{#if (isEmpty (lookup ../this 'carrier_logo'))}}
+                                        <!-- Display first two letters of SCAC if carrier_logo is empty -->
+                                        <div class="image-txt">
+                                            {{substring (lookup ../this 'scac') 0 2}}
+                                        </div>
+                                        {{else}}
+                                        <!-- Display logo if carrier_logo is not empty -->
+                                        <img src="{{lookup ../this 'carrier_logo'}}" alt="logo" />
+                                        {{/if}}
+                                    </div>
+                                    {{lookup ../this 'scac'}}
+                                    <div class="carrierName">
+                                        {{lookup ../this 'carrier name'}}
+                                    </div>
+                                </div>
+                                {{else}}
+                                <!-- Default case for other headers -->
+                                {{lookup ../this (toLowerCase this)}}
+                                {{/if}}
+                            </td>
+                            {{/each}}
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {{> footer }}
+    </div>
+    {{/each}}
+    
+    {{/if}}
+ 
+</body>
+
+</html>

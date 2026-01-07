@@ -1,0 +1,31 @@
+# Trivy Vulnerability Scan Template
+parameters:
+  - name: acrname
+  - name: acrrepository
+  - name: apiversion
+
+jobs:
+- job: TrivyScan
+  displayName: "Container Vulnerability Scan"
+  steps:
+
+  - task: AzureCLI@2
+    displayName: "Login to ACR"
+    inputs:
+      azureSubscription: "Azure Service Manager Endpoint"
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        az acr login --name ${{ parameters.acrname }}
+
+  - task: trivy@2
+    displayName: "Trivy Scan"
+    inputs:
+      version: 'latest'
+      type: 'image'
+      target: "${{ parameters.acrname }}.azurecr.io/${{ parameters.acrrepository }}:${{ parameters.apiversion }}"
+      scanners: 'misconfig,secret,vuln'
+      severities: 'LOW, MEDIUM, HIGH, CRITICAL'
+      ignoreUnfixed: true
+      showSuppressed: true
+      ignoreScanErrors: true

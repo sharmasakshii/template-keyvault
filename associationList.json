@@ -1,0 +1,903 @@
+{
+    "main_model": [
+        {
+            "model1": "User",
+            "model2": "Profile",
+            "associationType": "hasOne",
+            "options": {
+                "foreignKey": "user_id",
+                "as": "profile"
+            }
+        },
+        {
+            "model1": "User",
+            "model2": "UserCompany",
+            "associationType": "hasOne",
+            "options": {
+                "foreignKey": "user_id",
+                "as": "userCompany"
+            }
+        },
+        {
+            "model1": "User",
+            "model2": "Company",
+            "associationType": "belongsToMany",
+            "options": {
+                "through": "UserCompany",
+                "foreignKey": "user_id",
+                "otherKey": "company_id",
+                "as": "companies"
+            }
+        },
+        {
+            "model1": "CompanyOnboardingStatus",
+            "model2": "Scope",
+            "associationType": "hasOne",
+            "options": {
+                "foreignKey": "id",
+                "as": "scope",
+                "sourceKey": "scope_id"
+            }
+        }
+    ],
+    "common_model": [
+        {
+            "model1": "SummerisedFacilities",
+            "model2": "Region",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "region_id",
+                "as": "region"
+            }
+        },
+        {
+            "model1": "SummerisedFacilities",
+            "model2": "Facility",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "facilities_id",
+                "as": "facility"
+            }
+        },
+        {
+            "model1": "SummerisedEmission",
+            "model2": "Facility",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "region_id",
+                "as": "region"
+            }
+        },
+        {
+            "model1": "Region",
+            "model2": "SummerisedEmission",
+            "associationType": "hasOne",
+            "options": {
+                "foreignKey": "region_id",
+                "as": "SummerisedEmission"
+            }
+        },
+        {
+            "model1": "SummerisedEmission",
+            "model2": "Region",
+            "associationType": "hasOne",
+            "options": {
+                "foreignKey": "id",
+                "sourceKey": "region_id",
+                "as": "region_summerisedEmission"
+            }
+        },
+        {
+            "model1": "CarrierEmissions",
+            "model2": "CarrierEmissionReduction",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "carrier",
+                "targetKey": "carrier",
+                "as": "carrierEmissionsReduction"
+            }
+        },
+        {
+            "model1": "GetUserDetails",
+            "model2": "Roles",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "user_role",
+                "as": "userDetailsRole"
+            }
+        },
+        {
+            "model1": "EmissionsPPP",
+            "model2": "BusinessUnit",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "bu_id",
+                "as": "business_unit"
+            }
+        },
+        {
+            "model1": "SummerisedBusinessUnit",
+            "model2": "BusinessUnit",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "bu_id",
+                "as": "businessUnit"
+            }
+        },
+        {
+            "model1": "SummerisedBusinessUnit",
+            "model2": "Region",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "region_id",
+                "as": "Region"
+            }
+        },
+        {
+            "model1": "SummerisedCarrier",
+            "model2": "Region",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "region_id",
+                "as": "regions"
+            }
+        },
+        {
+            "model1": "EmissionsPPP",
+            "model2": "BusinessSector",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "sector_id",
+                "as": "business_sector"
+            }
+        },
+        {
+            "model1": "EmissionsPPP",
+            "model2": "FuelConstant",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_id",
+                "as": "fuel_constant"
+            }
+        },
+        {
+            "model1": "EmissionsChevron",
+            "model2": "FuelConstant",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_id",
+                "as": "fuelConstant"
+            }
+        },
+        {
+            "model1": "EmissionsChevron",
+            "model2": "FuelLocation",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "location_id",
+                "as": "fuelLocation"
+            }
+        },
+        {
+            "model1": "EmissionsChevron",
+            "model2": "FuelSubType",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_sub_type_id",
+                "as": "fuelSubType"
+            }
+        },
+        {
+            "model1": "EmissionsLeasecars",
+            "model2": "FuelConstant",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_id",
+                "as": "fuelConstant"
+            }
+        },
+        {
+            "model1": "EmissionsLeasecars",
+            "model2": "FuelLocation",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "location_id",
+                "as": "fuelLocation"
+            }
+        },
+        {
+            "model1": "EmissionsBiodiesel",
+            "model2": "FuelConstant",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_id",
+                "as": "fuelConstant"
+            }
+        },
+        {
+            "model1": "EmissionsBiodiesel",
+            "model2": "FuelLocation",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "location_id",
+                "as": "fuelLocation"
+            }
+        },
+        {
+            "model1": "EmissionsBiodiesel",
+            "model2": "BusinessSector",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "sector_id",
+                "as": "business_sector"
+            }
+        },
+        {
+            "model1": "EmissionsScope1",
+            "model2": "TimePeriodScope1",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "period_id",
+                "as": "TimePeriod"
+            }
+        },
+        {
+            "model1": "EmissionsScope1",
+            "model2": "ProductType",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_type",
+                "targetKey": "id",
+                "as": "productType"
+            }
+        },
+        {
+            "model1": "EvEmissions",
+            "model2": "EvCarriers",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "scac",
+                "targetKey": "scac",
+                "as": "carrier"
+            }
+        },
+        {
+            "model1": "FuelTracker",
+            "model2": "FuelConstant",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_id",
+                "targetKey": "id",
+                "as": "fuelConstant"
+            }
+        },
+        {
+            "model1": "FuelTracker",
+            "model2": "TimePeriodScope1",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "period",
+                "targetKey": "id",
+                "as": "timePeriod"
+            }
+        },
+        {
+            "model1": "TimeMapping",
+            "model2": "TimePeriod",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "period_id",
+                "targetKey": "id",
+                "as": "TimePeriod"
+            }
+        },
+        {
+            "model1": "TimePeriod",
+            "model2": "TimeMapping",
+            "associationType": "hasMany",
+            "options": {
+                "foreignKey": "period_id",
+                "as": "timeMappings"
+            }
+        },
+        {
+            "model1": "Emission",
+            "model2": "TimeMapping",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "time_id",
+                "targetKey": "id",
+                "as": "TimeMapping"
+            }
+        },
+        {
+            "model1": "SummerisedFuelType",
+            "model2": "FuelType",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_type_id",
+                "as": "FuelType"
+            }
+        },
+        {
+            "model1": "SummerisedFuelType",
+            "model2": "Region",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "region_id",
+                "as": "Region"
+            }
+        },
+        {
+            "model1": "SummerisedTrailerType",
+            "model2": "TrailerType",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "trailer_type_id",
+                "as": "TrailerType"
+            }
+        },
+        {
+            "model1": "SummerisedTrailerType",
+            "model2": "Region",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "region_id",
+                "as": "Region"
+            }
+        },
+        {
+            "model1": "SummerisedVehicleModel",
+            "model2": "VehicleModel",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "vehicle_model_id",
+                "as": "VehicleModel"
+            }
+        },
+        {
+            "model1": "SummerisedVehicleModel",
+            "model2": "FuelType",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_type_id",
+                "as": "FuelType"
+            }
+        },
+        {
+            "model1": "SummerisedVehicleModel",
+            "model2": "Region",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "region_id",
+                "as": "Region"
+            }
+        },
+        {
+            "model1": "EmissionsPropane",
+            "model2": "FuelConstant",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_id",
+                "as": "fuelConstant"
+            }
+        },
+        {
+            "model1": "EmissionsPropane",
+            "model2": "FuelLocation",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "location_id",
+                "as": "fuelLocation"
+            }
+        },
+        {
+            "model1": "EmissionsR99",
+            "model2": "FuelConstant",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_id",
+                "as": "fuelConstant"
+            }
+        },
+        {
+            "model1": "EmissionsR99",
+            "model2": "FuelLocation",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "location_id",
+                "as": "fuelLocation"
+            }
+        },
+        {
+            "model1": "FritoLayTransactions",
+            "model2": "FuelConstant",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_id",
+                "as": "fuelConstant"
+            }
+        },
+        {
+            "model1": "FritoLayTransactions",
+            "model2": "FuelLocation",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "location_id",
+                "as": "fuelLocation"
+            }
+        },
+        {
+            "model1": "LaneAlternateFuelType",
+            "model2": "AlternateFuelTypeConstant",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_type",
+                "targetKey": "id",
+                "as": "afc"
+            }
+        },
+        {
+            "model1": "LaneShipment",
+            "model2": "AlternateFueltypeCarrier",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "code",
+                "as": "carrier"
+            }
+        },
+        {
+            "model1": "LaneAlternateFuelType",
+            "model2": "AlternateFueltypeCarrier",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "scac",
+                "targetKey": "scac",
+                "as": "afc2"
+            }
+        },
+        {
+            "model1": "AlternateFueltypeCarrier",
+            "model2": "CarrierCountry",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "scac",
+                "targetKey": "carrier_scac",
+                "as": "countryScac"
+            }
+        },
+        {
+            "model1": "EvCarriers",
+            "model2": "CarrierCountry",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "scac",
+                "targetKey": "carrier_scac",
+                "as": "countryScacEv"
+            }
+        },
+        {
+            "model1": "Project",
+            "model2": "ProjectInvite",
+            "associationType": "hasMany",
+            "options": {
+                "foreignKey": "project_id",
+                "as": "projectInvite"
+            }
+        },
+        {
+            "model1": "DecarbSummery",
+            "model2": "Region",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "region_id",
+                "targetKey": "id",
+                "as": "region"
+            }
+        },
+        {
+            "model1": "DecarbSummery",
+            "model2": "BusinessUnitDivision",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "division_id",
+                "targetKey": "id",
+                "as": "division"
+            }
+        },
+        {
+            "model1": "Lane",
+            "model2": "EmissionLanes",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "name",
+                "targetKey": "name",
+                "as": "laneDetails"
+            }
+        },
+        {
+            "model1": "FuelReport",
+            "model2": "Company",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "company_id",
+                "targetKey": "id",
+                "as": "transactionCompany"
+            }
+        },
+        {
+            "model1": "FuelReport",
+            "model2": "Location",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "location_id",
+                "targetKey": "id",
+                "as": "transactionLocation"
+            }
+        },
+        {
+            "model1": "FuelReport",
+            "model2": "Market",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "market_id",
+                "targetKey": "id",
+                "as": "transactionMarket"
+            }
+        },
+        {
+            "model1": "FuelReport",
+            "model2": "Division",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "division_id",
+                "targetKey": "id",
+                "as": "transactionDivision"
+            }
+        },
+        {
+            "model1": "FuelReport",
+            "model2": "BusinessUnitScope1",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "business_unit_id",
+                "targetKey": "id",
+                "as": "transactionBusinessUnitScope1"
+            }
+        },
+        {
+            "model1": "FuelReport",
+            "model2": "Transport",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "transport_id",
+                "targetKey": "id",
+                "as": "pbnaTransport"
+            }
+        },
+        {
+            "model1": "PfnaTransactions",
+            "model2": "Transport",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "transport_id",
+                "targetKey": "id",
+                "as": "pfnaTransport"
+            }
+        },
+        {
+            "model1": "FuelReport",
+            "model2": "FuelType",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_type_id",
+                "targetKey": "id",
+                "as": "pbnaFuelType"
+            }
+        },
+        {
+            "model1": "FuelReport",
+            "model2": "TimePeriodScope1",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "period_id",
+                "targetKey": "id",
+                "as": "pbnaPeriod"
+            }
+        },
+        {
+            "model1": "PfnaTransactions",
+            "model2": "TimePeriodScope1",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "period_id",
+                "targetKey": "id",
+                "as": "pfnaPeriod"
+            }
+        },
+        {
+            "model1": "AIAgentChatHistory",
+            "model2": "AIAgentTitle",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "title_slug",
+                "targetKey": "slug",
+                "as": "aiAgentTitle"
+            }
+        },
+        {
+            "model1": "SummerisedBusinessUnit",
+            "model2": "BusinessUnitDivision",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "division_id",
+                "as": "businessUnitDivision"
+            }
+        },
+        {
+            "model1": "SummerisedBusinessUnit",
+            "model2": "Region",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "region_id",
+                "as": "region"
+            }
+        },
+        {
+            "model1": "FuelReportPfna",
+            "model2": "FuelType",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_type_id",
+                "as": "FuelType"
+            }
+        },
+        {
+            "model1": "FuelReportPfna",
+            "model2": "TimePeriodScope1",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "period_id",
+                "targetKey": "id",
+                "as": "pfnaPeriod"
+            }
+        },
+        {
+            "model1": "BidManagement",
+            "model2": "BidFileStatus",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "status_id",
+                "as": "status"
+            }
+        },
+        {
+            "model1": "BidManagement",
+            "model2": "GetUserDetails",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "user_id",
+                "targetKey": "user_id",
+                "as": "user"
+            }
+        },
+        {
+            "model1": "BidManagement",
+            "model2": "BidProcessing",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "id",
+                "targetKey": "file_id",
+                "as": "processing"
+            }
+        },
+        {
+            "model1": "BidManagement",
+            "model2": "BidErrorLog",
+            "associationType": "hasMany",
+            "options": {
+                "foreignKey": "file_id",
+                "as": "bidError"
+            }
+        },
+        {
+            "model1": "PfnaTransactions",
+            "model2": "Location",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "location_id",
+                "targetKey": "id",
+                "as": "pfnaTransactionLocation"
+            }
+        },
+        {
+            "model1": "PfnaTransactions",
+            "model2": "FuelType",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "fuel_type_id",
+                "as": "pfnaFuelType"
+            }
+        },
+        {
+            "model1": "FuelReport",
+            "model2": "Location",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "location_id",
+                "targetKey": "id",
+                "as": "pbnaTransactionLocation"
+            }
+        },
+        {
+            "model1": "FileManagement",
+            "model2": "FileStatus",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "status_id",
+                "targetKey": "id",
+                "as": "fileStatus"
+            }
+        },
+        {
+            "model1": "FileManagement",
+            "model2": "GetUserDetails",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "User_id",
+                "targetKey": "user_id",
+                "as": "user"
+            }
+        },
+        {
+            "model1": "ActivityLog",
+            "model2": "FileStatus",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "status_id",
+                "targetKey": "id",
+                "as": "status"
+            }
+        },
+        {
+            "model1": "ActivityLog",
+            "model2": "FileManagement",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "file_management_id",
+                "targetKey": "id",
+                "as": "fileManagement"
+            }
+        },
+        {
+            "model1": "RegionBenchmarks",
+            "model2": "BenchmarkRegions",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "region",
+                "targetKey": "id",
+                "as": "BenchmarkRegions"
+            }
+        },
+        {
+            "model1": "SummarisedFuelBoard",
+            "model2": "CarrierCountry",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "carrier_scac",
+                "targetKey": "carrier_scac",
+                "as": "combineDashCarCtry"
+            }
+        },
+        {
+            "model1": "CarrierCountry",
+            "model2": "AlternateFueltypeCarrier",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "carrier_scac",
+                "targetKey": "scac",
+                "as": "combineDashCarrAltr"
+            }
+        },
+        {
+            "model1": "CarrierCountry",
+            "model2": "EvCarriers",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "carrier_scac",
+                "targetKey": "scac",
+                "as": "combineDashCarrEv"
+            }
+        },
+        {
+            "model1": "SummerisedEmission",
+            "model2": "TimeMapping",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "time_id",
+                "targetKey": "id",
+                "as": "SummerisedEmissionTimeMapping"
+            }
+        },
+        {
+            "model1": "SummerisedBusinessUnit",
+            "model2": "TimeMapping",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "time_id",
+                "targetKey": "id",
+                "as": "SummerisedBusinessUnitTimeMapping"
+            }
+        },
+        {
+            "model1": "Emission",
+            "model2": "TimeMapping",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "time_id",
+                "targetKey": "id",
+                "as": "EmissionTimeMapping"
+            }
+        },
+        {
+            "model1": "SummerisedCarrierType",
+            "model2": "CarrierType",
+            "associationType": "hasOne",
+            "options": {
+                "foreignKey": "id",
+                "sourceKey": "carrier_type_id",
+                "as": "carrier_type"
+            }
+        },
+        {
+            "model1": "SummerisedCarrierType",
+            "model2": "TimeMapping",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "time_id",
+                "targetKey": "id",
+                "as": "SummerisedCarrierTypeTimeMapping"
+            }
+        },
+        {
+            "model1": "SummarisedFuelBoard",
+            "model2": "Country",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "country_name",
+                "targetKey": "country_name",
+                "as": "countryMaster"
+            }
+        },
+        {
+            "model1": "LaneAlternateFuelType",
+            "model2": "Country",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "country_id",
+                "targetKey": "id",
+                "as": "countryMaster"
+            }
+        },
+        {
+            "model1": "ProductTypeAvailability",
+            "model2": "ProductTypeExternal",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "product_type_id",
+                "targetKey": "id",
+                "as": "productTypeExternal"
+            }
+        },
+           {
+            "model1": "ProductTypeExternal",
+            "model2": "ProductTypeAvailability",
+            "associationType": "belongsTo",
+            "options": {
+                "foreignKey": "id",
+                "targetKey": "product_type_id",
+                "as": "checkProductFromMaster"
+            }
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+# # Deploy Container App Template
+# parameters:
+#   - name: acrname
+#   - name: image
+#   - name: containerapp
+#   - name: rgname
+
+# jobs:
+# - job: DeployApp
+#   displayName: "Deploy to Azure Container App"
+#   steps:
+
+#   - task: AzureContainerApps@1
+#     displayName: "Deploy container revision"
+#     inputs:
+#       azureSubscription: 'Azure Service Manager Endpoint'
+#       acrname: ${{ parameters.acrname }}
+#       acrusername: ${{ parameters.acrname }}
+#       acrpassword: $(ACR_PASSWORD)
+#       imagetodeploy: ${{ parameters.image }}
+#       containerappname: ${{ parameters.containerapp }}
+#       resourcegroup: ${{ parameters.rgname }}
+#       targetport: 8000
+
+# Deploy Container App Template
+parameters:
+  - name: acrname
+    type: string
+  - name: image
+    type: string
+  - name: containerapp
+    type: string
+  - name: rgname
+    type: string
+
+jobs:
+- job: DeployApp
+  displayName: "Deploy to Azure Container App"
+  steps:
+
+    # 🔐 Fetch secrets FIRST
+    - template: fetch_secrets.yml
+
+    # 🚀 Deploy container revision
+    - task: AzureContainerApps@1
+      displayName: "Deploy container revision"
+      inputs:
+        azureSubscription: 'devops-secrect-reader'
+        acrName: ${{ parameters.acrname }}
+        acrUsername: ${{ parameters.acrname }}
+        acrPassword: $(ACR_PASSWORD)
+        imageToDeploy: ${{ parameters.image }}
+        containerAppName: ${{ parameters.containerapp }}
+        resourceGroup: ${{ parameters.rgname }}
+        targetPort: 8000

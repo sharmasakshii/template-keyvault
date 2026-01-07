@@ -1,0 +1,22 @@
+# Build & Push Docker Image Template
+parameters:
+  - name: acrname
+  - name: acrrepository
+  - name: apiversion
+  - name: dockerfilepath  # <-- Added parameter
+
+jobs:
+- job: BuildAndPush
+  displayName: Build & Push Docker Image
+
+  steps:
+  - task: Docker@2
+    displayName: "Build & Push Docker image"
+    inputs:
+      command: buildAndPush
+      containerregistry: $(ACR_SERVICE_CONNECTION)  # <-- Use actual service connection variable
+      repository: ${{ parameters.acrrepository }}   # <-- ACR name added automatically by registry
+      dockerfile: ${{ parameters.dockerfilepath }}  # <-- Correct parameter usage
+      tags: |
+        ${{ parameters.apiversion }}
+        latest

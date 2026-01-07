@@ -1,0 +1,9 @@
+# STEP TEMPLATE — fetch secrets from Key Vault
+steps:
+- task: AzureKeyVault@2
+  displayName: "Fetch secrets from Key Vault"
+  inputs:
+    azureSubscription: 'devops-secrect-reader'
+    KeyVaultName: 'gs-keyvault-dev'
+    SecretsFilter: '*'
+    RunAsPreJob: true

@@ -1,0 +1,64 @@
+[
+    {
+        "question": "What are the total emissions for Carrier JB Hunt in Q1 2024?",
+        "answer": "In Q1 of 2024 J.B. Hunt (HJBT) generated 12.11 metric tons of CO₂ emission, with an emissions intensity of 72.9 gram CO₂e per ton-mile.",
+        "type": "text"
+    },
+    {
+        "question": "Which carrier has the highest emissions intensity for the SEDC region?",
+        "answer": "TOTAL QUALITY LOGISTICS (TQYL) has generated 345.58 metric tons of CO₂ emission for the SEDC region.",
+        "type": "text"
+    },
+    {
+        "question": "What were our emissions for Q3 2024?",
+        "answer": "In Q3 2024, total emissions were 316,832.66 metric tons of CO₂e.",
+        "type": "text"
+    },
+    {
+        "question": "What are the emissions for the DECATUR-to-JOPLIN lane in 2024?",
+        "answer": "The DECATUR-to-JOPLIN lane generated 1.59 metric tons of CO₂e in 2024, with an average intensity of 164.5 g CO₂e per ton-mile.",
+        "type": "text"
+    },
+    {
+        "question": "Which lane has the highest emissions in the PBC region?",
+        "answer": "The MISSISSAUGA-to-MONCTON lane had the highest emissions in the PBC region, totaling 1,971.05 metric tons of CO₂e.",
+        "type": "text"
+    },
+    {
+        "question": "What were the emissions for the PBCI region in 2024?",
+        "answer": "The PBCI region generated 28,801.77 metric tons of CO₂e in 2024, with 70% from diesel-powered shipments and 30% from natural gases/alternative fuel.",
+        "type": "text"
+    },
+    {
+        "question": "Compare emissions between the PBCI and PBC regions in Q2 2024.",
+        "answer": "In Q2 2024, the PBC region emitted 50,159.57 metric tons of CO₂e, while the PBCI region emitted 6,505.74 metric tons of CO₂e.",
+        "type": "text"
+    },
+    {
+        "question": "Show emissions intensity for the top 5 lanes by ton-mile",
+        "answer": "Here are the Top 5 Lanes by Ton-Mile with Emissions Intensity:",
+        "data": "/images/chatbot/response/barChart.png",
+        "type": "image"
+    },
+    {
+        "question": "How do the emissions of JB Hunt (HJBT) and NFI Canada (NFCA) compare on the Brampton to Airdrie lane during the period from March 1, 2024, to October 31, 2024?",
+        "answer": "J.B. Hunt has an emissions intensity of 72.9 gCO₂e/Ton-Mile of freight for the BRAMPTON to AIRDRIE lane, compared to NFI CANADA’s 98.9 gCO₂e/Ton-Mile of freight for the period between 03/01/24 and 31/10/24.",
+        "data": "/images/chatbot/response/pieChart.png",
+        "type": "image"
+    },
+    {
+        "question": "Which carrier has the lowest emissions intensity for the Northeast region?",
+        "answer": "HUNT, J B TRANSPORT INC has an emissions intensity 65.50g CO₂e per ton-mile for the Northeast region.",
+        "type": "text"
+    },
+    {
+        "question": "Which lane has the highest emissions in the Midwest region?",
+        "answer": "The MAQUOKETA, IA-to-MAQUOKETA, IA lane had the highest emissions in the Midwest region, totaling 5,697.74 metric tons of CO₂e.",
+        "type": "text"
+    },
+    {
+        "question": "What were the emissions for the Southeast region in 2024?",
+        "answer": "The Southeast region generated 831,626.27 metric tons of CO₂e in 2024.",
+        "type": "text"
+    }
+]
