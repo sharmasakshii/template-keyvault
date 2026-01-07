@@ -1,0 +1,13 @@
+trigger:
+  - develop
+
+pr: none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+- stage: Deploy
+  displayName: "Build & Deploy"
+  jobs:
+    - template: templates/static_web_app_deploy.yml

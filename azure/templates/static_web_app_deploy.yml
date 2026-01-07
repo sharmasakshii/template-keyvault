@@ -1,0 +1,34 @@
+jobs:
+- job: Deploy
+  displayName: "Deploy Azure Static Web App"
+  steps:
+
+    # 🔐 Fetch secrets INSIDE the job
+    - task: AzureKeyVault@2
+      displayName: "Fetch SWA Deployment Token"
+      inputs:
+        azureSubscription: 'devops-secrect-reader'
+        KeyVaultName: 'gs-keyvault-demo'
+        SecretsFilter: 'STATIC-WEB-APP-TOKEN'
+        RunAsPreJob: true
+
+    - checkout: self
+
+    # 🔍 Optional debug (remove later)
+    - script: |
+        echo "Token fetched successfully"
+      displayName: "Confirm Token Fetch"
+
+    # 🏗 Build
+    - script: |
+        npm install
+        npm run build
+      displayName: "Build Application"
+
+    # 🚀 Deploy
+    - task: AzureStaticWebApp@0
+      displayName: "Deploy to Azure Static Web App"
+      inputs:
+        app_location: "/"
+        output_location: "dist"
+        azure_static_web_apps_api_token: $(STATIC-WEB-APP-TOKEN)
