@@ -4,10 +4,14 @@ parameters:
 
 jobs:
 - job: Deploy
-  displayName: "Deploy Static Web App"
+  displayName: "Deploy Azure Static Web App"
   steps:
+
+    - checkout: self
+    # 🚀 Static Web App Deploy
     - task: AzureStaticWebApp@0
+      displayName: "Deploy to Azure Static Web App"
       inputs:
-        app_location: "/"
-        output_location: "dist"
+        app_location: "/"          # root of app
+        output_location: "dist"    # change if build output differs
         azure_static_web_apps_api_token: ${{ parameters.deploymentToken }}
