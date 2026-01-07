@@ -6,38 +6,32 @@ pr: none
 pool:
   vmImage: 'ubuntu-latest'
 
-# variables:
-#   - name: PROJECT_VERSION
-#     value: "1.0.0"
-
 stages:
 
-# ---------- SECRETS ----------
+# ================================
+# STAGE 1: READ SECRETS
+# ================================
 - stage: Secrets
   displayName: "Read Secrets from Key Vault"
   jobs:
-  - job: ReadSecrets
-    displayName: "Key Vault Secrets"
-    steps:
-      - task: AzureKeyVault@2
-        inputs:
-          azureSubscription: 'devops-secrect-reader'
-          KeyVaultName: 'gs-keyvault-demo'
-          SecretsFilter: '*'
-          RunAsPreJob: true
+    - job: ReadSecrets
+      displayName: "Fetch Key Vault Secrets"
+      steps:
+        - task: AzureKeyVault@2
+          displayName: "Get Static Web App Token"
+          inputs:
+            azureSubscription: 'devops-secrect-reader'
+            KeyVaultName: 'gs-keyvault-demo'
+            SecretsFilter: 'STATIC-WEB-APP-TOKEN'
+            RunAsPreJob: true
 
-# # ---------- QUALITY + SONAR ----------
-# - stage: Quality
-#   displayName: "Quality & Sonar"
-#   dependsOn: Secrets
-#   jobs:
-#     - template: templates/test-cases.yml
-#       parameters:
-#         sonarenabled: true
-
-# ---------- BUILD & DEPLOY ----------
+# ================================
+# STAGE 2: BUILD & DEPLOY
+# ================================
 - stage: Build_and_Deploy
-  displayName: "Build & Deploy"
- # dependsOn: Quality
+  displayName: "Build & Deploy Static Web App"
+  dependsOn: Secrets
   jobs:
     - template: templates/static_web_app_deploy.yml
+      parameters:
+        deploymentToken: $(STATIC-WEB-APP-TOKEN)
