@@ -1,14 +1,21 @@
 jobs:
-- job: Deploy
-  displayName: "Deploy Azure Static Web App"
+- job: DeployStaticWebApp
+  displayName: "Deploy Static Web App"
   steps:
 
-    
+    # 🔐 Fetch all secrets from Key Vault
+    - template: secrects.yml
 
-    # 🚀 Deploy
+    # (Optional) Build step
+    - script: |
+        npm install
+        npm run build
+      displayName: "Build App"
+
+    # 🚀 Deploy Static Web App
     - task: AzureStaticWebApp@0
-      displayName: "Deploy to Azure Static Web App"
+      displayName: "Deploy"
       inputs:
         app_location: "/"
         output_location: "dist"
-        azure_static_web_apps_api_token: $(STATIC-WEB-APP-TOKEN)
+        azure_static_web_apps_api_token: $(STATIC_WEB_APP_TOKEN)
