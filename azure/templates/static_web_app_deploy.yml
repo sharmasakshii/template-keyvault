@@ -18,4 +18,4 @@ jobs:
       inputs:
         app_location: "/"
         output_location: "dist"
-        azure_static_web_apps_api_token: $(STATIC_WEB_APP_TOKEN)
+        azure_static_web_apps_api_token: $(STATIC-WEB-APP-TOKEN)
