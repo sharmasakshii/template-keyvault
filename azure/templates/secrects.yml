@@ -4,6 +4,6 @@ steps:
   displayName: "Fetch secrets from Key Vault"
   inputs:
     azureSubscription: 'devops-secrect-reader'
-    KeyVaultName: 'gs-keyvault-dev'
+    KeyVaultName: 'gs-keyvault-demo'
     SecretsFilter: '*'
     RunAsPreJob: true
